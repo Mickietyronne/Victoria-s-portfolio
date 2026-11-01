@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pipchat — Case study · Victoria</title>
+<meta name="description" content="Pipchat: a Nigerian messaging app with a wallet built in — case study.">
+<meta property="og:title" content="Pipchat — Case study · Victoria">
+<meta property="og:description" content="Pipchat: a Nigerian messaging app with a wallet built in — case study.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#FFFFFF">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500&amp;family=Geist:wght@400;700;800&amp;display=swap">
+<style>
+body{margin:0;background:#FFFFFF}
+a{color:inherit}a:hover{color:inherit}
+.it{font-family:inherit;font-style:normal}
+.rv{opacity:0;transform:translateY(28px);filter:blur(8px);transition:opacity .9s ease,transform 1s cubic-bezier(.22,1,.36,1),filter .9s ease}
+.rv.in{opacity:1;transform:none;filter:blur(0)}
+.mono{font-family:'JetBrains Mono',ui-monospace,Menlo,monospace}
+.lnk{text-decoration:none;transition:opacity .2s}.lnk:hover{opacity:.6}
+.lift{transition:transform .35s cubic-bezier(.2,.7,.2,1)}.lift:hover{transform:translateY(-4px)}
+.scrollx{overflow-x:auto;position:relative}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+.floaty{animation:floaty 6s ease-in-out infinite}
+@media (prefers-reduced-motion:reduce){.floaty{animation:none}}
+</style>
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<div style="font-family:'Inter Tight',system-ui,sans-serif;color:#0E0E10;background:#FFFFFF;overflow:hidden">
+
+<!-- ============ TOP BAR (shared case-study template) ============ -->
+<header style="max-width:1320px;margin:0 auto;padding:24px clamp(20px,4vw,56px);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px">
+  <a href="index.html" class="lnk" style="display:inline-flex;align-items:center;gap:10px;min-height:44px;padding:0 18px 0 12px;border-radius:999px;border:1px solid #D7D6D0;background:#FFFFFF;font-weight:500;font-size:14px">
+    <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M19 12H5M11 6l-6 6 6 6"></path></svg>
+    Back to all work
+  </a>
+  <a href="index.html" class="lnk" style="display:flex;align-items:center;gap:10px;font-weight:700;font-size:18px">
+    <span class="it" style="width:40px;height:40px;border-radius:50%;background:#0E0E10;color:#F6F6F3;display:flex;align-items:center;justify-content:center;font-size:20px">V</span>
+    <span>Victoria<span style="color:#5B7F12">.</span></span>
+  </a>
+  <a href="peopleflow.html" class="lnk" style="display:inline-flex;align-items:center;gap:10px;min-height:44px;padding:0 12px 0 18px;border-radius:999px;background:#0E0E10;color:#FFFFFF;font-weight:600;font-size:14px">
+    Next: PeopleFlow
+    <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+  </a>
+</header>
+
+<!-- ============ HERO ============ -->
+<section style="max-width:1320px;margin:0 auto;padding:clamp(32px,5vw,72px) clamp(20px,4vw,56px) 0">
+  <p class="mono" style="margin:0;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:#55555B">Case study 03 — Messaging &amp; payments · Mobile app</p>
+  <div style="display:flex;flex-wrap:wrap;gap:24px 64px;align-items:flex-end;margin-top:24px">
+    <h1 style="margin:0;flex:1 1 520px;font-size:clamp(80px,13vw,200px);line-height:.82;letter-spacing:-0.06em;font-weight:800">Pipchat<span style="color:#8DBF1E">.</span></h1>
+    <p style="margin:0;flex:1 1 380px;font-size:clamp(22px,2.4vw,32px);line-height:1.25;letter-spacing:-0.02em;font-weight:500">A Nigerian messaging app with a wallet built in — chat, call, share Moments and send money <span style="color:#8A8A90">without leaving the conversation.</span></p>
+  </div>
+
+  <dl style="margin:56px 0 0;display:flex;flex-wrap:wrap;border-top:1px solid #0E0E10">
+    <div style="flex:1 1 180px;padding:20px 20px 20px 0"><dt class="mono" style="font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#55555B">Role</dt><dd style="margin:8px 0 0;font-size:17px;font-weight:600">UI/UX Designer</dd></div>
+    <div style="flex:1 1 180px;padding:20px 20px 20px 0"><dt class="mono" style="font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#55555B">Timeline</dt><dd style="margin:8px 0 0;font-size:17px;font-weight:600">[Timeline]</dd></div>
+    <div style="flex:1 1 180px;padding:20px 20px 20px 0"><dt class="mono" style="font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#55555B">Team</dt><dd style="margin:8px 0 0;font-size:17px;font-weight:600">PM, engineers, finance &amp; compliance</dd></div>
+    <div style="flex:1 1 180px;padding:20px 20px 20px 0"><dt class="mono" style="font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#55555B">Shipped</dt><dd style="margin:8px 0 0;font-size:17px;font-weight:600">Mobile app &amp; design system</dd></div>
+    <div style="flex:1 1 180px;padding:20px 0"><dt class="mono" style="font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#55555B">Status</dt><dd style="margin:8px 0 0;font-size:17px;font-weight:600;display:flex;align-items:center;gap:8px"><span style="width:8px;height:8px;border-radius:50%;background:#1F9D55"></span>Waitlist open</dd></div>
+  </dl>
+
+  <div style="margin-top:24px;border-radius:clamp(24px,3vw,40px);background:#1A2602;overflow:hidden">
+    <img src="assets/pc_hero.webp" alt="Three Pipchat screens: a chat with a ₦12,500 payment card and a ₦3,000 request, the Pippay wallet, and the naira virtual card" style="width:100%;display:block">
+  </div>
+</section>
+
+<!-- ============ AT A GLANCE ============ -->
+<section style="max-width:1320px;margin:0 auto;padding:56px clamp(20px,4vw,56px) 0">
+  <div style="display:flex;flex-wrap:wrap;gap:24px">
+    <div style="flex:1 1 220px;border-top:1px solid #0E0E10;padding-top:18px"><div style="font-size:clamp(44px,4.6vw,64px);font-weight:600;letter-spacing:-0.04em;line-height:1">6</div><p style="margin:10px 0 0;color:#55555B;font-size:15px">Product areas designed, from chat to cards</p></div>
+    <div style="flex:1 1 220px;border-top:1px solid #0E0E10;padding-top:18px"><div style="font-size:clamp(44px,4.6vw,64px);font-weight:600;letter-spacing:-0.04em;line-height:1">27</div><p style="margin:10px 0 0;color:#55555B;font-size:15px">Error states, each with a next step</p></div>
+    <div style="flex:1 1 220px;border-top:1px solid #0E0E10;padding-top:18px"><div style="font-size:clamp(44px,4.6vw,64px);font-weight:600;letter-spacing:-0.04em;line-height:1">3</div><p style="margin:10px 0 0;color:#55555B;font-size:15px">Verification tiers, each explaining what it unlocks</p></div>
+    <div style="flex:1 1 220px;border-top:1px solid #0E0E10;padding-top:18px"><div style="font-size:clamp(44px,4.6vw,64px);font-weight:600;letter-spacing:-0.04em;line-height:1">47</div><p style="margin:10px 0 0;color:#55555B;font-size:15px">Piptoon stickers in the official pack</p></div>
+  </div>
+  <nav aria-label="Chapters" style="margin-top:56px;display:flex;flex-wrap:wrap;gap:8px">
+    <a href="#overview" class="lnk" style="padding:10px 16px;border-radius:999px;border:1px solid #D7D6D0;background:#FFFFFF;font-size:14px">01 Overview</a>
+    <a href="#challenge" class="lnk" style="padding:10px 16px;border-radius:999px;border:1px solid #D7D6D0;background:#FFFFFF;font-size:14px">02 Challenge</a>
+    <a href="#scope" class="lnk" style="padding:10px 16px;border-radius:999px;border:1px solid #D7D6D0;background:#FFFFFF;font-size:14px">03 Scope</a>
+    <a href="#inside" class="lnk" style="padding:10px 16px;border-radius:999px;border:1px solid #D7D6D0;background:#FFFFFF;font-size:14px">04 Inside the app</a>
+    <a href="#system" class="lnk" style="padding:10px 16px;border-radius:999px;border:1px solid #D7D6D0;background:#FFFFFF;font-size:14px">05 Design system</a>
+    <a href="#decisions" class="lnk" style="padding:10px 16px;border-radius:999px;border:1px solid #D7D6D0;background:#FFFFFF;font-size:14px">06 Decisions</a>
+    <a href="#launch" class="lnk" style="padding:10px 16px;border-radius:999px;border:1px solid #D7D6D0;background:#FFFFFF;font-size:14px">07 Launch &amp; next</a>
+  </nav>
+</section>
+
+<!-- ============ 01 OVERVIEW ============ -->
+<section id="overview" style="max-width:1320px;margin:0 auto;padding:clamp(80px,9vw,128px) clamp(20px,4vw,56px) 0;display:flex;flex-wrap:wrap;gap:24px 64px">
+  <div style="flex:1 1 220px;max-width:300px"><div class="mono" style="font-size:13px;color:#5B7F12">01</div><h2 style="margin:8px 0 0;font-size:clamp(36px,3.6vw,52px);letter-spacing:-0.04em;line-height:1;font-weight:600">Overview</h2></div>
+  <div style="flex:999 1 640px;min-width:0">
+    <h3 style="margin:0;font-size:clamp(26px,2.6vw,38px);letter-spacing:-0.03em;line-height:1.12;font-weight:600">Money talk happens in chat. <span style="color:#8A8A90">The money doesn’t.</span></h3>
+    <p style="margin:16px 0 0;font-size:18px;line-height:1.6;color:#3F3F45;max-width:720px">In Nigeria, a lot of everyday payments start in a chat: splitting a bill, sending a gift, paying a vendor. But the payment happens somewhere else. People leave the chat, open a bank app, copy an account number and send a screenshot as proof. Pipchat puts a wallet, Pippay, inside the chat — so the conversation and the money live in the same place.</p>
+
+    <p class="mono" style="margin:40px 0 14px;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#55555B">Sending a ₦5,000 gift today takes five steps</p>
+    <ol style="margin:0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:10px">
+      
+        <li style="flex:1 1 150px;background:#FFFFFF;border:1px solid #E4E3DE;border-radius:18px;padding:18px;display:flex;flex-direction:column;gap:8px">
+          <span class="mono" style="font-size:12px;color:#55555B">01</span>
+          <span style="font-weight:600;font-size:16px">Agree in chat</span>
+          <span style="font-size:14px;line-height:1.45;color:#3F3F45">“Abeg send it, I’ll share my details.”</span>
+          <span class="mono" style="margin-top:auto;padding-top:10px;font-size:11px;letter-spacing:.04em;color:#B3123C">✕ Context lost</span>
+        </li>
+      
+        <li style="flex:1 1 150px;background:#FFFFFF;border:1px solid #E4E3DE;border-radius:18px;padding:18px;display:flex;flex-direction:column;gap:8px">
+          <span class="mono" style="font-size:12px;color:#55555B">02</span>
+          <span style="font-weight:600;font-size:16px">Leave the app</span>
+          <span style="font-size:14px;line-height:1.45;color:#3F3F45">Switch to a bank app and log in again.</span>
+          <span class="mono" style="margin-top:auto;padding-top:10px;font-size:11px;letter-spacing:.04em;color:#B3123C">✕ Two apps, two logins</span>
+        </li>
+      
+        <li style="flex:1 1 150px;background:#FFFFFF;border:1px solid #E4E3DE;border-radius:18px;padding:18px;display:flex;flex-direction:column;gap:8px">
+          <span class="mono" style="font-size:12px;color:#55555B">03</span>
+          <span style="font-weight:600;font-size:16px">Copy the details</span>
+          <span style="font-size:14px;line-height:1.45;color:#3F3F45">Type a 10-digit account number and hope it’s right.</span>
+          <span class="mono" style="margin-top:auto;padding-top:10px;font-size:11px;letter-spacing:.04em;color:#B3123C">✕ Easy to mistype</span>
+        </li>
+      
+        <li style="flex:1 1 150px;background:#FFFFFF;border:1px solid #E4E3DE;border-radius:18px;padding:18px;display:flex;flex-direction:column;gap:8px">
+          <span class="mono" style="font-size:12px;color:#55555B">04</span>
+          <span style="font-weight:600;font-size:16px">Prove it</span>
+          <span style="font-size:14px;line-height:1.45;color:#3F3F45">Screenshot the receipt.</span>
+          <span class="mono" style="margin-top:auto;padding-top:10px;font-size:11px;letter-spacing:.04em;color:#B3123C">✕ No shared record</span>
+        </li>
+      
+        <li style="flex:1 1 150px;background:#FFFFFF;border:1px solid #E4E3DE;border-radius:18px;padding:18px;display:flex;flex-direction:column;gap:8px">
+          <span class="mono" style="font-size:12px;color:#55555B">05</span>
+          <span style="font-weight:600;font-size:16px">Back to chat</span>
+          <span style="font-size:14px;line-height:1.45;color:#3F3F45">Paste the screenshot and wait.</span>
+          <span class="mono" style="margin-top:auto;padding-top:10px;font-size:11px;letter-spacing:.04em;color:#B3123C">✕ Trust by screenshot</span>
+        </li>
+      
+    </ol>
+    <div style="margin-top:12px;background:#0B1220;color:#F2F4F7;border-radius:20px;padding:24px 28px;display:flex;flex-wrap:wrap;align-items:center;gap:16px 28px">
+      <span class="mono" style="font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#AEE82B">With Pipchat</span>
+      <span style="display:inline-flex;align-items:center;justify-content:center;min-width:56px;height:56px;border-radius:50%;background:#AEE82B;color:#0B1220;font-weight:800;font-size:15px">Tap</span>
+      <p style="margin:0;flex:1 1 320px;font-size:18px;line-height:1.5">Send money inside the chat. <span style="color:#C7CDD8">The payment card is the proof, and both people see it.</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 02 CHALLENGE ============ -->
+<section id="challenge" style="max-width:1320px;margin:0 auto;padding:clamp(80px,9vw,128px) clamp(20px,4vw,56px) 0;display:flex;flex-wrap:wrap;gap:24px 64px">
+  <div style="flex:1 1 220px;max-width:300px"><div class="mono" style="font-size:13px;color:#5B7F12">02</div><h2 style="margin:8px 0 0;font-size:clamp(36px,3.6vw,52px);letter-spacing:-0.04em;line-height:1;font-weight:600">Challenge</h2></div>
+  <div style="flex:999 1 640px;min-width:0">
+    <h3 style="margin:0;font-size:clamp(26px,2.6vw,38px);letter-spacing:-0.03em;line-height:1.12;font-weight:600">As easy as a message, <span style="color:#8A8A90">as safe as a bank.</span></h3>
+    <p style="margin:16px 0 0;font-size:18px;line-height:1.6;color:#3F3F45;max-width:720px">A wallet inside a chat app has to feel casual without being careless. Three constraints shaped almost every screen.</p>
+    <div style="display:flex;flex-wrap:wrap;gap:16px;margin-top:32px">
+      <div class="lift" style="flex:1 1 240px;background:#FFFFFF;border:1px solid #E4E3DE;border-radius:24px;padding:26px"><div class="mono" style="font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#5B7F12">Rules</div><div style="font-size:22px;font-weight:600;letter-spacing:-0.02em;margin-top:14px">Identity in tiers</div><p style="margin:10px 0 0;font-size:15px;line-height:1.55;color:#3F3F45">Limits depend on verification — BVN, NIN, selfie, address. Each step has to explain itself or people drop off.</p></div>
+      <div class="lift" style="flex:1 1 240px;background:#FFFFFF;border:1px solid #E4E3DE;border-radius:24px;padding:26px"><div class="mono" style="font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#5B7F12">Trust</div><div style="font-size:22px;font-weight:600;letter-spacing:-0.02em;margin-top:14px">Fees in plain sight</div><p style="margin:10px 0 0;font-size:15px;line-height:1.55;color:#3F3F45">Every fee is shown before money moves, so nobody meets it for the first time on a statement.</p></div>
+      <div class="lift" style="flex:1 1 240px;background:#FFFFFF;border:1px solid #E4E3DE;border-radius:24px;padding:26px"><div class="mono" style="font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#5B7F12">Habit</div><div style="font-size:22px;font-weight:600;letter-spacing:-0.02em;margin-top:14px">Chat-speed expectations</div><p style="margin:10px 0 0;font-size:15px;line-height:1.55;color:#3F3F45">People live in WhatsApp. Money features had to feel as quick and familiar as sending a message, or they’d go unused.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 03 SCOPE ============ -->
+<section id="scope" style="max-width:1320px;margin:0 auto;padding:clamp(80px,9vw,128px) clamp(20px,4vw,56px) 0;display:flex;flex-wrap:wrap;gap:24px 64px">
+  <div style="flex:1 1 220px;max-width:300px"><div class="mono" style="font-size:13px;color:#5B7F12">03</div><h2 style="margin:8px 0 0;font-size:clamp(36px,3.6vw,52px);letter-spacing:-0.04em;line-height:1;font-weight:600">Scope</h2></div>
+  <div style="flex:999 1 640px;min-width:0">
+    <p style="margin:0;font-size:clamp(20px,1.9vw,26px);line-height:1.45;letter-spacing:-0.01em;color:#2A2A2F">As UI/UX designer, Victoria worked alongside the product manager, engineers, and the finance and compliance team. The work turned financial rules and partner workflows into flows people can actually follow.</p>
+    <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:32px">
+      <div style="flex:1 1 260px;background:#F4F4F2;border-radius:20px;padding:24px"><div class="mono" style="font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#55555B">Product design</div><div style="font-size:19px;font-weight:600;margin-top:10px">Mobile app</div><p style="margin:8px 0 0;font-size:15px;line-height:1.55;color:#3F3F45">Chat, groups, Moments, stickers, wallet, identity checks and virtual cards — including every empty and error state.</p></div>
+      <div style="flex:1 1 260px;background:#F4F4F2;border-radius:20px;padding:24px"><div class="mono" style="font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#55555B">Design system</div><div style="font-size:19px;font-weight:600;margin-top:10px">One system, every screen</div><p style="margin:8px 0 0;font-size:15px;line-height:1.55;color:#3F3F45">Tokens and components for chat and money screens, in dark and light.</p></div>
+      <div style="flex:1 1 260px;background:#F4F4F2;border-radius:20px;padding:24px"><div class="mono" style="font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#55555B">Prototyping</div><div style="font-size:19px;font-weight:600;margin-top:10px">Clickable before code</div><p style="margin:8px 0 0;font-size:15px;line-height:1.55;color:#3F3F45">Every flow built as a working prototype, so the team could test it before engineering started.</p></div>
+      <div style="flex:1 1 260px;background:#F4F4F2;border-radius:20px;padding:24px"><div class="mono" style="font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#55555B">Collaboration</div><div style="font-size:19px;font-weight:600;margin-top:10px">Cross-functional</div><p style="margin:8px 0 0;font-size:15px;line-height:1.55;color:#3F3F45">Limits, fees and partner workflows turned into decisions the whole team could review in clickable prototypes.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 04 INSIDE THE APP ============ -->
+<section id="inside" style="max-width:1320px;margin:0 auto;padding:clamp(80px,9vw,128px) clamp(20px,4vw,56px) 0">
+  <div style="display:flex;flex-wrap:wrap;gap:24px 64px;align-items:flex-end">
+    <div style="flex:1 1 220px;max-width:300px"><div class="mono" style="font-size:13px;color:#5B7F12">04</div><h2 style="margin:8px 0 0;font-size:clamp(36px,3.6vw,52px);letter-spacing:-0.04em;line-height:1;font-weight:600">Inside <span class="it" style="color:#8A8A90">the app</span></h2></div>
+    <p style="margin:0;flex:999 1 640px;font-size:18px;line-height:1.6;color:#3F3F45;max-width:720px">Six areas of the Pipchat app, and the thinking behind each.</p>
+  </div>
+  <div style="display:flex;flex-direction:column;gap:clamp(56px,7vw,96px);margin-top:48px">
+    
+      <article style="background:#F4F4F2;border-radius:clamp(24px,3vw,36px);padding:clamp(24px,4vw,56px)">
+        <div style="display:flex;flex-wrap:wrap;gap:16px 48px;align-items:flex-end;justify-content:space-between">
+          <div style="flex:1 1 420px;min-width:0">
+            <div class="mono" style="font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#5B7F12">01 · Chat and pay</div>
+            <h3 style="margin:12px 0 0;font-size:clamp(26px,2.8vw,40px);letter-spacing:-0.035em;line-height:1.08;font-weight:600">Payments that live in <span style="color:#8A8A90">the conversation.</span></h3>
+          </div>
+          <p style="margin:0;flex:1 1 360px;font-size:16px;line-height:1.6;color:#3F3F45">Money is part of the chat, not a separate screen. <strong style="color:#0E0E10;font-weight:600"> A payment shows up as a card in the thread</strong>, so it’s the proof and the receipt at once — and groups can run polls and events without leaving the conversation.</p>
+        </div>
+        <figure style="margin:36px 0 0">
+          <div class="scrollx">
+            <div style="min-width:820px">
+              <img src="assets/pc_chat.webp" alt="Conversation, group thread, group info and sticker tray screens" style="width:100%;display:block">
+              <figcaption style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));column-gap:2.67%;margin-top:18px">
+                
+                  <div><div style="font-weight:600;font-size:15px">Conversation</div><div style="margin-top:4px;font-size:14px;line-height:1.45;color:#55555B">Swipe up from any chat to open Pippay.</div></div>
+                
+                  <div><div style="font-weight:600;font-size:15px">Group thread</div><div style="margin-top:4px;font-size:14px;line-height:1.45;color:#55555B">A ₦5,000 payment, a poll and an event in one thread.</div></div>
+                
+                  <div><div style="font-weight:600;font-size:15px">Group info</div><div style="margin-top:4px;font-size:14px;line-height:1.45;color:#55555B">Media, invite links and members in one place.</div></div>
+                
+                  <div><div style="font-weight:600;font-size:15px">Sticker tray</div><div style="margin-top:4px;font-size:14px;line-height:1.45;color:#55555B">Standard packs, plus Piptoon, Pipchat’s own character.</div></div>
+                
+              </figcaption>
+            </div>
+          </div>
+        </figure>
+      </article>
+    
+      <article style="background:#F4F4F2;border-radius:clamp(24px,3vw,36px);padding:clamp(24px,4vw,56px)">
+        <div style="display:flex;flex-wrap:wrap;gap:16px 48px;align-items:flex-end;justify-content:space-between">
+          <div style="flex:1 1 420px;min-width:0">
+            <div class="mono" style="font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#5B7F12">02 · Moments and Piptoon</div>
+            <h3 style="margin:12px 0 0;font-size:clamp(26px,2.8vw,40px);letter-spacing:-0.035em;line-height:1.08;font-weight:600">A camera and a character <span style="color:#8A8A90">that feel local.</span></h3>
+          </div>
+          <p style="margin:0;flex:1 1 360px;font-size:16px;line-height:1.6;color:#3F3F45">Moments is the story camera: photo, video or text, with filters and a caption. <strong style="color:#0E0E10;font-weight:600"> Piptoon gives Pipchat a face</strong>: 47 stickers people can save and send in any chat.</p>
+        </div>
+        <figure style="margin:36px 0 0">
+          <div class="scrollx">
+            <div style="min-width:820px">
+              <img src="assets/pc_moments.webp" alt="Moments camera, editor, sticker favourites and stickers in chat" style="width:100%;display:block">
+              <figcaption style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));column-gap:2.67%;margin-top:18px">
+                
+                  <div><div style="font-weight:600;font-size:15px">Moments camera</div><div style="margin-top:4px;font-size:14px;line-height:1.45;color:#55555B">Tap for a photo, hold for video, or switch to text.</div></div>
+                
+                  <div><div style="font-weight:600;font-size:15px">Editor</div><div style="margin-top:4px;font-size:14px;line-height:1.45;color:#55555B">Filters, effects and backgrounds, previewed on the photo.</div></div>
+                
+                  <div><div style="font-weight:600;font-size:15px">Favourites</div><div style="margin-top:4px;font-size:14px;line-height:1.45;color:#55555B">Saved stickers sit one tap away in the tray.</div></div>
+                
+                  <div><div style="font-weight:600;font-size:15px">Sent and received</div><div style="margin-top:4px;font-size:14px;line-height:1.45;color:#55555B">Stickers land without a bubble, like the real thing.</div></div>
+                
+              </figcaption>
+            </div>
+          </div>
+        </figure>
+      </article>
+    
+      <article style="background:#F4F4F2;border-radius:clamp(24px,3vw,36px);padding:clamp(24px,4vw,56px)">
+        <div style="display:flex;flex-wrap:wrap;gap:16px 48px;align-items:flex-end;justify-content:space-between">
+          <div style="flex:1 1 420px;min-width:0">
+            <div class="mono" style="font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#5B7F12">03 · Activation and identity</div>
+            <h3 style="margin:12px 0 0;font-size:clamp(26px,2.8vw,40px);letter-spacing:-0.035em;line-height:1.08;font-weight:600">A wallet that explains <span style="color:#8A8A90">its own rules.</span></h3>
+          </div>
+          <p style="margin:0;flex:1 1 360px;font-size:16px;line-height:1.6;color:#3F3F45">Nigerian limits depend on how much you verify, so the wallet tells you what each step unlocks. <strong style="color:#0E0E10;font-weight:600"> Tier 1 is setup, Tier 2 unlocks an account number, Tier 3 raises limits</strong> — and fees appear before money moves.</p>
+        </div>
+        <figure style="margin:36px 0 0">
+          <div class="scrollx">
+            <div style="min-width:820px">
+              <img src="assets/pc_identity.webp" alt="Locked wallet, identity verification, wallet home and top-up method screens" style="width:100%;display:block">
+              <figcaption style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));column-gap:2.67%;margin-top:18px">
+                
+                  <div><div style="font-weight:600;font-size:15px">Locked wallet</div><div style="margin-top:4px;font-size:14px;line-height:1.45;color:#55555B">What activation unlocks, before asking for anything.</div></div>
+                
+                  <div><div style="font-weight:600;font-size:15px">Verify your identity</div><div style="margin-top:4px;font-size:14px;line-height:1.45;color:#55555B">Step 1 of 4: BVN and NIN, with why each is asked for.</div></div>
+                
+                  <div><div style="font-weight:600;font-size:15px">Wallet home</div><div style="margin-top:4px;font-size:14px;line-height:1.45;color:#55555B">Account number, limits and the 1.8% receiving fee, upfront.</div></div>
+                
+                  <div><div style="font-weight:600;font-size:15px">Choose a top-up method</div><div style="margin-top:4px;font-size:14px;line-height:1.45;color:#55555B">Bank transfer or debit card, with the fee shown on each.</div></div>
+                
+              </figcaption>
+            </div>
+          </div>
+        </figure>
+      </article>
+    
+      <article style="background:#F4F4F2;border-radius:clamp(24px,3vw,36px);padding:clamp(24px,4vw,56px)">
+        <div style="display:flex;flex-wrap:wrap;gap:16px 48px;align-items:flex-end;justify-content:space-between">
+          <div style="flex:1 1 420px;min-width:0">
+            <div class="mono" style="font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#5B7F12">04 · Virtual cards</div>
+            <h3 style="margin:12px 0 0;font-size:clamp(26px,2.8vw,40px);letter-spacing:-0.035em;line-height:1.08;font-weight:600">Two cards, <span style="color:#8A8A90">two money models.</span></h3>
+          </div>
+          <p style="margin:0;flex:1 1 360px;font-size:16px;line-height:1.6;color:#3F3F45">The naira card has its own balance you fund from Pippay. <strong style="color:#0E0E10;font-weight:600"> The dollar card has no balance</strong>: it pays abroad and charges your wallet in naira at the rate shown when you pay. The screens make that difference obvious.</p>
+        </div>
+        <figure style="margin:36px 0 0">
+          <div class="scrollx">
+            <div style="min-width:820px">
+              <img src="assets/pc_cards.webp" alt="Choose a card, review, naira card and dollar payment screens" style="width:100%;display:block">
+              <figcaption style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));column-gap:2.67%;margin-top:18px">
+                
+                  <div><div style="font-weight:600;font-size:15px">Choose a card</div><div style="margin-top:4px;font-size:14px;line-height:1.45;color:#55555B">How each card works, with its fees, side by side.</div></div>
+                
+                  <div><div style="font-weight:600;font-size:15px">Review</div><div style="margin-top:4px;font-size:14px;line-height:1.45;color:#55555B">Creation fee and first funding, totalled before you pay.</div></div>
+                
+                  <div><div style="font-weight:600;font-size:15px">Naira card</div><div style="margin-top:4px;font-size:14px;line-height:1.45;color:#55555B">Its own balance, with fund, withdraw, details and freeze.</div></div>
+                
+                  <div><div style="font-weight:600;font-size:15px">Dollar payment</div><div style="margin-top:4px;font-size:14px;line-height:1.45;color:#55555B">The dollar amount, the naira charged, and the rate used.</div></div>
+                
+              </figcaption>
+            </div>
+          </div>
+        </figure>
+      </article>
+    
+      <article style="background:#F4F4F2;border-radius:clamp(24px,3vw,36px);padding:clamp(24px,4vw,56px)">
+        <div style="display:flex;flex-wrap:wrap;gap:16px 48px;align-items:flex-end;justify-content:space-between">
+          <div style="flex:1 1 420px;min-width:0">
+            <div class="mono" style="font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#5B7F12">05 · When things go wrong</div>
+            <h3 style="margin:12px 0 0;font-size:clamp(26px,2.8vw,40px);letter-spacing:-0.035em;line-height:1.08;font-weight:600">Designing <span style="color:#8A8A90">the failures too.</span></h3>
+          </div>
+          <p style="margin:0;flex:1 1 360px;font-size:16px;line-height:1.6;color:#3F3F45">27 error states, from a wrong code to a blurry ID. <strong style="color:#0E0E10;font-weight:600"> Each one appears inside the screen where it happens</strong>, says what went wrong in plain words, and offers a next step.</p>
+        </div>
+        <figure style="margin:36px 0 0">
+          <div class="scrollx">
+            <div style="min-width:820px">
+              <img src="assets/pc_errors.webp" alt="Wrong code, too many attempts, selfie check failed and Tier 3 not approved screens" style="width:100%;display:block">
+              <figcaption style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));column-gap:2.67%;margin-top:18px">
+                
+                  <div><div style="font-weight:600;font-size:15px">Wrong code</div><div style="margin-top:4px;font-size:14px;line-height:1.45;color:#55555B">Red boxes, attempts left, and a way to resend.</div></div>
+                
+                  <div><div style="font-weight:600;font-size:15px">Too many attempts</div><div style="margin-top:4px;font-size:14px;line-height:1.45;color:#55555B">Verification paused, with a countdown until you can try again.</div></div>
+                
+                  <div><div style="font-weight:600;font-size:15px">Selfie check failed</div><div style="margin-top:4px;font-size:14px;line-height:1.45;color:#55555B">What went wrong, and a clear way to try again.</div></div>
+                
+                  <div><div style="font-weight:600;font-size:15px">Tier 3 not approved</div><div style="margin-top:4px;font-size:14px;line-height:1.45;color:#55555B">What we found, and how to fix it and resubmit.</div></div>
+                
+              </figcaption>
+            </div>
+          </div>
+        </figure>
+      </article>
+    
+      <article style="background:#F4F4F2;border-radius:clamp(24px,3vw,36px);padding:clamp(24px,4vw,56px)">
+        <div style="display:flex;flex-wrap:wrap;gap:16px 48px;align-items:flex-end;justify-content:space-between">
+          <div style="flex:1 1 420px;min-width:0">
+            <div class="mono" style="font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#5B7F12">06 · Help and growth</div>
+            <h3 style="margin:12px 0 0;font-size:clamp(26px,2.8vw,40px);letter-spacing:-0.035em;line-height:1.08;font-weight:600">Support that starts <span style="color:#8A8A90">in the app.</span></h3>
+          </div>
+          <p style="margin:0;flex:1 1 360px;font-size:16px;line-height:1.6;color:#3F3F45">Help sits one tap away, with answers by topic before anyone opens a ticket. <strong style="color:#0E0E10;font-weight:600"> Referrals reward each friend who joins</strong>, and problems can be reported without leaving the app.</p>
+        </div>
+        <figure style="margin:36px 0 0">
+          <div class="scrollx">
+            <div style="min-width:820px">
+              <img src="assets/pc_help.webp" alt="Help center, support chat, report a problem and referrals screens" style="width:100%;display:block">
+              <figcaption style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));column-gap:2.67%;margin-top:18px">
+                
+                  <div><div style="font-weight:600;font-size:15px">Help Center</div><div style="margin-top:4px;font-size:14px;line-height:1.45;color:#55555B">Answers grouped by topic, with popular articles.</div></div>
+                
+                  <div><div style="font-weight:600;font-size:15px">Support chat</div><div style="margin-top:4px;font-size:14px;line-height:1.45;color:#55555B">Quick replies for the most common problems.</div></div>
+                
+                  <div><div style="font-weight:600;font-size:15px">Report a problem</div><div style="margin-top:4px;font-size:14px;line-height:1.45;color:#55555B">Issue type, details and screenshots, sent with device info.</div></div>
+                
+                  <div><div style="font-weight:600;font-size:15px">Referrals</div><div style="margin-top:4px;font-size:14px;line-height:1.45;color:#55555B">₦500 for every friend who joins, tracked live.</div></div>
+                
+              </figcaption>
+            </div>
+          </div>
+        </figure>
+      </article>
+    
+  </div>
+</section>
+
+<!-- ============ 05 DESIGN SYSTEM ============ -->
+<section id="system" style="max-width:1320px;margin:0 auto;padding:clamp(80px,9vw,128px) clamp(20px,4vw,56px) 0;display:flex;flex-wrap:wrap;gap:24px 64px">
+  <div style="flex:1 1 220px;max-width:300px"><div class="mono" style="font-size:13px;color:#5B7F12">05</div><h2 style="margin:8px 0 0;font-size:clamp(36px,3.6vw,52px);letter-spacing:-0.04em;line-height:1;font-weight:600">Design <span class="it" style="color:#8A8A90">system</span></h2><p style="margin:14px 0 0;font-size:15px;line-height:1.55;color:#55555B">Navy surfaces, one lime action colour, and status colours that mean the same thing on every screen.</p></div>
+  <div style="flex:999 1 640px;min-width:0;display:flex;flex-direction:column;gap:16px">
+    <div style="display:flex;flex-wrap:wrap;gap:12px">
+      
+        <div class="lift" style="flex:1 1 130px;background:#FFFFFF;border:1px solid #E4E3DE;border-radius:18px;overflow:hidden">
+          <div style="height:92px;background:#0B1220"></div>
+          <div style="padding:12px 14px"><div style="font-weight:600;font-size:15px">Navy</div><div class="mono" style="font-size:12px;color:#55555B;margin-top:4px">#0B1220</div></div>
+        </div>
+      
+        <div class="lift" style="flex:1 1 130px;background:#FFFFFF;border:1px solid #E4E3DE;border-radius:18px;overflow:hidden">
+          <div style="height:92px;background:#141B2B"></div>
+          <div style="padding:12px 14px"><div style="font-weight:600;font-size:15px">Surface</div><div class="mono" style="font-size:12px;color:#55555B;margin-top:4px">#141B2B</div></div>
+        </div>
+      
+        <div class="lift" style="flex:1 1 130px;background:#FFFFFF;border:1px solid #E4E3DE;border-radius:18px;overflow:hidden">
+          <div style="height:92px;background:#AEE82B"></div>
+          <div style="padding:12px 14px"><div style="font-weight:600;font-size:15px">Lime</div><div class="mono" style="font-size:12px;color:#55555B;margin-top:4px">#AEE82B</div></div>
+        </div>
+      
+        <div class="lift" style="flex:1 1 130px;background:#FFFFFF;border:1px solid #E4E3DE;border-radius:18px;overflow:hidden">
+          <div style="height:92px;background:#F2F4F7"></div>
+          <div style="padding:12px 14px"><div style="font-weight:600;font-size:15px">Ink</div><div class="mono" style="font-size:12px;color:#55555B;margin-top:4px">#F2F4F7</div></div>
+        </div>
+      
+        <div class="lift" style="flex:1 1 130px;background:#FFFFFF;border:1px solid #E4E3DE;border-radius:18px;overflow:hidden">
+          <div style="height:92px;background:#3DD68C"></div>
+          <div style="padding:12px 14px"><div style="font-weight:600;font-size:15px">Success</div><div class="mono" style="font-size:12px;color:#55555B;margin-top:4px">#3DD68C</div></div>
+        </div>
+      
+        <div class="lift" style="flex:1 1 130px;background:#FFFFFF;border:1px solid #E4E3DE;border-radius:18px;overflow:hidden">
+          <div style="height:92px;background:#F2B53A"></div>
+          <div style="padding:12px 14px"><div style="font-weight:600;font-size:15px">Pending</div><div class="mono" style="font-size:12px;color:#55555B;margin-top:4px">#F2B53A</div></div>
+        </div>
+      
+        <div class="lift" style="flex:1 1 130px;background:#FFFFFF;border:1px solid #E4E3DE;border-radius:18px;overflow:hidden">
+          <div style="height:92px;background:#F25C5C"></div>
+          <div style="padding:12px 14px"><div style="font-weight:600;font-size:15px">Error</div><div class="mono" style="font-size:12px;color:#55555B;margin-top:4px">#F25C5C</div></div>
+        </div>
+      
+        <div class="lift" style="flex:1 1 130px;background:#FFFFFF;border:1px solid #E4E3DE;border-radius:18px;overflow:hidden">
+          <div style="height:92px;background:#7FA6F2"></div>
+          <div style="padding:12px 14px"><div style="font-weight:600;font-size:15px">Info</div><div class="mono" style="font-size:12px;color:#55555B;margin-top:4px">#7FA6F2</div></div>
+        </div>
+      
+    </div>
+    <div style="display:flex;flex-wrap:wrap;gap:16px">
+      <div style="flex:1 1 300px;background:#FFFFFF;border:1px solid #E4E3DE;border-radius:24px;padding:28px;font-family:'Geist','Inter Tight',system-ui,sans-serif">
+        <div class="mono" style="font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#55555B">Type · Geist</div>
+        <div style="margin-top:18px;font-size:34px;font-weight:800;letter-spacing:-0.02em">Pippay</div><div class="mono" style="font-size:11px;color:#55555B">Display 34 / 800</div>
+        <div style="margin-top:16px;font-size:22px;font-weight:700;letter-spacing:-0.01em">Your account number is ready</div><div class="mono" style="font-size:11px;color:#55555B">Title 22 / 700</div>
+        <div style="margin-top:16px;font-size:15px">Share it to receive money from any Nigerian bank.</div><div class="mono" style="font-size:11px;color:#55555B">Body 15 / 400</div>
+      </div>
+      <div style="flex:1.2 1 340px;background:#0B1220;color:#F2F4F7;border-radius:24px;padding:28px;display:flex;flex-direction:column;gap:16px;font-family:'Geist','Inter Tight',system-ui,sans-serif">
+        <div class="mono" style="font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#C7CDD8">Components</div>
+        <div style="display:flex;flex-wrap:wrap;gap:10px">
+          <span style="display:inline-flex;align-items:center;min-height:44px;padding:0 20px;border-radius:999px;background:#AEE82B;color:#0B1220;font-weight:700;font-size:15px">Send money</span>
+          <span style="display:inline-flex;align-items:center;min-height:44px;padding:0 20px;border-radius:999px;border:1px solid #3A4560;font-weight:600;font-size:15px">Share</span>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:8px;font-size:13px;font-weight:600">
+          <span style="padding:6px 12px;border-radius:999px;background:rgba(61,214,140,.15);color:#3DD68C">● Successful</span>
+          <span style="padding:6px 12px;border-radius:999px;background:rgba(242,181,58,.15);color:#F2B53A">● Pending</span>
+          <span style="padding:6px 12px;border-radius:999px;background:rgba(242,92,92,.15);color:#F25C5C">● Failed</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:10px;min-height:48px;padding:0 16px;border-radius:14px;background:#141B2B;color:#8B93A7;font-size:15px">Type a message</div>
+        <div style="border-radius:16px;padding:18px;background:linear-gradient(135deg,#1E3A12,#141B2B 70%);border:1px solid #2A3A1E">
+          <div class="mono" style="font-size:11px;letter-spacing:.08em;color:#AEE82B">● YOUR PIPPAY ACCOUNT</div>
+          <div style="font-size:28px;font-weight:800;letter-spacing:.02em;margin-top:8px">7012 345 678</div>
+          <div style="font-size:13px;color:#C7CDD8;margin-top:4px">Damilola Blessing · Wema Bank</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 06 DECISIONS ============ -->
+<section id="decisions" style="max-width:1320px;margin:0 auto;padding:clamp(80px,9vw,128px) clamp(20px,4vw,56px) 0;display:flex;flex-wrap:wrap;gap:24px 64px">
+  <div style="flex:1 1 220px;max-width:300px"><div class="mono" style="font-size:13px;color:#5B7F12">06</div><h2 style="margin:8px 0 0;font-size:clamp(36px,3.6vw,52px);letter-spacing:-0.04em;line-height:1;font-weight:600">Decisions</h2><p style="margin:14px 0 0;font-size:15px;line-height:1.55;color:#55555B">Four calls that made it trustworthy.</p></div>
+  <div style="flex:999 1 640px;min-width:0;display:flex;flex-wrap:wrap;gap:12px">
+    
+      <div class="lift" style="flex:1 1 300px;background:#FFFFFF;border:1px solid #E4E3DE;border-radius:22px;padding:26px;display:flex;flex-direction:column;gap:12px">
+        <span class="mono" style="font-size:13px;color:#5B7F12">01</span>
+        <div style="font-size:21px;font-weight:600;letter-spacing:-0.02em">Activation that explains itself</div>
+        <p style="margin:0;font-size:15px;line-height:1.6;color:#3F3F45">Tier 1 is setup only, Tier 2 unlocks an account number, Tier 3 raises limits. Every step says what it needs and what it unlocks.</p>
+      </div>
+    
+      <div class="lift" style="flex:1 1 300px;background:#FFFFFF;border:1px solid #E4E3DE;border-radius:22px;padding:26px;display:flex;flex-direction:column;gap:12px">
+        <span class="mono" style="font-size:13px;color:#5B7F12">02</span>
+        <div style="font-size:21px;font-weight:600;letter-spacing:-0.02em">Fees before money moves</div>
+        <p style="margin:0;font-size:15px;line-height:1.6;color:#3F3F45">The 1.8% receiving fee sits on the account card, the top-up screen and the receipt — not hidden in terms.</p>
+      </div>
+    
+      <div class="lift" style="flex:1 1 300px;background:#FFFFFF;border:1px solid #E4E3DE;border-radius:22px;padding:26px;display:flex;flex-direction:column;gap:12px">
+        <span class="mono" style="font-size:13px;color:#5B7F12">03</span>
+        <div style="font-size:21px;font-weight:600;letter-spacing:-0.02em">Design the failures too</div>
+        <p style="margin:0;font-size:15px;line-height:1.6;color:#3F3F45">27 error states, from a wrong OTP to a blurry ID, each shown inside the screen where it happens, with a clear next step.</p>
+      </div>
+    
+      <div class="lift" style="flex:1 1 300px;background:#FFFFFF;border:1px solid #E4E3DE;border-radius:22px;padding:26px;display:flex;flex-direction:column;gap:12px">
+        <span class="mono" style="font-size:13px;color:#5B7F12">04</span>
+        <div style="font-size:21px;font-weight:600;letter-spacing:-0.02em">Familiar, but ours</div>
+        <p style="margin:0;font-size:15px;line-height:1.6;color:#3F3F45">Patterns people already know from WhatsApp, with a local voice: Naija Talk stickers, Piptoon, and copy written for Nigerian users, not a bank.</p>
+      </div>
+    
+  </div>
+</section>
+
+<!-- ============ 07 LAUNCH & NEXT ============ -->
+<section id="launch" style="max-width:1320px;margin:0 auto;padding:clamp(80px,9vw,128px) clamp(20px,4vw,56px) 0;display:flex;flex-wrap:wrap;gap:24px 64px">
+  <div style="flex:1 1 220px;max-width:300px"><div class="mono" style="font-size:13px;color:#5B7F12">07</div><h2 style="margin:8px 0 0;font-size:clamp(36px,3.6vw,52px);letter-spacing:-0.04em;line-height:1;font-weight:600">Launch &amp; <span class="it" style="color:#8A8A90">next</span></h2></div>
+  <div style="flex:999 1 640px;min-width:0">
+    <p style="margin:0;font-size:clamp(20px,1.9vw,26px);line-height:1.45;letter-spacing:-0.01em;color:#2A2A2F">The waitlist site is live at pipchat.io, and the App Store screenshots tell the product story in seven frames.</p>
+    <div style="margin-top:28px;background:#0B1220;border-radius:24px;padding:clamp(16px,2vw,28px)"><img src="assets/pc_appstore.webp" alt="Seven Pipchat App Store screenshots" style="width:100%;display:block;border-radius:10px"></div>
+    <div style="margin-top:16px;background:#F4F4F2;border-radius:24px;padding:clamp(16px,2vw,28px)"><img src="assets/pc_waitlist.webp" alt="The Pipchat waitlist website" style="width:100%;display:block;border-radius:10px"></div>
+    <a href="https://pipchat.io" target="_blank" rel="noopener" style="margin-top:20px;display:inline-flex;align-items:center;gap:12px;min-height:52px;padding:0 10px 0 24px;border-radius:999px;background:#0E0E10;color:#FFFFFF;font-weight:600;font-size:15px;text-decoration:none">Visit pipchat.io<span aria-hidden="true" style="width:34px;height:34px;border-radius:50%;background:#AEE82B;color:#0B1220;display:flex;align-items:center;justify-content:center"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M7 17 17 7M8 7h9v9"></path></svg></span></a>
+
+    <h3 style="margin:64px 0 0;font-size:22px;letter-spacing:-0.02em;font-weight:600">What’s being measured next</h3>
+    <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:18px">
+      <div style="flex:1 1 220px;background:#FFFFFF;border:1px solid #E4E3DE;border-radius:20px;padding:24px"><div class="mono" style="font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#5B7F12">Activation</div><div style="font-size:19px;font-weight:600;margin-top:10px">Drop-off by tier</div><p style="margin:8px 0 0;font-size:15px;line-height:1.55;color:#3F3F45">Where people stop between Tier 1 and an account number.</p></div>
+      <div style="flex:1 1 220px;background:#FFFFFF;border:1px solid #E4E3DE;border-radius:20px;padding:24px"><div class="mono" style="font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#5B7F12">Payments</div><div style="font-size:19px;font-weight:600;margin-top:10px">Sends from chat</div><p style="margin:8px 0 0;font-size:15px;line-height:1.55;color:#3F3F45">How many payments start inside a conversation.</p></div>
+      <div style="flex:1 1 220px;background:#FFFFFF;border:1px solid #E4E3DE;border-radius:20px;padding:24px"><div class="mono" style="font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#5B7F12">Cards</div><div style="font-size:19px;font-weight:600;margin-top:10px">Card adoption</div><p style="margin:8px 0 0;font-size:15px;line-height:1.55;color:#3F3F45">How many Tier 2 users create a card in their first month.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ NEXT PROJECT ============ -->
+<section style="max-width:1320px;margin:0 auto;padding:clamp(96px,10vw,140px) clamp(20px,4vw,56px)">
+  <a href="peopleflow.html" class="lift" style="display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between;text-decoration:none;background:#17291D;color:#F2F5EE;border-radius:clamp(24px,3vw,40px);padding:clamp(28px,4vw,56px);overflow:hidden">
+    <div style="flex:1 1 320px">
+      <div class="mono" style="font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#ADE163">Next case study — 04</div>
+      <div style="font-size:clamp(56px,8vw,120px);font-weight:800;letter-spacing:-0.06em;line-height:.9;margin-top:16px">PeopleFlow<span style="color:#ADE163">.</span></div>
+      <p style="margin:16px 0 0;font-size:18px;line-height:1.5;color:#C7CFC4;max-width:420px">Hiring to handover, in one calm HR workspace — for HR teams and every employee.</p>
+    </div>
+    <img src="assets/pf_thumb.webp" alt="" style="flex:0 1 340px;width:340px;max-width:100%;display:block;border-radius:16px">
+  </a>
+  <div class="mono" style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;margin-top:40px;font-size:12px;color:#55555B">
+    <span>© 2026 Victoria — Designed with care</span>
+    <a href="index.html" class="lnk">← Back to all work</a>
+  </div>
+</section>
+
+</div>
+<script src="site.js" defer></script>
+</body>
+</html>

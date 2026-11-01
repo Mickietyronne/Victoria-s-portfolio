@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>QuickPay — Case study · Victoria</title>
+<meta name="description" content="QuickPay: a mobile wallet for instant transfers and everyday bills, designed end-to-end by Victoria.">
+<meta property="og:title" content="QuickPay — Case study · Victoria">
+<meta property="og:description" content="QuickPay: a mobile wallet for instant transfers and everyday bills, designed end-to-end by Victoria.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#FFFFFF">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500&amp;family=Poppins:wght@400;600;800&amp;display=swap">
+<style>
+body{margin:0;background:#FFFFFF}
+a{color:inherit}a:hover{color:inherit}
+.it{font-family:inherit;font-style:normal}
+.rv{opacity:0;transform:translateY(28px);filter:blur(8px);transition:opacity .9s ease,transform 1s cubic-bezier(.22,1,.36,1),filter .9s ease}
+.rv.in{opacity:1;transform:none;filter:blur(0)}
+.mono{font-family:'JetBrains Mono',ui-monospace,Menlo,monospace}
+.lnk{text-decoration:none;transition:opacity .2s}.lnk:hover{opacity:.6}
+.lift{transition:transform .35s cubic-bezier(.2,.7,.2,1)}.lift:hover{transform:translateY(-4px)}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+.floaty{animation:floaty 6s ease-in-out infinite}
+@media (prefers-reduced-motion:reduce){.floaty{animation:none}}
+</style>
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<div style="font-family:'Inter Tight',system-ui,sans-serif;color:#0E0E10;background:#FFFFFF;overflow:hidden">
+
+<!-- ============ TOP BAR (shared case-study template) ============ -->
+<header style="max-width:1320px;margin:0 auto;padding:24px clamp(20px,4vw,56px);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px">
+  <a href="index.html" class="lnk" style="display:inline-flex;align-items:center;gap:10px;min-height:44px;padding:0 18px 0 12px;border-radius:999px;border:1px solid #D7D6D0;background:#FFFFFF;font-weight:500;font-size:14px">
+    <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M19 12H5M11 6l-6 6 6 6"></path></svg>
+    Back to all work
+  </a>
+  <a href="index.html" class="lnk" style="display:flex;align-items:center;gap:10px;font-weight:700;font-size:18px">
+    <span class="it" style="width:40px;height:40px;border-radius:50%;background:#0E0E10;color:#F6F6F3;display:flex;align-items:center;justify-content:center;font-size:20px">V</span>
+    <span>Victoria<span style="color:#9200D0">.</span></span>
+  </a>
+  <a href="pipchat.html" class="lnk" style="display:inline-flex;align-items:center;gap:10px;min-height:44px;padding:0 12px 0 18px;border-radius:999px;background:#0E0E10;color:#FFFFFF;font-weight:600;font-size:14px">
+    Next: Pipchat
+    <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+  </a>
+</header>
+
+<!-- ============ HERO ============ -->
+<section style="max-width:1320px;margin:0 auto;padding:clamp(32px,5vw,72px) clamp(20px,4vw,56px) 0">
+  <p class="mono" style="margin:0;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:#55555B">Case study 02 — Fintech · Mobile app</p>
+  <div style="display:flex;flex-wrap:wrap;gap:24px 64px;align-items:flex-end;margin-top:24px">
+    <h1 style="margin:0;flex:1 1 520px;font-size:clamp(80px,13vw,200px);line-height:.82;letter-spacing:-0.06em;font-weight:800">QuickPay<span style="color:#9200D0">.</span></h1>
+    <p style="margin:0;flex:1 1 360px;font-size:clamp(22px,2.4vw,32px);line-height:1.25;letter-spacing:-0.02em;font-weight:500">A wallet that makes moving money feel like <span class="it" style="color:#9200D0">one quick tap.</span></p>
+  </div>
+
+  <dl style="margin:56px 0 0;display:flex;flex-wrap:wrap;border-top:1px solid #0E0E10">
+    <div style="flex:1 1 180px;padding:20px 20px 20px 0"><dt class="mono" style="font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#55555B">Role</dt><dd style="margin:8px 0 0;font-size:17px;font-weight:600">Design &amp; UI</dd></div>
+    <div style="flex:1 1 180px;padding:20px 20px 20px 0"><dt class="mono" style="font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#55555B">Type</dt><dd style="margin:8px 0 0;font-size:17px;font-weight:600">Product concept</dd></div>
+    <div style="flex:1 1 180px;padding:20px 20px 20px 0"><dt class="mono" style="font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#55555B">Year</dt><dd style="margin:8px 0 0;font-size:17px;font-weight:600">2026</dd></div>
+    <div style="flex:1 1 180px;padding:20px 20px 20px 0"><dt class="mono" style="font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#55555B">Platform</dt><dd style="margin:8px 0 0;font-size:17px;font-weight:600">iOS</dd></div>
+    <div style="flex:1 1 180px;padding:20px 0"><dt class="mono" style="font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#55555B">Focus</dt><dd style="margin:8px 0 0;font-size:17px;font-weight:600">Fintech · Mobile payments</dd></div>
+  </dl>
+
+  <div style="margin-top:24px;border-radius:clamp(24px,3vw,40px);background:#3B0A50;overflow:hidden">
+    <img src="assets/qp_showcase.webp" alt="A phone on glossy purple slats showing the QuickPay home screen with balance and services" style="width:100%;display:block">
+  </div>
+</section>
+
+<!-- ============ AT A GLANCE ============ -->
+<section style="max-width:1320px;margin:0 auto;padding:56px clamp(20px,4vw,56px) 0">
+  <div style="display:flex;flex-wrap:wrap;gap:24px">
+    <div style="flex:1 1 220px;border-top:1px solid #0E0E10;padding-top:18px"><div style="font-size:clamp(44px,4.6vw,64px);font-weight:600;letter-spacing:-0.04em;line-height:1">12</div><p style="margin:10px 0 0;color:#55555B;font-size:15px">Core screens designed</p></div>
+    <div style="flex:1 1 220px;border-top:1px solid #0E0E10;padding-top:18px"><div style="font-size:clamp(44px,4.6vw,64px);font-weight:600;letter-spacing:-0.04em;line-height:1">2</div><p style="margin:10px 0 0;color:#55555B;font-size:15px">Primary user flows</p></div>
+    <div style="flex:1 1 220px;border-top:1px solid #0E0E10;padding-top:18px"><div style="font-size:clamp(44px,4.6vw,64px);font-weight:600;letter-spacing:-0.04em;line-height:1">Light<span style="color:#9200D0">+</span>dark</div><p style="margin:10px 0 0;color:#55555B;font-size:15px">Themed for context</p></div>
+    <div style="flex:1 1 220px;border-top:1px solid #0E0E10;padding-top:18px"><div style="font-size:clamp(44px,4.6vw,64px);font-weight:600;letter-spacing:-0.04em;line-height:1">1</div><p style="margin:10px 0 0;color:#55555B;font-size:15px">Unified design system</p></div>
+  </div>
+  <nav aria-label="Chapters" style="margin-top:56px;display:flex;flex-wrap:wrap;gap:8px">
+    <a href="#overview" class="lnk" style="padding:10px 16px;border-radius:999px;border:1px solid #D7D6D0;background:#FFFFFF;font-size:14px">01 Overview</a>
+    <a href="#onboarding" class="lnk" style="padding:10px 16px;border-radius:999px;border:1px solid #D7D6D0;background:#FFFFFF;font-size:14px">02 Onboarding</a>
+    <a href="#signup" class="lnk" style="padding:10px 16px;border-radius:999px;border:1px solid #D7D6D0;background:#FFFFFF;font-size:14px">03 Account creation</a>
+    <a href="#home" class="lnk" style="padding:10px 16px;border-radius:999px;border:1px solid #D7D6D0;background:#FFFFFF;font-size:14px">04 Home &amp; profile</a>
+    <a href="#flow" class="lnk" style="padding:10px 16px;border-radius:999px;border:1px solid #D7D6D0;background:#FFFFFF;font-size:14px">05 Sending money</a>
+    <a href="#style" class="lnk" style="padding:10px 16px;border-radius:999px;border:1px solid #D7D6D0;background:#FFFFFF;font-size:14px">06 Visual style</a>
+    <a href="#result" class="lnk" style="padding:10px 16px;border-radius:999px;border:1px solid #D7D6D0;background:#FFFFFF;font-size:14px">07 Result</a>
+  </nav>
+</section>
+
+<!-- ============ 01 OVERVIEW ============ -->
+<section id="overview" style="max-width:1320px;margin:0 auto;padding:clamp(80px,9vw,128px) clamp(20px,4vw,56px) 0;display:flex;flex-wrap:wrap;gap:24px 64px">
+  <div style="flex:1 1 220px;max-width:300px"><div class="mono" style="font-size:13px;color:#9200D0">01</div><h2 style="margin:8px 0 0;font-size:clamp(36px,3.6vw,52px);letter-spacing:-0.04em;line-height:1;font-weight:600">Overview</h2></div>
+  <div style="flex:999 1 640px;min-width:0">
+    <p style="margin:0;font-size:clamp(20px,1.9vw,26px);line-height:1.45;letter-spacing:-0.01em;color:#2A2A2F">QuickPay covers the full consumer journey: getting onboarded, funding a balance, paying for everyday services and sending money to people you trust — without the flow ever feeling heavy.</p>
+    <div style="display:flex;flex-wrap:wrap;gap:16px;margin-top:40px">
+      <div style="flex:1 1 220px;background:#FFFFFF;border:1px solid #E4E3DE;border-radius:24px;padding:24px"><div class="it" style="font-size:30px;color:#9200D0">Quick.</div><p style="margin:10px 0 0;font-size:15px;line-height:1.55;color:#3F3F45">Every step shows only what the next decision needs.</p></div>
+      <div style="flex:1 1 220px;background:#FFFFFF;border:1px solid #E4E3DE;border-radius:24px;padding:24px"><div class="it" style="font-size:30px;color:#9200D0">Secure.</div><p style="margin:10px 0 0;font-size:15px;line-height:1.55;color:#3F3F45">Face ID and up-front warnings guard the moments of no return.</p></div>
+      <div style="flex:1 1 220px;background:#FFFFFF;border:1px solid #E4E3DE;border-radius:24px;padding:24px"><div class="it" style="font-size:30px;color:#9200D0">Simple.</div><p style="margin:10px 0 0;font-size:15px;line-height:1.55;color:#3F3F45">One type system, one palette, one set of components.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 02 ONBOARDING ============ -->
+<section id="onboarding" style="max-width:1320px;margin:0 auto;padding:clamp(80px,9vw,128px) clamp(20px,4vw,56px) 0;display:flex;flex-wrap:wrap;gap:24px 64px">
+  <div style="flex:1 1 220px;max-width:300px"><div class="mono" style="font-size:13px;color:#9200D0">02</div><h2 style="margin:8px 0 0;font-size:clamp(36px,3.6vw,52px);letter-spacing:-0.04em;line-height:1;font-weight:600">Onboarding</h2></div>
+  <div style="flex:999 1 640px;min-width:0">
+    <h3 style="margin:0;font-size:clamp(24px,2.4vw,34px);letter-spacing:-0.03em;line-height:1.15;font-weight:600">A first run that earns trust in <span class="it">three screens.</span></h3>
+    <p style="margin:14px 0 0;font-size:17px;line-height:1.6;color:#3F3F45;max-width:640px">The intro carousel leads with the single promise — instant transfers — then reassures on security and savings before asking for anything. A persistent Skip respects returning users.</p>
+    <div style="margin-top:28px;background:#E8D4F0;border-radius:28px;padding:clamp(20px,3vw,40px)">
+      <img src="assets/qp_onboard.webp" alt="Splash screen followed by three onboarding screens: send money instantly, safe and secure payments, earn and save smarter" style="width:100%;display:block">
+    </div>
+  </div>
+</section>
+
+<!-- ============ 03 ACCOUNT CREATION ============ -->
+<section id="signup" style="max-width:1320px;margin:0 auto;padding:clamp(80px,9vw,128px) clamp(20px,4vw,56px) 0;display:flex;flex-wrap:wrap;gap:24px 64px">
+  <div style="flex:1 1 220px;max-width:300px"><div class="mono" style="font-size:13px;color:#9200D0">03</div><h2 style="margin:8px 0 0;font-size:clamp(36px,3.6vw,52px);letter-spacing:-0.04em;line-height:1;font-weight:600">Account <span class="it">creation</span></h2></div>
+  <div style="flex:999 1 640px;min-width:0;display:flex;flex-wrap:wrap;gap:32px;align-items:center">
+    <div style="flex:1 1 300px;min-width:0">
+      <h3 style="margin:0;font-size:clamp(24px,2.4vw,34px);letter-spacing:-0.03em;line-height:1.15;font-weight:600">Sign-up, trimmed to the <span class="it">essentials.</span></h3>
+      <p style="margin:14px 0 0;font-size:17px;line-height:1.6;color:#3F3F45">Just the fields needed to open an account, followed by a 4-digit code to confirm the email. Nothing optional gets in the way of the first session.</p>
+      <ul style="margin:24px 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:16px;font-size:16px;line-height:1.5">
+        <li style="display:flex;gap:14px"><span style="flex:0 0 10px;height:10px;border-radius:50%;background:#9200D0;margin-top:7px"></span><span><strong>Required only:</strong> name, email and password — each marked, with show/hide on secure fields.</span></li>
+        <li style="display:flex;gap:14px"><span style="flex:0 0 10px;height:10px;border-radius:50%;background:#9200D0;margin-top:7px"></span><span><strong>One-time code:</strong> a masked email and a 45-second resend timer set clear expectations.</span></li>
+        <li style="display:flex;gap:14px"><span style="flex:0 0 10px;height:10px;border-radius:50%;background:#9200D0;margin-top:7px"></span><span><strong>Disabled until valid:</strong> primary buttons stay inactive until the form can actually proceed.</span></li>
+      </ul>
+    </div>
+    <div style="flex:1.1 1 320px;min-width:0;background:#FFFFFF;border:1px solid #E4E3DE;border-radius:28px;padding:24px">
+      <img src="assets/qp_account.webp" alt="Create account form and 4-digit email verification screen" style="width:100%;display:block">
+    </div>
+  </div>
+</section>
+
+<!-- ============ 04 HOME & PROFILE ============ -->
+<section id="home" style="max-width:1320px;margin:0 auto;padding:clamp(80px,9vw,128px) clamp(20px,4vw,56px) 0;display:flex;flex-wrap:wrap;gap:24px 64px">
+  <div style="flex:1 1 220px;max-width:300px"><div class="mono" style="font-size:13px;color:#9200D0">04</div><h2 style="margin:8px 0 0;font-size:clamp(36px,3.6vw,52px);letter-spacing:-0.04em;line-height:1;font-weight:600">Home &amp; <span class="it">profile</span></h2></div>
+  <div style="flex:999 1 640px;min-width:0;display:flex;flex-wrap:wrap-reverse;gap:32px;align-items:center">
+    <div style="flex:1.1 1 320px;min-width:0;background:#FFFFFF;border:1px solid #E4E3DE;border-radius:28px;padding:24px">
+      <img src="assets/qp_home.webp" alt="Home dashboard with balance card and services grid, and the profile screen with card and settings" style="width:100%;display:block">
+    </div>
+    <div style="flex:1 1 300px;min-width:0">
+      <h3 style="margin:0;font-size:clamp(24px,2.4vw,34px);letter-spacing:-0.03em;line-height:1.15;font-weight:600">Everything one glance from <span class="it">the balance.</span></h3>
+      <p style="margin:14px 0 0;font-size:17px;line-height:1.6;color:#3F3F45">The dashboard opens on available balance with Transfer and Top Up within reach, a services grid for bills, and rotating promos. Profile keeps the card, account details and settings in one tidy stack.</p>
+      <ul style="margin:24px 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:16px;font-size:16px;line-height:1.5">
+        <li style="display:flex;gap:14px"><span style="flex:0 0 10px;height:10px;border-radius:50%;background:#9200D0;margin-top:7px"></span><span><strong>Balance first:</strong> a gradient card anchors the screen, with a privacy toggle.</span></li>
+        <li style="display:flex;gap:14px"><span style="flex:0 0 10px;height:10px;border-radius:50%;background:#9200D0;margin-top:7px"></span><span><strong>Pay for life:</strong> internet, electricity, airtime and TV sit one tap away.</span></li>
+        <li style="display:flex;gap:14px"><span style="flex:0 0 10px;height:10px;border-radius:50%;background:#9200D0;margin-top:7px"></span><span><strong>Self-served profile:</strong> card, security, rewards and support, clearly grouped.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 05 KEY FLOW (dark) ============ -->
+<section id="flow" style="margin-top:clamp(80px,9vw,128px);background:#38074D;color:#FFFFFF;border-radius:clamp(28px,4vw,48px)">
+  <div style="max-width:1320px;margin:0 auto;padding:clamp(72px,9vw,120px) clamp(20px,4vw,56px);display:flex;flex-wrap:wrap;gap:24px 64px">
+    <div style="flex:1 1 220px;max-width:300px"><div class="mono" style="font-size:13px;color:#FFCC59">05 · Key flow</div><h2 style="margin:8px 0 0;font-size:clamp(36px,3.6vw,52px);letter-spacing:-0.04em;line-height:1;font-weight:600">Sending <span class="it" style="color:#D387F4">money</span></h2></div>
+    <div style="flex:999 1 640px;min-width:0">
+      <p style="margin:0;font-size:clamp(19px,1.8vw,24px);line-height:1.5;color:#EBDDF2;max-width:720px">The flagship flow runs on a dark theme to signal “you’re moving real money.” Each step shows only what the next decision needs, and Face ID guards the moment of no return.</p>
+      <img src="assets/qp_flow.webp" alt="Four-step transfer flow: quick transfer, confirm transfer, Face ID verification, transfer successful" style="width:100%;display:block;margin-top:36px">
+      <ol style="margin:28px 0 0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:12px">
+        <li style="flex:1 1 180px;border-top:1px solid rgba(255,255,255,.25);padding-top:14px"><span class="mono" style="font-size:13px;color:#FFCC59">01</span><p style="margin:8px 0 0;font-size:15px;line-height:1.5"><strong>Quick transfer:</strong> pick a recent payee or paste an account, then set the amount.</p></li>
+        <li style="flex:1 1 180px;border-top:1px solid rgba(255,255,255,.25);padding-top:14px"><span class="mono" style="font-size:13px;color:#FFCC59">02</span><p style="margin:8px 0 0;font-size:15px;line-height:1.5"><strong>Confirm:</strong> name, amount and date in one read, with a clear payment method.</p></li>
+        <li style="flex:1 1 180px;border-top:1px solid rgba(255,255,255,.25);padding-top:14px"><span class="mono" style="font-size:13px;color:#FFCC59">03</span><p style="margin:8px 0 0;font-size:15px;line-height:1.5"><strong>Face ID:</strong> a biometric check authorises the send before it leaves.</p></li>
+        <li style="flex:1 1 180px;border-top:1px solid rgba(255,255,255,.25);padding-top:14px"><span class="mono" style="font-size:13px;color:#FFCC59">04</span><p style="margin:8px 0 0;font-size:15px;line-height:1.5"><strong>Successful:</strong> confetti, a receipt link and a route straight back home.</p></li>
+      </ol>
+      <div style="margin-top:36px;display:flex;align-items:center;gap:16px;border:1px solid rgba(211,135,244,.5);border-radius:999px;padding:16px 24px">
+        <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FFCC59" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"></circle><path d="M12 8v5M12 16v.01"></path></svg>
+        <p style="margin:0;font-size:clamp(16px,1.6vw,20px)">“Transfer can’t be undone once sent” — surfaced <span class="it" style="font-size:1.15em">before</span>, not after, the tap.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 06 VISUAL STYLE ============ -->
+<section id="style" style="max-width:1320px;margin:0 auto;padding:clamp(80px,9vw,128px) clamp(20px,4vw,56px) 0;display:flex;flex-wrap:wrap;gap:24px 64px">
+  <div style="flex:1 1 220px;max-width:300px"><div class="mono" style="font-size:13px;color:#9200D0">06</div><h2 style="margin:8px 0 0;font-size:clamp(36px,3.6vw,52px);letter-spacing:-0.04em;line-height:1;font-weight:600">Visual <span class="it">style</span></h2><p style="margin:14px 0 0;font-size:15px;line-height:1.55;color:#55555B">A vivid gradient for primary actions; everything else stays calm.</p></div>
+  <div style="flex:999 1 640px;min-width:0">
+    <div style="display:flex;flex-wrap:wrap;gap:12px">
+      
+        <div class="lift" style="flex:1 1 150px;background:#FFFFFF;border:1px solid #E4E3DE;border-radius:20px;overflow:hidden">
+          <div style="height:110px;background:linear-gradient(135deg,#C232FF,#990BD6)"></div>
+          <div style="padding:14px 16px"><div style="font-weight:600;font-size:15px">Brand gradient</div><div class="mono" style="font-size:12px;color:#55555B;margin-top:4px">#C232FF → #990BD6</div></div>
+        </div>
+      
+        <div class="lift" style="flex:1 1 150px;background:#FFFFFF;border:1px solid #E4E3DE;border-radius:20px;overflow:hidden">
+          <div style="height:110px;background:#9200D0"></div>
+          <div style="padding:14px 16px"><div style="font-weight:600;font-size:15px">Purple</div><div class="mono" style="font-size:12px;color:#55555B;margin-top:4px">#9200D0</div></div>
+        </div>
+      
+        <div class="lift" style="flex:1 1 150px;background:#FFFFFF;border:1px solid #E4E3DE;border-radius:20px;overflow:hidden">
+          <div style="height:110px;background:#38074D"></div>
+          <div style="padding:14px 16px"><div style="font-weight:600;font-size:15px">Aubergine</div><div class="mono" style="font-size:12px;color:#55555B;margin-top:4px">#38074D</div></div>
+        </div>
+      
+        <div class="lift" style="flex:1 1 150px;background:#FFFFFF;border:1px solid #E4E3DE;border-radius:20px;overflow:hidden">
+          <div style="height:110px;background:#D387F4"></div>
+          <div style="padding:14px 16px"><div style="font-weight:600;font-size:15px">Lavender</div><div class="mono" style="font-size:12px;color:#55555B;margin-top:4px">#D387F4</div></div>
+        </div>
+      
+        <div class="lift" style="flex:1 1 150px;background:#FFFFFF;border:1px solid #E4E3DE;border-radius:20px;overflow:hidden">
+          <div style="height:110px;background:#13AF77"></div>
+          <div style="padding:14px 16px"><div style="font-weight:600;font-size:15px">Success</div><div class="mono" style="font-size:12px;color:#55555B;margin-top:4px">#13AF77</div></div>
+        </div>
+      
+        <div class="lift" style="flex:1 1 150px;background:#FFFFFF;border:1px solid #E4E3DE;border-radius:20px;overflow:hidden">
+          <div style="height:110px;background:#FFCC59"></div>
+          <div style="padding:14px 16px"><div style="font-weight:600;font-size:15px">Gold accent</div><div class="mono" style="font-size:12px;color:#55555B;margin-top:4px">#FFCC59</div></div>
+        </div>
+      
+        <div class="lift" style="flex:1 1 150px;background:#FFFFFF;border:1px solid #E4E3DE;border-radius:20px;overflow:hidden">
+          <div style="height:110px;background:#0F0F0F"></div>
+          <div style="padding:14px 16px"><div style="font-weight:600;font-size:15px">Ink</div><div class="mono" style="font-size:12px;color:#55555B;margin-top:4px">#0F0F0F</div></div>
+        </div>
+      
+        <div class="lift" style="flex:1 1 150px;background:#FFFFFF;border:1px solid #E4E3DE;border-radius:20px;overflow:hidden">
+          <div style="height:110px;background:#FFFFFF"></div>
+          <div style="padding:14px 16px"><div style="font-weight:600;font-size:15px">Paper</div><div class="mono" style="font-size:12px;color:#55555B;margin-top:4px">#FFFFFF</div></div>
+        </div>
+      
+    </div>
+    <div style="margin-top:16px;background:#FFFFFF;border:1px solid #E4E3DE;border-radius:24px;padding:28px;display:flex;flex-wrap:wrap;gap:28px;align-items:center;font-family:'Poppins',system-ui,sans-serif">
+      <div style="flex:1 1 200px"><div class="mono" style="font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#55555B">Display &amp; body · Poppins</div><div style="font-size:96px;font-weight:800;line-height:1;margin-top:12px">Aa</div></div>
+      <div style="flex:2 1 320px">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;border-bottom:1px solid #EFEEEA;padding-bottom:12px"><span style="font-size:26px;font-weight:600">Quick. Secure. Simple.</span><span class="mono" style="font-size:12px;color:#55555B">600 / 800</span></div>
+        <p style="margin:14px 0 0;font-size:15px;line-height:1.6;color:#3F3F45">Rounded, geometric type keeps the product friendly while staying legible at the small sizes a wallet lives in. Numerics read cleanly on balances and amounts — <strong style="color:#0E0E10">$23,452.00</strong>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 07 RESULT ============ -->
+<section id="result" style="max-width:1320px;margin:0 auto;padding:clamp(80px,9vw,128px) clamp(20px,4vw,56px) 0;display:flex;flex-wrap:wrap;gap:24px 64px">
+  <div style="flex:1 1 220px;max-width:300px"><div class="mono" style="font-size:13px;color:#9200D0">07</div><h2 style="margin:8px 0 0;font-size:clamp(36px,3.6vw,52px);letter-spacing:-0.04em;line-height:1;font-weight:600">Result</h2></div>
+  <div style="flex:999 1 640px;min-width:0">
+    <p style="margin:0;font-size:clamp(20px,1.9vw,26px);line-height:1.45;letter-spacing:-0.01em;color:#2A2A2F">A complete, build-ready concept in a single brand language. From first launch to a confirmed transfer, every screen shares one type system, one palette and one set of components — ready to hand to development.</p>
+    <div style="display:flex;flex-wrap:wrap;gap:16px;margin-top:32px">
+      <div style="flex:1 1 260px;background:#FFFFFF;border:1px solid #E4E3DE;border-radius:20px;padding:24px"><div class="mono" style="font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#55555B">Hardest decision</div><p style="margin:12px 0 0;font-size:16px;line-height:1.55">[The trade-off Victoria wrestled with most, and why she chose what she did.]</p></div>
+      <div style="flex:1 1 260px;background:#FFFFFF;border:1px solid #E4E3DE;border-radius:20px;padding:24px"><div class="mono" style="font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#55555B">Next</div><p style="margin:12px 0 0;font-size:16px;line-height:1.55">[What she would validate with users next — e.g. the confirm step’s clarity.]</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ NEXT PROJECT ============ -->
+<section style="max-width:1320px;margin:0 auto;padding:clamp(96px,10vw,140px) clamp(20px,4vw,56px)">
+  <a href="pipchat.html" class="lift" style="display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between;text-decoration:none;background:#1A2602;color:#F2F4F7;border-radius:clamp(24px,3vw,40px);padding:clamp(28px,4vw,56px);overflow:hidden">
+    <div style="flex:1 1 320px">
+      <div class="mono" style="font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#AEE82B">Next case study — 03</div>
+      <div style="font-size:clamp(56px,8vw,120px);font-weight:800;letter-spacing:-0.06em;line-height:.9;margin-top:16px">Pipchat<span style="color:#AEE82B">.</span></div>
+      <p style="margin:16px 0 0;font-size:18px;line-height:1.5;color:#C7CDD8;max-width:420px">A messaging app with a wallet built in — send money without leaving the conversation.</p>
+    </div>
+    <img src="assets/pc_card.webp" alt="" style="flex:0 1 360px;width:360px;max-width:100%;display:block;border-radius:16px">
+  </a>
+  <div class="mono" style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;margin-top:40px;font-size:12px;color:#55555B">
+    <span>© 2026 Victoria — Designed with care</span>
+    <a href="index.html" class="lnk">← Back to all work</a>
+  </div>
+</section>
+
+</div>
+<script src="site.js" defer></script>
+</body>
+</html>

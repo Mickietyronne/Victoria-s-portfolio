@@ -1,0 +1,890 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cici — Case study · Victoria</title>
+<meta name="description" content="How Victoria led a five-person team to design Cici, a women’s wellness app for Nigerian women from puberty to menopause.">
+<meta property="og:title" content="Cici — Case study · Victoria">
+<meta property="og:description" content="How Victoria led a five-person team to design Cici, a women’s wellness app for Nigerian women from puberty to menopause.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#FFFFFF">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500&amp;family=Nunito:wght@400;700&amp;display=swap">
+<style>
+body{margin:0;background:#FFFFFF}
+a{color:inherit}a:hover{color:inherit}
+.it{font-family:inherit;font-style:normal}
+.rv{opacity:0;transform:translateY(28px);filter:blur(8px);transition:opacity .9s ease,transform 1s cubic-bezier(.22,1,.36,1),filter .9s ease}
+.rv.in{opacity:1;transform:none;filter:blur(0)}
+.mono{font-family:'JetBrains Mono',ui-monospace,Menlo,monospace}
+.lnk{text-decoration:none;transition:opacity .2s}.lnk:hover{opacity:.6}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.lift{transition:transform .35s cubic-bezier(.2,.7,.2,1)}.lift:hover{transform:translateY(-4px)}
+.scrollx{overflow-x:auto;position:relative}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+.floaty{animation:floaty 6s ease-in-out infinite}
+@media (prefers-reduced-motion:reduce){.floaty{animation:none}}
+</style>
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<div style="font-family:'Inter Tight',system-ui,sans-serif;color:#0E0E10;background:#FFFFFF;overflow:hidden">
+
+<!-- ============ TOP BAR (shared case-study template) ============ -->
+<header style="max-width:1320px;margin:0 auto;padding:24px clamp(20px,4vw,56px);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px">
+  <a href="index.html" class="lnk" style="display:inline-flex;align-items:center;gap:10px;min-height:44px;padding:0 18px 0 12px;border-radius:999px;border:1px solid #D7D6D0;background:#FFFFFF;font-weight:500;font-size:14px">
+    <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M19 12H5M11 6l-6 6 6 6"></path></svg>
+    Back to all work
+  </a>
+  <a href="index.html" class="lnk" style="display:flex;align-items:center;gap:10px;font-weight:700;font-size:18px">
+    <span class="it" style="width:40px;height:40px;border-radius:50%;background:#0E0E10;color:#F6F6F3;display:flex;align-items:center;justify-content:center;font-size:20px">V</span>
+    <span>Victoria<span style="color:#C2185B">.</span></span>
+  </a>
+  <a href="quickpay.html" class="lnk" style="display:inline-flex;align-items:center;gap:10px;min-height:44px;padding:0 12px 0 18px;border-radius:999px;background:#0E0E10;color:#FFFFFF;font-weight:600;font-size:14px">
+    Next: QuickPay
+    <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+  </a>
+</header>
+
+<!-- ============ HERO ============ -->
+<section style="max-width:1320px;margin:0 auto;padding:clamp(32px,5vw,72px) clamp(20px,4vw,56px) 0">
+  <p class="mono" style="margin:0;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:#55555B">Case study 01 — Women’s health · Mobile app</p>
+  <div style="display:flex;flex-wrap:wrap;gap:24px 64px;align-items:flex-end;margin-top:24px">
+    <h1 style="margin:0;flex:1 1 420px;font-size:clamp(88px,15vw,220px);line-height:.82;letter-spacing:-0.06em;font-weight:800">Cici<span style="color:#FF5470">.</span></h1>
+    <p style="margin:0;flex:1 1 380px;font-size:clamp(22px,2.4vw,32px);line-height:1.25;letter-spacing:-0.02em;font-weight:500">One trusted, private place for Nigerian women to manage their health — <span class="it" style="color:#C2185B">from puberty to menopause.</span></p>
+  </div>
+
+  <dl style="margin:56px 0 0;display:flex;flex-wrap:wrap;border-top:1px solid #0E0E10">
+    <div style="flex:1 1 180px;padding:20px 20px 20px 0"><dt class="mono" style="font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#55555B">Role</dt><dd style="margin:8px 0 0;font-size:17px;font-weight:600">Team lead &amp; product designer</dd></div>
+    <div style="flex:1 1 180px;padding:20px 20px 20px 0"><dt class="mono" style="font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#55555B">Team</dt><dd style="margin:8px 0 0;font-size:17px;font-weight:600">5 people</dd></div>
+    <div style="flex:1 1 180px;padding:20px 20px 20px 0"><dt class="mono" style="font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#55555B">Timeline</dt><dd style="margin:8px 0 0;font-size:17px;font-weight:600">5 weeks · 2025</dd></div>
+    <div style="flex:1 1 180px;padding:20px 20px 20px 0"><dt class="mono" style="font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#55555B">Platform</dt><dd style="margin:8px 0 0;font-size:17px;font-weight:600">Mobile app · Nigeria</dd></div>
+    <div style="flex:1 1 180px;padding:20px 0"><dt class="mono" style="font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#55555B">Tools</dt><dd style="margin:8px 0 0;font-size:17px;font-weight:600">Figma, ChatGPT, Google Docs</dd></div>
+  </dl>
+
+  <div style="margin-top:24px;border-radius:clamp(24px,3vw,40px);background:#FFD3DC;overflow:hidden">
+    <img src="assets/cici_showcase.webp" alt="Two pink phones on pastel steps, showing the Cici nest community feed and the period-tracking home screen" style="width:100%;display:block">
+  </div>
+</section>
+
+<!-- ============ AT A GLANCE ============ -->
+<section style="max-width:1320px;margin:0 auto;padding:56px clamp(20px,4vw,56px) 0">
+  <div style="display:flex;flex-wrap:wrap;gap:24px">
+    <div style="flex:1 1 220px;border-top:1px solid #0E0E10;padding-top:18px"><div style="font-size:clamp(44px,4.6vw,64px);font-weight:600;letter-spacing:-0.04em;line-height:1">50<span style="color:#C2185B">+</span></div><p style="margin:10px 0 0;color:#55555B;font-size:15px">Screens designed</p></div>
+    <div style="flex:1 1 220px;border-top:1px solid #0E0E10;padding-top:18px"><div style="font-size:clamp(44px,4.6vw,64px);font-weight:600;letter-spacing:-0.04em;line-height:1">34</div><p style="margin:10px 0 0;color:#55555B;font-size:15px">Women surveyed, plus interviews</p></div>
+    <div style="flex:1 1 220px;border-top:1px solid #0E0E10;padding-top:18px"><div style="font-size:clamp(44px,4.6vw,64px);font-weight:600;letter-spacing:-0.04em;line-height:1">3</div><p style="margin:10px 0 0;color:#55555B;font-size:15px">Life stages in one app</p></div>
+    <div style="flex:1 1 220px;border-top:1px solid #0E0E10;padding-top:18px"><div style="font-size:clamp(44px,4.6vw,64px);font-weight:600;letter-spacing:-0.04em;line-height:1">12–60</div><p style="margin:10px 0 0;color:#55555B;font-size:15px">Age range designed for</p></div>
+  </div>
+  <nav aria-label="Chapters" style="margin-top:56px;display:flex;flex-wrap:wrap;gap:8px">
+    <a href="#overview" class="lnk" style="padding:10px 16px;border-radius:999px;border:1px solid #D7D6D0;background:#FFFFFF;font-size:14px">01 Overview</a>
+    <a href="#team" class="lnk" style="padding:10px 16px;border-radius:999px;border:1px solid #D7D6D0;background:#FFFFFF;font-size:14px">02 Team &amp; process</a>
+    <a href="#empathize" class="lnk" style="padding:10px 16px;border-radius:999px;border:1px solid #D7D6D0;background:#FFFFFF;font-size:14px">03 Empathize</a>
+    <a href="#define" class="lnk" style="padding:10px 16px;border-radius:999px;border:1px solid #D7D6D0;background:#FFFFFF;font-size:14px">04 Define</a>
+    <a href="#ideate" class="lnk" style="padding:10px 16px;border-radius:999px;border:1px solid #D7D6D0;background:#FFFFFF;font-size:14px">05 Ideate</a>
+    <a href="#prototype" class="lnk" style="padding:10px 16px;border-radius:999px;border:1px solid #D7D6D0;background:#FFFFFF;font-size:14px">06 Prototype</a>
+    <a href="#system" class="lnk" style="padding:10px 16px;border-radius:999px;border:1px solid #D7D6D0;background:#FFFFFF;font-size:14px">07 Design system</a>
+    <a href="#outcome" class="lnk" style="padding:10px 16px;border-radius:999px;border:1px solid #D7D6D0;background:#FFFFFF;font-size:14px">08 Outcome</a>
+  </nav>
+</section>
+
+<!-- ============ 01 OVERVIEW ============ -->
+<section id="overview" style="max-width:1320px;margin:0 auto;padding:clamp(80px,9vw,128px) clamp(20px,4vw,56px) 0;display:flex;flex-wrap:wrap;gap:24px 64px">
+  <div style="flex:1 1 220px;max-width:300px"><div class="mono" style="font-size:13px;color:#C2185B">01</div><h2 style="margin:8px 0 0;font-size:clamp(36px,3.6vw,52px);letter-spacing:-0.04em;line-height:1;font-weight:600">Overview</h2></div>
+  <div style="flex:999 1 640px;min-width:0">
+    <p style="margin:0;font-size:clamp(20px,1.9vw,26px);line-height:1.45;letter-spacing:-0.01em;color:#2A2A2F">Many Nigerian women manage their reproductive health alone — piecing together advice from WhatsApp groups and Google, unsure what to trust, and uncomfortable raising topics like menstruation, fertility or menopause. Cici brings tracking, credible information, community and real doctors into one private app.</p>
+    <div style="display:flex;flex-wrap:wrap;gap:16px;margin-top:40px">
+      <div style="flex:1 1 300px;background:#FFFFFF;border:1px solid #E4E3DE;border-radius:24px;padding:28px">
+        <div class="mono" style="font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#55555B">The problem</div>
+        <ul style="margin:18px 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:14px;font-size:16px;line-height:1.5">
+          <li style="display:flex;gap:12px"><span class="mono" style="color:#C2185B">—</span>Limited access to trusted medical advice and doctors.</li>
+          <li style="display:flex;gap:12px"><span class="mono" style="color:#C2185B">—</span>Low confidence discussing menstruation, fertility or menopause.</li>
+          <li style="display:flex;gap:12px"><span class="mono" style="color:#C2185B">—</span>Poor health literacy and little reliable, localised information.</li>
+          <li style="display:flex;gap:12px"><span class="mono" style="color:#C2185B">—</span>No single platform that supports women across life stages.</li>
+        </ul>
+      </div>
+      <div style="flex:1 1 300px;background:#FF5470;color:#0E0E10;border-radius:24px;padding:28px">
+        <div class="mono" style="font-size:12px;letter-spacing:.08em;text-transform:uppercase">The solution</div>
+        <ul style="margin:18px 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:14px;font-size:16px;line-height:1.5">
+          <li style="display:flex;gap:12px"><span class="mono">+</span>Tracking for cycles, breastfeeding and menopause symptoms.</li>
+          <li style="display:flex;gap:12px"><span class="mono">+</span>Credible articles tailored to each age group.</li>
+          <li style="display:flex;gap:12px"><span class="mono">+</span>A private, anonymous community forum for sensitive questions.</li>
+          <li style="display:flex;gap:12px"><span class="mono">+</span>Virtual consults with verified doctors and midwives, plus AI help.</li>
+          <li style="display:flex;gap:12px"><span class="mono">+</span>Local languages and a low-data mode for wider access.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 02 TEAM & PROCESS ============ -->
+<section id="team" style="max-width:1320px;margin:0 auto;padding:clamp(80px,9vw,128px) clamp(20px,4vw,56px) 0;display:flex;flex-wrap:wrap;gap:24px 64px">
+  <div style="flex:1 1 220px;max-width:300px"><div class="mono" style="font-size:13px;color:#C2185B">02</div><h2 style="margin:8px 0 0;font-size:clamp(36px,3.6vw,52px);letter-spacing:-0.04em;line-height:1;font-weight:600">Team &amp; <span class="it">process</span></h2></div>
+  <div style="flex:999 1 640px;min-width:0">
+    <p style="margin:0;font-size:18px;line-height:1.6;color:#3F3F45;max-width:680px">Victoria led a five-person team through a design-thinking process — keeping research, decisions and screens moving together over five weeks.</p>
+    <div style="margin-top:28px;background:#FFFFFF;border:1px solid #E4E3DE;border-radius:24px;padding:20px">
+      <img src="assets/cici_team.webp" alt="The Cici team: Victoria (team lead), Dickson, Dammy, Isaac and Sackey" style="width:100%;display:block;border-radius:12px">
+    </div>
+    <ol style="margin:40px 0 0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:12px">
+      <li class="lift" style="flex:1 1 170px;border-radius:20px;padding:22px;background:#E9D3EA"><div class="mono" style="font-size:12px">Weeks 1–2</div><div class="it" style="font-size:30px;margin-top:20px">Empathize</div><p style="margin:8px 0 0;font-size:14px;line-height:1.5">Interviews with women of different ages; empathy maps from their real stories.</p></li>
+      <li class="lift" style="flex:1 1 170px;border-radius:20px;padding:22px;background:#D6DBF0"><div class="mono" style="font-size:12px">Weeks 2–3</div><div class="it" style="font-size:30px;margin-top:20px">Define</div><p style="margin:8px 0 0;font-size:14px;line-height:1.5">A clear problem statement and personas that aligned the team.</p></li>
+      <li class="lift" style="flex:1 1 170px;border-radius:20px;padding:22px;background:#F3E3B5"><div class="mono" style="font-size:12px">Weeks 3–4</div><div class="it" style="font-size:30px;margin-top:20px">Ideate</div><p style="margin:8px 0 0;font-size:14px;line-height:1.5">Brainstorms and flow sketches, prioritised with a value–effort matrix.</p></li>
+      <li class="lift" style="flex:1 1 170px;border-radius:20px;padding:22px;background:#D5EADF"><div class="mono" style="font-size:12px">Weeks 4–5</div><div class="it" style="font-size:30px;margin-top:20px">Prototype</div><p style="margin:8px 0 0;font-size:14px;line-height:1.5">Mid-fidelity wireframes into an interactive prototype.</p></li>
+      <li class="lift" style="flex:1 1 170px;border-radius:20px;padding:22px;background:#F6D2C6"><div class="mono" style="font-size:12px">Week 5</div><div class="it" style="font-size:30px;margin-top:20px">Test</div><p style="margin:8px 0 0;font-size:14px;line-height:1.5">[What the team tested, with whom, and what changed.]</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ 03 EMPATHIZE ============ -->
+<section id="empathize" style="max-width:1320px;margin:0 auto;padding:clamp(80px,9vw,128px) clamp(20px,4vw,56px) 0;display:flex;flex-wrap:wrap;gap:24px 64px">
+  <div style="flex:1 1 220px;max-width:300px"><div class="mono" style="font-size:13px;color:#C2185B">03</div><h2 style="margin:8px 0 0;font-size:clamp(36px,3.6vw,52px);letter-spacing:-0.04em;line-height:1;font-weight:600">Empathize</h2><p style="margin:14px 0 0;font-size:15px;line-height:1.55;color:#55555B">Interviews, a questionnaire and a competitive audit.</p></div>
+  <div style="flex:999 1 640px;min-width:0">
+    <h3 style="margin:0;font-size:22px;letter-spacing:-0.02em;font-weight:600">What we asked</h3>
+    <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:18px">
+      <div style="flex:1 1 260px;background:#FF5470;border-radius:18px;padding:18px;font-size:16px;line-height:1.45">“Can you walk me through how you currently manage your reproductive health?”</div>
+      <div style="flex:1 1 260px;background:#FF5470;border-radius:18px;padding:18px;font-size:16px;line-height:1.45">“When you have sensitive health questions, where do you go for answers?”</div>
+      <div style="flex:1 1 260px;background:#FF5470;border-radius:18px;padding:18px;font-size:16px;line-height:1.45">“If an app supported you from puberty to menopause, what one feature would matter most?”</div>
+      <div style="flex:1 1 260px;background:#FF5470;border-radius:18px;padding:18px;font-size:16px;line-height:1.45">“How comfortable are you with health apps that collect personal data?”</div>
+    </div>
+
+    <div style="display:flex;flex-wrap:wrap;gap:16px;margin-top:40px">
+      <div style="flex:2 1 380px;background:#FFE4E9;border-radius:24px;padding:28px">
+        <h3 style="margin:0;font-size:22px;letter-spacing:-0.02em;font-weight:600">Key insights</h3>
+        <ol style="margin:18px 0 0;padding-left:22px;display:flex;flex-direction:column;gap:10px;font-size:16px;line-height:1.5">
+          <li>Users trust apps for basic tracking — but accuracy is crucial.</li>
+          <li>Paywalls frustrate; people want more contextual features.</li>
+          <li>Current tools lack credibility and personalisation.</li>
+          <li>Privacy must be explicit: clear data language and anonymous options.</li>
+          <li>Needs vary by stage — menopause education, breastfeeding guidance.</li>
+          <li>Local languages and low-data mode would boost adoption beyond cities.</li>
+          <li>Most would check in a few times a week; daily with reminders.</li>
+        </ol>
+      </div>
+      <div style="flex:1 1 260px;display:flex;flex-direction:column;gap:16px">
+        <div style="background:#0E0E10;color:#F6F6F3;border-radius:24px;padding:28px;flex:1">
+          <div style="font-size:64px;font-weight:600;letter-spacing:-0.04em;line-height:1">70.6<span style="color:#FF8A9A">%</span></div>
+          <p style="margin:12px 0 0;font-size:15px;line-height:1.5;color:#C9C9CE">of the 34 women surveyed have used an app to track their cycle or other health issues.</p>
+        </div>
+        <div style="background:#FFFFFF;border:1px solid #E4E3DE;border-radius:24px;padding:24px">
+          <div class="mono" style="font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#55555B">Must-have features</div>
+          <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:14px">
+            <span style="padding:7px 12px;border-radius:999px;border:1px solid #FF8A9A;color:#A3123F;font-size:13px">Ovulation tracking</span>
+            <span style="padding:7px 12px;border-radius:999px;border:1px solid #FF8A9A;color:#A3123F;font-size:13px">Period tracking</span>
+            <span style="padding:7px 12px;border-radius:999px;border:1px solid #FF8A9A;color:#A3123F;font-size:13px">Menopause support</span>
+            <span style="padding:7px 12px;border-radius:999px;border:1px solid #FF8A9A;color:#A3123F;font-size:13px">Reminders</span>
+            <span style="padding:7px 12px;border-radius:999px;border:1px solid #FF8A9A;color:#A3123F;font-size:13px">Privacy protection</span>
+            <span style="padding:7px 12px;border-radius:999px;border:1px solid #FF8A9A;color:#A3123F;font-size:13px">Breastfeeding support</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h3 style="margin:56px 0 0;font-size:22px;letter-spacing:-0.02em;font-weight:600">Competitive analysis</h3>
+    <p style="margin:8px 0 0;font-size:16px;line-height:1.55;color:#3F3F45;max-width:620px">No competitor covers every life stage: cycle apps ignore breastfeeding and menopause, while the breastfeeding app ignores cycles — and key features sit behind paywalls.</p>
+    <div class="scrollx" style="margin-top:20px;background:#FFFFFF;border:1px solid #E4E3DE;border-radius:24px">
+      <table style="width:100%;min-width:560px;border-collapse:collapse;font-size:15px">
+        <thead>
+          <tr style="background:#FFE4E9">
+            <th scope="col" style="text-align:left;padding:16px 20px;font-weight:600">Feature</th>
+            <th scope="col" style="padding:16px 12px;font-weight:600">Flo</th>
+            <th scope="col" style="padding:16px 12px;font-weight:600">Clue</th>
+            <th scope="col" style="padding:16px 12px;font-weight:600">Balance</th>
+            <th scope="col" style="padding:16px 12px;font-weight:600">Lactapp</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+            <tr style="border-top:1px solid #EFEEEA">
+              <th scope="row" style="text-align:left;padding:13px 20px;font-weight:500">Period tracking</th>
+              
+                <td style="text-align:center;padding:13px 12px">
+                  <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A8F4A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"></path></svg><span class="sr">Yes</span>
+                  
+                  
+                </td>
+              
+                <td style="text-align:center;padding:13px 12px">
+                  <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A8F4A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"></path></svg><span class="sr">Yes</span>
+                  
+                  
+                </td>
+              
+                <td style="text-align:center;padding:13px 12px">
+                  <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A8F4A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"></path></svg><span class="sr">Yes</span>
+                  
+                  
+                </td>
+              
+                <td style="text-align:center;padding:13px 12px">
+                  
+                  <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#B3123C" stroke-width="2.6" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"></path></svg><span class="sr">No</span>
+                  
+                </td>
+              
+            </tr>
+          
+            <tr style="border-top:1px solid #EFEEEA">
+              <th scope="row" style="text-align:left;padding:13px 20px;font-weight:500">Fertility predictions</th>
+              
+                <td style="text-align:center;padding:13px 12px">
+                  <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A8F4A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"></path></svg><span class="sr">Yes</span>
+                  
+                  
+                </td>
+              
+                <td style="text-align:center;padding:13px 12px">
+                  <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A8F4A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"></path></svg><span class="sr">Yes</span>
+                  
+                  
+                </td>
+              
+                <td style="text-align:center;padding:13px 12px">
+                  
+                  <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#B3123C" stroke-width="2.6" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"></path></svg><span class="sr">No</span>
+                  
+                </td>
+              
+                <td style="text-align:center;padding:13px 12px">
+                  
+                  <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#B3123C" stroke-width="2.6" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"></path></svg><span class="sr">No</span>
+                  
+                </td>
+              
+            </tr>
+          
+            <tr style="border-top:1px solid #EFEEEA">
+              <th scope="row" style="text-align:left;padding:13px 20px;font-weight:500">Period symptom tracking</th>
+              
+                <td style="text-align:center;padding:13px 12px">
+                  <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A8F4A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"></path></svg><span class="sr">Yes</span>
+                  
+                  
+                </td>
+              
+                <td style="text-align:center;padding:13px 12px">
+                  <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A8F4A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"></path></svg><span class="sr">Yes</span>
+                  
+                  
+                </td>
+              
+                <td style="text-align:center;padding:13px 12px">
+                  <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A8F4A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"></path></svg><span class="sr">Yes</span>
+                  
+                  
+                </td>
+              
+                <td style="text-align:center;padding:13px 12px">
+                  
+                  <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#B3123C" stroke-width="2.6" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"></path></svg><span class="sr">No</span>
+                  
+                </td>
+              
+            </tr>
+          
+            <tr style="border-top:1px solid #EFEEEA">
+              <th scope="row" style="text-align:left;padding:13px 20px;font-weight:500">Breastfeeding tracking</th>
+              
+                <td style="text-align:center;padding:13px 12px">
+                  
+                  <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#B3123C" stroke-width="2.6" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"></path></svg><span class="sr">No</span>
+                  
+                </td>
+              
+                <td style="text-align:center;padding:13px 12px">
+                  
+                  <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#B3123C" stroke-width="2.6" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"></path></svg><span class="sr">No</span>
+                  
+                </td>
+              
+                <td style="text-align:center;padding:13px 12px">
+                  
+                  <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#B3123C" stroke-width="2.6" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"></path></svg><span class="sr">No</span>
+                  
+                </td>
+              
+                <td style="text-align:center;padding:13px 12px">
+                  <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A8F4A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"></path></svg><span class="sr">Yes</span>
+                  
+                  
+                </td>
+              
+            </tr>
+          
+            <tr style="border-top:1px solid #EFEEEA">
+              <th scope="row" style="text-align:left;padding:13px 20px;font-weight:500">Baby tracking</th>
+              
+                <td style="text-align:center;padding:13px 12px">
+                  
+                  <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#B3123C" stroke-width="2.6" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"></path></svg><span class="sr">No</span>
+                  
+                </td>
+              
+                <td style="text-align:center;padding:13px 12px">
+                  
+                  <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#B3123C" stroke-width="2.6" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"></path></svg><span class="sr">No</span>
+                  
+                </td>
+              
+                <td style="text-align:center;padding:13px 12px">
+                  
+                  <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#B3123C" stroke-width="2.6" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"></path></svg><span class="sr">No</span>
+                  
+                </td>
+              
+                <td style="text-align:center;padding:13px 12px">
+                  <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A8F4A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"></path></svg><span class="sr">Yes</span>
+                  
+                  
+                </td>
+              
+            </tr>
+          
+            <tr style="border-top:1px solid #EFEEEA">
+              <th scope="row" style="text-align:left;padding:13px 20px;font-weight:500">Personalized support</th>
+              
+                <td style="text-align:center;padding:13px 12px">
+                  
+                  
+                  <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#9A6A00" stroke-width="2"><rect x="5" y="11" width="14" height="9" rx="2"></rect><path d="M8 11V8a4 4 0 0 1 8 0v3"></path></svg><span class="sr">Paid only</span>
+                </td>
+              
+                <td style="text-align:center;padding:13px 12px">
+                  
+                  
+                  <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#9A6A00" stroke-width="2"><rect x="5" y="11" width="14" height="9" rx="2"></rect><path d="M8 11V8a4 4 0 0 1 8 0v3"></path></svg><span class="sr">Paid only</span>
+                </td>
+              
+                <td style="text-align:center;padding:13px 12px">
+                  
+                  
+                  <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#9A6A00" stroke-width="2"><rect x="5" y="11" width="14" height="9" rx="2"></rect><path d="M8 11V8a4 4 0 0 1 8 0v3"></path></svg><span class="sr">Paid only</span>
+                </td>
+              
+                <td style="text-align:center;padding:13px 12px">
+                  <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A8F4A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"></path></svg><span class="sr">Yes</span>
+                  
+                  
+                </td>
+              
+            </tr>
+          
+            <tr style="border-top:1px solid #EFEEEA">
+              <th scope="row" style="text-align:left;padding:13px 20px;font-weight:500">Menopause symptom tracking</th>
+              
+                <td style="text-align:center;padding:13px 12px">
+                  
+                  <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#B3123C" stroke-width="2.6" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"></path></svg><span class="sr">No</span>
+                  
+                </td>
+              
+                <td style="text-align:center;padding:13px 12px">
+                  
+                  <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#B3123C" stroke-width="2.6" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"></path></svg><span class="sr">No</span>
+                  
+                </td>
+              
+                <td style="text-align:center;padding:13px 12px">
+                  <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A8F4A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"></path></svg><span class="sr">Yes</span>
+                  
+                  
+                </td>
+              
+                <td style="text-align:center;padding:13px 12px">
+                  
+                  <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#B3123C" stroke-width="2.6" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"></path></svg><span class="sr">No</span>
+                  
+                </td>
+              
+            </tr>
+          
+            <tr style="border-top:1px solid #EFEEEA">
+              <th scope="row" style="text-align:left;padding:13px 20px;font-weight:500">Sleep monitoring</th>
+              
+                <td style="text-align:center;padding:13px 12px">
+                  <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A8F4A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"></path></svg><span class="sr">Yes</span>
+                  
+                  
+                </td>
+              
+                <td style="text-align:center;padding:13px 12px">
+                  <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A8F4A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"></path></svg><span class="sr">Yes</span>
+                  
+                  
+                </td>
+              
+                <td style="text-align:center;padding:13px 12px">
+                  <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A8F4A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"></path></svg><span class="sr">Yes</span>
+                  
+                  
+                </td>
+              
+                <td style="text-align:center;padding:13px 12px">
+                  
+                  <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#B3123C" stroke-width="2.6" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"></path></svg><span class="sr">No</span>
+                  
+                </td>
+              
+            </tr>
+          
+            <tr style="border-top:1px solid #EFEEEA">
+              <th scope="row" style="text-align:left;padding:13px 20px;font-weight:500">Consultation</th>
+              
+                <td style="text-align:center;padding:13px 12px">
+                  
+                  <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#B3123C" stroke-width="2.6" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"></path></svg><span class="sr">No</span>
+                  
+                </td>
+              
+                <td style="text-align:center;padding:13px 12px">
+                  
+                  <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#B3123C" stroke-width="2.6" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"></path></svg><span class="sr">No</span>
+                  
+                </td>
+              
+                <td style="text-align:center;padding:13px 12px">
+                  <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A8F4A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"></path></svg><span class="sr">Yes</span>
+                  
+                  
+                </td>
+              
+                <td style="text-align:center;padding:13px 12px">
+                  <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A8F4A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"></path></svg><span class="sr">Yes</span>
+                  
+                  
+                </td>
+              
+            </tr>
+          
+            <tr style="border-top:1px solid #EFEEEA">
+              <th scope="row" style="text-align:left;padding:13px 20px;font-weight:500">Mental health monitoring</th>
+              
+                <td style="text-align:center;padding:13px 12px">
+                  
+                  
+                  <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#9A6A00" stroke-width="2"><rect x="5" y="11" width="14" height="9" rx="2"></rect><path d="M8 11V8a4 4 0 0 1 8 0v3"></path></svg><span class="sr">Paid only</span>
+                </td>
+              
+                <td style="text-align:center;padding:13px 12px">
+                  
+                  
+                  <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#9A6A00" stroke-width="2"><rect x="5" y="11" width="14" height="9" rx="2"></rect><path d="M8 11V8a4 4 0 0 1 8 0v3"></path></svg><span class="sr">Paid only</span>
+                </td>
+              
+                <td style="text-align:center;padding:13px 12px">
+                  <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A8F4A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"></path></svg><span class="sr">Yes</span>
+                  
+                  
+                </td>
+              
+                <td style="text-align:center;padding:13px 12px">
+                  
+                  <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#B3123C" stroke-width="2.6" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"></path></svg><span class="sr">No</span>
+                  
+                </td>
+              
+            </tr>
+          
+            <tr style="border-top:1px solid #EFEEEA">
+              <th scope="row" style="text-align:left;padding:13px 20px;font-weight:500">Insights (articles)</th>
+              
+                <td style="text-align:center;padding:13px 12px">
+                  
+                  
+                  <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#9A6A00" stroke-width="2"><rect x="5" y="11" width="14" height="9" rx="2"></rect><path d="M8 11V8a4 4 0 0 1 8 0v3"></path></svg><span class="sr">Paid only</span>
+                </td>
+              
+                <td style="text-align:center;padding:13px 12px">
+                  
+                  
+                  <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#9A6A00" stroke-width="2"><rect x="5" y="11" width="14" height="9" rx="2"></rect><path d="M8 11V8a4 4 0 0 1 8 0v3"></path></svg><span class="sr">Paid only</span>
+                </td>
+              
+                <td style="text-align:center;padding:13px 12px">
+                  <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A8F4A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"></path></svg><span class="sr">Yes</span>
+                  
+                  
+                </td>
+              
+                <td style="text-align:center;padding:13px 12px">
+                  <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A8F4A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"></path></svg><span class="sr">Yes</span>
+                  
+                  
+                </td>
+              
+            </tr>
+          
+            <tr style="border-top:1px solid #EFEEEA">
+              <th scope="row" style="text-align:left;padding:13px 20px;font-weight:500">Reminders</th>
+              
+                <td style="text-align:center;padding:13px 12px">
+                  <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A8F4A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"></path></svg><span class="sr">Yes</span>
+                  
+                  
+                </td>
+              
+                <td style="text-align:center;padding:13px 12px">
+                  <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A8F4A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"></path></svg><span class="sr">Yes</span>
+                  
+                  
+                </td>
+              
+                <td style="text-align:center;padding:13px 12px">
+                  <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A8F4A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"></path></svg><span class="sr">Yes</span>
+                  
+                  
+                </td>
+              
+                <td style="text-align:center;padding:13px 12px">
+                  <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A8F4A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"></path></svg><span class="sr">Yes</span>
+                  
+                  
+                </td>
+              
+            </tr>
+          
+            <tr style="border-top:1px solid #EFEEEA">
+              <th scope="row" style="text-align:left;padding:13px 20px;font-weight:500">Community</th>
+              
+                <td style="text-align:center;padding:13px 12px">
+                  <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A8F4A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"></path></svg><span class="sr">Yes</span>
+                  
+                  
+                </td>
+              
+                <td style="text-align:center;padding:13px 12px">
+                  
+                  <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#B3123C" stroke-width="2.6" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"></path></svg><span class="sr">No</span>
+                  
+                </td>
+              
+                <td style="text-align:center;padding:13px 12px">
+                  <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A8F4A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"></path></svg><span class="sr">Yes</span>
+                  
+                  
+                </td>
+              
+                <td style="text-align:center;padding:13px 12px">
+                  <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A8F4A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"></path></svg><span class="sr">Yes</span>
+                  
+                  
+                </td>
+              
+            </tr>
+          
+        </tbody>
+      </table>
+    </div>
+    <p class="mono" style="margin:12px 0 0;font-size:12px;color:#55555B">✓ available · ✕ not available · lock = paid only</p>
+  </div>
+</section>
+
+<!-- ============ 04 DEFINE ============ -->
+<section id="define" style="max-width:1320px;margin:0 auto;padding:clamp(80px,9vw,128px) clamp(20px,4vw,56px) 0;display:flex;flex-wrap:wrap;gap:24px 64px">
+  <div style="flex:1 1 220px;max-width:300px"><div class="mono" style="font-size:13px;color:#C2185B">04</div><h2 style="margin:8px 0 0;font-size:clamp(36px,3.6vw,52px);letter-spacing:-0.04em;line-height:1;font-weight:600">Define</h2><p style="margin:14px 0 0;font-size:15px;line-height:1.55;color:#55555B">Two personas at opposite ends of the journey, one journey map, six questions.</p></div>
+  <div style="flex:999 1 640px;min-width:0">
+    <div role="group" aria-label="Choose a persona" style="display:inline-flex;gap:6px;background:#FFFFFF;border:1px solid #E4E3DE;border-radius:999px;padding:5px">
+      
+        <button type="button" class="ftab" data-act="persona:0" data-ptab="0" aria-pressed="true" style="min-height:40px;padding:0 18px;border:0;border-radius:999px;font:600 14px 'Inter Tight',sans-serif;cursor:pointer">Amaka · new mother</button>
+      
+        <button type="button" class="ftab" data-act="persona:1" data-ptab="1" aria-pressed="false" style="min-height:40px;padding:0 18px;border:0;border-radius:999px;font:600 14px 'Inter Tight',sans-serif;cursor:pointer">Bisi · approaching menopause</button>
+      
+    </div>
+<div data-persona="0">    <div style="margin-top:16px;background:#FFFFFF;border:1px solid #E4E3DE;border-radius:28px;padding:clamp(24px,3vw,40px)">
+      <div style="display:flex;flex-wrap:wrap;gap:24px;align-items:center">
+        <div aria-hidden="true" class="it" style="width:96px;height:96px;border-radius:28px;background:#FFD3DC;display:flex;align-items:center;justify-content:center;font-size:48px;color:#A3123F">A</div>
+        <div style="flex:1 1 280px">
+          <div class="mono" style="font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#55555B">Persona · Breastfeeding mother</div>
+          <div style="font-size:clamp(28px,3vw,40px);font-weight:600;letter-spacing:-0.03em;margin-top:6px">Amaka Okoye</div>
+          <div style="font-size:15px;color:#3F3F45;margin-top:4px">29 · Enugu · Boutique owner · Married</div>
+        </div>
+      </div>
+      <p class="it" style="margin:28px 0 0;font-size:clamp(22px,2.2vw,30px);line-height:1.25;color:#2A2A2F">“I need to be more in control of my health.”</p>
+      <p style="margin:16px 0 0;font-size:16px;line-height:1.6;color:#3F3F45">A first-time mum caring for her three-month-old while running a small clothing store. She recently moved and has no close relatives nearby, so she relies on Google and WhatsApp groups — and isn’t sure what to believe.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:16px;margin-top:28px">
+        <div style="flex:1 1 260px;background:#F6F6F3;border-radius:18px;padding:22px">
+          <div class="mono" style="font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#1A6A3A">Goals</div>
+          <ul style="margin:12px 0 0;padding-left:18px;display:flex;flex-direction:column;gap:8px;font-size:15px;line-height:1.5">
+            <li>Track breastfeeding sessions and baby’s development</li><li>Get verified answers on baby nutrition and postnatal care</li><li>Join a safe community of mothers</li><li>Access healthcare without long trips</li>
+          </ul>
+        </div>
+        <div style="flex:1 1 260px;background:#FFE4E9;border-radius:18px;padding:22px">
+          <div class="mono" style="font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#A3123F">Frustrations</div>
+          <ul style="margin:12px 0 0;padding-left:18px;display:flex;flex-direction:column;gap:8px;font-size:15px;line-height:1.5">
+            <li>Overwhelmed by conflicting advice</li><li>Can’t afford regular clinic visits</li><li>Isolated and unsure who to trust</li><li>Balancing motherhood and her business</li>
+          </ul>
+        </div>
+      </div>
+    </div></div><div data-persona="1" hidden>    <div style="margin-top:16px;background:#FFFFFF;border:1px solid #E4E3DE;border-radius:28px;padding:clamp(24px,3vw,40px)">
+      <div style="display:flex;flex-wrap:wrap;gap:24px;align-items:center">
+        <div aria-hidden="true" class="it" style="width:96px;height:96px;border-radius:28px;background:#FFD3DC;display:flex;align-items:center;justify-content:center;font-size:48px;color:#A3123F">B</div>
+        <div style="flex:1 1 280px">
+          <div class="mono" style="font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#55555B">Persona · Woman approaching menopause</div>
+          <div style="font-size:clamp(28px,3vw,40px);font-weight:600;letter-spacing:-0.03em;margin-top:6px">Bisi Adebayo</div>
+          <div style="font-size:15px;color:#3F3F45;margin-top:4px">48 · Ibadan · Public school teacher · Married, grown children</div>
+        </div>
+      </div>
+      <p class="it" style="margin:28px 0 0;font-size:clamp(22px,2.2vw,30px);line-height:1.25;color:#2A2A2F">“Am I starting menopause, or is this just stress?”</p>
+      <p style="margin:16px 0 0;font-size:16px;line-height:1.6;color:#3F3F45">Bisi has started experiencing irregular periods, hot flashes and mood swings, but brushes them off as work stress. She values privacy and feels talking about these changes publicly is taboo.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:16px;margin-top:28px">
+        <div style="flex:1 1 260px;background:#F6F6F3;border-radius:18px;padding:22px">
+          <div class="mono" style="font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#1A6A3A">Goals</div>
+          <ul style="margin:12px 0 0;padding-left:18px;display:flex;flex-direction:column;gap:8px;font-size:15px;line-height:1.5">
+            <li>Learn about menopause from reliable sources</li><li>Track symptoms to understand her body</li><li>Get medical support without visiting hospitals</li><li>Find others going through the same changes</li>
+          </ul>
+        </div>
+        <div style="flex:1 1 260px;background:#FFE4E9;border-radius:18px;padding:22px">
+          <div class="mono" style="font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#A3123F">Frustrations</div>
+          <ul style="margin:12px 0 0;padding-left:18px;display:flex;flex-direction:column;gap:8px;font-size:15px;line-height:1.5">
+            <li>Feels neglected by society at her age</li><li>Doesn’t understand what’s happening and fears judgment</li><li>Few local resources on menopause</li><li>Doesn’t want to talk to male doctors</li>
+          </ul>
+        </div>
+      </div>
+    </div></div>
+
+    <h3 style="margin:56px 0 0;font-size:22px;letter-spacing:-0.02em;font-weight:600">Journey map</h3>
+    <div class="scrollx" style="margin-top:18px">
+      <div style="display:flex;gap:12px;min-width:860px">
+        
+          <div style="flex:1 1 0;background:#FFFFFF;border:1px solid #E4E3DE;border-radius:20px;padding:20px;display:flex;flex-direction:column;gap:14px">
+            <div style="display:flex;justify-content:space-between;align-items:center"><span style="font-weight:600;font-size:16px">Awareness</span><span class="mono" style="font-size:11px;color:#55555B">01</span></div>
+            <p class="it" style="margin:0;font-size:19px;line-height:1.2">“Is this legit? I don’t want just any app knowing about my body.”</p>
+            <div style="font-size:13px;line-height:1.5;color:#3F3F45"><span class="mono" style="display:block;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#A3123F;margin-bottom:4px">Pain point</span>Lack of trust in health apps; fear of judgment.</div>
+            <div style="margin-top:auto;font-size:13px;line-height:1.5;background:#FFE4E9;border-radius:12px;padding:12px"><span class="mono" style="display:block;font-size:11px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:4px">Opportunity</span>Build trust with real stories, clear data privacy and cultural sensitivity.</div>
+          </div>
+        
+          <div style="flex:1 1 0;background:#FFFFFF;border:1px solid #E4E3DE;border-radius:20px;padding:20px;display:flex;flex-direction:column;gap:14px">
+            <div style="display:flex;justify-content:space-between;align-items:center"><span style="font-weight:600;font-size:16px">Consideration</span><span class="mono" style="font-size:11px;color:#55555B">02</span></div>
+            <p class="it" style="margin:0;font-size:19px;line-height:1.2">“It looks good… but will it really help me?”</p>
+            <div style="font-size:13px;line-height:1.5;color:#3F3F45"><span class="mono" style="display:block;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#A3123F;margin-bottom:4px">Pain point</span>Worried it’ll be hard to use or won’t apply to her.</div>
+            <div style="margin-top:auto;font-size:13px;line-height:1.5;background:#FFE4E9;border-radius:12px;padding:12px"><span class="mono" style="display:block;font-size:11px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:4px">Opportunity</span>Keep visuals clean and the value obvious.</div>
+          </div>
+        
+          <div style="flex:1 1 0;background:#FFFFFF;border:1px solid #E4E3DE;border-radius:20px;padding:20px;display:flex;flex-direction:column;gap:14px">
+            <div style="display:flex;justify-content:space-between;align-items:center"><span style="font-weight:600;font-size:16px">Onboard</span><span class="mono" style="font-size:11px;color:#55555B">03</span></div>
+            <p class="it" style="margin:0;font-size:19px;line-height:1.2">“Okay, this feels personal… not bad.”</p>
+            <div style="font-size:13px;line-height:1.5;color:#3F3F45"><span class="mono" style="display:block;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#A3123F;margin-bottom:4px">Pain point</span>Overwhelmed by settings; unsure what to choose.</div>
+            <div style="margin-top:auto;font-size:13px;line-height:1.5;background:#FFE4E9;border-radius:12px;padding:12px"><span class="mono" style="display:block;font-size:11px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:4px">Opportunity</span>Short onboarding with “skip & return later” options.</div>
+          </div>
+        
+          <div style="flex:1 1 0;background:#FFFFFF;border:1px solid #E4E3DE;border-radius:20px;padding:20px;display:flex;flex-direction:column;gap:14px">
+            <div style="display:flex;justify-content:space-between;align-items:center"><span style="font-weight:600;font-size:16px">Engage</span><span class="mono" style="font-size:11px;color:#55555B">04</span></div>
+            <p class="it" style="margin:0;font-size:19px;line-height:1.2">“These women feel what I feel? I thought I was alone.”</p>
+            <div style="font-size:13px;line-height:1.5;color:#3F3F45"><span class="mono" style="display:block;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#A3123F;margin-bottom:4px">Pain point</span>Shame around PMS; didn’t know where to ask.</div>
+            <div style="margin-top:auto;font-size:13px;line-height:1.5;background:#FFE4E9;border-radius:12px;padding:12px"><span class="mono" style="display:block;font-size:11px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:4px">Opportunity</span>Relatable tone and anonymous questions to build comfort.</div>
+          </div>
+        
+          <div style="flex:1 1 0;background:#FFFFFF;border:1px solid #E4E3DE;border-radius:20px;padding:20px;display:flex;flex-direction:column;gap:14px">
+            <div style="display:flex;justify-content:space-between;align-items:center"><span style="font-weight:600;font-size:16px">Retain</span><span class="mono" style="font-size:11px;color:#55555B">05</span></div>
+            <p class="it" style="margin:0;font-size:19px;line-height:1.2">“This is actually helping. I want to keep this up.”</p>
+            <div style="font-size:13px;line-height:1.5;color:#3F3F45"><span class="mono" style="display:block;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#A3123F;margin-bottom:4px">Pain point</span>Hard to stay consistent when life gets busy.</div>
+            <div style="margin-top:auto;font-size:13px;line-height:1.5;background:#FFE4E9;border-radius:12px;padding:12px"><span class="mono" style="display:block;font-size:11px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:4px">Opportunity</span>Soft nudges, praise for progress, short articles in downtime.</div>
+          </div>
+        
+      </div>
+    </div>
+
+    <h3 style="margin:56px 0 0;font-size:22px;letter-spacing:-0.02em;font-weight:600">How might we…</h3>
+    <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:18px">
+      
+        <div class="lift" style="flex:1 1 260px;background:#FFFFFF;border:1px solid #E4E3DE;border-radius:20px;padding:22px;display:flex;flex-direction:column;gap:14px">
+          <span class="mono" style="font-size:12px;color:#A3123F">HMW 1</span>
+          <p style="margin:0;font-size:17px;line-height:1.35;font-weight:600;letter-spacing:-0.01em">Help women access trusted health information in a way that feels simple and relatable?</p>
+          <p style="margin:auto 0 0;font-size:14px;line-height:1.5;color:#3F3F45;border-top:1px solid #EFEEEA;padding-top:12px">→ Bite-sized, culturally relevant articles for each life stage.</p>
+        </div>
+      
+        <div class="lift" style="flex:1 1 260px;background:#FFFFFF;border:1px solid #E4E3DE;border-radius:20px;padding:22px;display:flex;flex-direction:column;gap:14px">
+          <span class="mono" style="font-size:12px;color:#A3123F">HMW 2</span>
+          <p style="margin:0;font-size:17px;line-height:1.35;font-weight:600;letter-spacing:-0.01em">Encourage women to openly manage their reproductive health without shame?</p>
+          <p style="margin:auto 0 0;font-size:14px;line-height:1.5;color:#3F3F45;border-top:1px solid #EFEEEA;padding-top:12px">→ Personalised, discreet trackers with neutral icons and names.</p>
+        </div>
+      
+        <div class="lift" style="flex:1 1 260px;background:#FFFFFF;border:1px solid #E4E3DE;border-radius:20px;padding:22px;display:flex;flex-direction:column;gap:14px">
+          <span class="mono" style="font-size:12px;color:#A3123F">HMW 3</span>
+          <p style="margin:0;font-size:17px;line-height:1.35;font-weight:600;letter-spacing:-0.01em">Create a safe, private space to ask health questions anonymously?</p>
+          <p style="margin:auto 0 0;font-size:14px;line-height:1.5;color:#3F3F45;border-top:1px solid #EFEEEA;padding-top:12px">→ An anonymous, moderated community forum.</p>
+        </div>
+      
+        <div class="lift" style="flex:1 1 260px;background:#FFFFFF;border:1px solid #E4E3DE;border-radius:20px;padding:22px;display:flex;flex-direction:column;gap:14px">
+          <span class="mono" style="font-size:12px;color:#A3123F">HMW 4</span>
+          <p style="margin:0;font-size:17px;line-height:1.35;font-weight:600;letter-spacing:-0.01em">Connect women to affordable health professionals, even in rural areas?</p>
+          <p style="margin:auto 0 0;font-size:14px;line-height:1.5;color:#3F3F45;border-top:1px solid #EFEEEA;padding-top:12px">→ In-app bookings for virtual consults with verified doctors and midwives.</p>
+        </div>
+      
+        <div class="lift" style="flex:1 1 260px;background:#FFFFFF;border:1px solid #E4E3DE;border-radius:20px;padding:22px;display:flex;flex-direction:column;gap:14px">
+          <span class="mono" style="font-size:12px;color:#A3123F">HMW 5</span>
+          <p style="margin:0;font-size:17px;line-height:1.35;font-weight:600;letter-spacing:-0.01em">Design for urban and rural women with varying tech literacy and internet access?</p>
+          <p style="margin:auto 0 0;font-size:14px;line-height:1.5;color:#3F3F45;border-top:1px solid #EFEEEA;padding-top:12px">→ A low-data mode with minimal images and offline reading.</p>
+        </div>
+      
+        <div class="lift" style="flex:1 1 260px;background:#FFFFFF;border:1px solid #E4E3DE;border-radius:20px;padding:22px;display:flex;flex-direction:column;gap:14px">
+          <span class="mono" style="font-size:12px;color:#A3123F">HMW 6</span>
+          <p style="margin:0;font-size:17px;line-height:1.35;font-weight:600;letter-spacing:-0.01em">Support women at every stage — puberty to menopause — in one platform?</p>
+          <p style="margin:auto 0 0;font-size:14px;line-height:1.5;color:#3F3F45;border-top:1px solid #EFEEEA;padding-top:12px">→ Onboarding that tailors content and tools to age or life stage.</p>
+        </div>
+      
+    </div>
+  </div>
+</section>
+
+<!-- ============ 05 IDEATE ============ -->
+<section id="ideate" style="max-width:1320px;margin:0 auto;padding:clamp(80px,9vw,128px) clamp(20px,4vw,56px) 0;display:flex;flex-wrap:wrap;gap:24px 64px">
+  <div style="flex:1 1 220px;max-width:300px"><div class="mono" style="font-size:13px;color:#C2185B">05</div><h2 style="margin:8px 0 0;font-size:clamp(36px,3.6vw,52px);letter-spacing:-0.04em;line-height:1;font-weight:600">Ideate</h2><p style="margin:14px 0 0;font-size:15px;line-height:1.55;color:#55555B">Mapping onboarding and the information architecture.</p></div>
+  <div style="flex:999 1 640px;min-width:0;display:flex;flex-wrap:wrap;gap:16px">
+    <figure style="flex:1 1 300px;margin:0;background:#FFF5F7;border:1px solid #F5D9DF;border-radius:24px;padding:20px">
+      <img src="assets/cici_flow.webp" alt="User flow from first launch through avatar, name, life-stage and last-period questions to the home screen, with skip paths" style="width:100%;display:block;border-radius:12px">
+      <figcaption style="margin-top:14px;font-size:14px;line-height:1.5;color:#3F3F45"><strong>Onboarding flow.</strong> Every personal question can be skipped and answered later — trust before data.</figcaption>
+    </figure>
+    <div style="flex:1.3 1 360px;min-width:0;background:#0E0E10;color:#F6F6F3;border-radius:24px;padding:28px">
+      <div class="mono" style="font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#C9C9CE">Information architecture</div>
+      <div style="margin-top:20px;display:inline-block;padding:10px 22px;border-radius:999px;background:#FF5470;color:#0E0E10;font-weight:700">Cici</div>
+      <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:20px">
+        
+          <div style="flex:1 1 140px;border-top:2px solid #FF8A9A;padding-top:12px">
+            <div style="font-weight:600;font-size:16px">Home</div>
+            <ul style="margin:10px 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:6px;font-size:14px;color:#C9C9CE">
+              <li>Profile</li><li>Reminders</li><li>Health tips</li><li>Daily summary</li>
+            </ul>
+          </div>
+        
+          <div style="flex:1 1 140px;border-top:2px solid #FF8A9A;padding-top:12px">
+            <div style="font-weight:600;font-size:16px">Tracker</div>
+            <ul style="margin:10px 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:6px;font-size:14px;color:#C9C9CE">
+              <li>Period</li><li>Breastfeeding</li><li>Menopause</li>
+            </ul>
+          </div>
+        
+          <div style="flex:1 1 140px;border-top:2px solid #FF8A9A;padding-top:12px">
+            <div style="font-weight:600;font-size:16px">Cici’s nest</div>
+            <ul style="margin:10px 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:6px;font-size:14px;color:#C9C9CE">
+              <li>Notifications</li><li>Posts</li><li>Followers</li><li>Comments</li>
+            </ul>
+          </div>
+        
+          <div style="flex:1 1 140px;border-top:2px solid #FF8A9A;padding-top:12px">
+            <div style="font-weight:600;font-size:16px">Insights</div>
+            <ul style="margin:10px 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:6px;font-size:14px;color:#C9C9CE">
+              <li>Articles</li><li>Expert content</li><li>Tips</li>
+            </ul>
+          </div>
+        
+          <div style="flex:1 1 140px;border-top:2px solid #FF8A9A;padding-top:12px">
+            <div style="font-weight:600;font-size:16px">Schedule</div>
+            <ul style="margin:10px 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:6px;font-size:14px;color:#C9C9CE">
+              <li>Cici AI chat</li><li>Virtual consults</li>
+            </ul>
+          </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 06 PROTOTYPE ============ -->
+<section id="prototype" style="max-width:1320px;margin:0 auto;padding:clamp(80px,9vw,128px) clamp(20px,4vw,56px) 0;display:flex;flex-wrap:wrap;gap:24px 64px">
+  <div style="flex:1 1 220px;max-width:300px"><div class="mono" style="font-size:13px;color:#C2185B">06</div><h2 style="margin:8px 0 0;font-size:clamp(36px,3.6vw,52px);letter-spacing:-0.04em;line-height:1;font-weight:600">Prototype</h2><p style="margin:14px 0 0;font-size:15px;line-height:1.55;color:#55555B">From paper to structured screen logic.</p></div>
+  <div style="flex:999 1 640px;min-width:0;display:flex;flex-wrap:wrap;gap:16px">
+    <figure style="flex:1 1 300px;margin:0">
+      <div style="background:#FFFFFF;border:1px solid #E4E3DE;border-radius:24px;padding:16px"><img src="assets/cici_lofi.webp" alt="Hand-drawn low-fidelity wireframes of calendar, breastfeeding and menopause screens" style="width:100%;display:block;border-radius:12px"></div>
+      <figcaption style="margin-top:12px;font-size:14px;line-height:1.5;color:#3F3F45"><span class="mono" style="font-size:11px;color:#55555B">LOW FIDELITY</span><br>Paper sketches to agree on layout fast, as a team.</figcaption>
+    </figure>
+    <figure style="flex:1 1 300px;margin:0">
+      <div style="background:#FFFFFF;border:1px solid #E4E3DE;border-radius:24px;padding:16px"><img src="assets/cici_midfi.webp" alt="Mid-fidelity wireframes of articles, calendar, community posts and replies" style="width:100%;display:block;border-radius:12px"></div>
+      <figcaption style="margin-top:12px;font-size:14px;line-height:1.5;color:#3F3F45"><span class="mono" style="font-size:11px;color:#55555B">MID FIDELITY</span><br>Real content and screen logic for articles, calendar and Cici nest.</figcaption>
+    </figure>
+    <div style="flex:1 1 100%;background:#FFE4E9;border-radius:24px;padding:28px;display:flex;flex-wrap:wrap;gap:24px;align-items:center">
+      <p class="it" style="margin:0;flex:1 1 300px;font-size:clamp(24px,2.4vw,32px);line-height:1.2">A soft, feminine style in orchid pink — calm enough for sensitive topics.</p>
+      <p style="margin:0;flex:1 1 300px;font-size:15px;line-height:1.6;color:#3F3F45">The prototype simulated the full journey: tracking tools, content access and community, with a floating Cici AI button always within reach.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 07 DESIGN SYSTEM ============ -->
+<section id="system" style="max-width:1320px;margin:0 auto;padding:clamp(80px,9vw,128px) clamp(20px,4vw,56px) 0;display:flex;flex-wrap:wrap;gap:24px 64px">
+  <div style="flex:1 1 220px;max-width:300px"><div class="mono" style="font-size:13px;color:#C2185B">07</div><h2 style="margin:8px 0 0;font-size:clamp(36px,3.6vw,52px);letter-spacing:-0.04em;line-height:1;font-weight:600">Design <span class="it">system</span></h2><p style="margin:14px 0 0;font-size:15px;line-height:1.55;color:#55555B">Nunito, Solar &amp; Huge icons, and a four-step palette.</p></div>
+  <div style="flex:999 1 640px;min-width:0;display:flex;flex-direction:column;gap:16px">
+    
+      <div style="display:flex;flex-wrap:wrap;gap:10px;align-items:stretch">
+        <div style="flex:0 0 120px;padding-top:8px"><div style="font-weight:600">Primary</div><div class="mono" style="font-size:11px;color:#55555B;margin-top:4px">100 → 400</div></div>
+        
+          <div style="flex:1 1 90px;height:96px;border-radius:16px;background:#FF5470;border:1px solid rgba(14,14,16,.08);padding:12px;box-sizing:border-box;display:flex;align-items:flex-end;font-size:12px;color:#0E0E10" class="mono">100</div>
+        
+          <div style="flex:1 1 90px;height:96px;border-radius:16px;background:#FF8A9A;border:1px solid rgba(14,14,16,.08);padding:12px;box-sizing:border-box;display:flex;align-items:flex-end;font-size:12px;color:#0E0E10" class="mono">200</div>
+        
+          <div style="flex:1 1 90px;height:96px;border-radius:16px;background:#FFB3BE;border:1px solid rgba(14,14,16,.08);padding:12px;box-sizing:border-box;display:flex;align-items:flex-end;font-size:12px;color:#0E0E10" class="mono">300</div>
+        
+          <div style="flex:1 1 90px;height:96px;border-radius:16px;background:#FFDEE3;border:1px solid rgba(14,14,16,.08);padding:12px;box-sizing:border-box;display:flex;align-items:flex-end;font-size:12px;color:#0E0E10" class="mono">400</div>
+        
+      </div>
+    
+      <div style="display:flex;flex-wrap:wrap;gap:10px;align-items:stretch">
+        <div style="flex:0 0 120px;padding-top:8px"><div style="font-weight:600">Accent</div><div class="mono" style="font-size:11px;color:#55555B;margin-top:4px">100 → 400</div></div>
+        
+          <div style="flex:1 1 90px;height:96px;border-radius:16px;background:#1DE9CF;border:1px solid rgba(14,14,16,.08);padding:12px;box-sizing:border-box;display:flex;align-items:flex-end;font-size:12px;color:#0E0E10" class="mono">100</div>
+        
+          <div style="flex:1 1 90px;height:96px;border-radius:16px;background:#6AFFE6;border:1px solid rgba(14,14,16,.08);padding:12px;box-sizing:border-box;display:flex;align-items:flex-end;font-size:12px;color:#0E0E10" class="mono">200</div>
+        
+          <div style="flex:1 1 90px;height:96px;border-radius:16px;background:#A8FFF0;border:1px solid rgba(14,14,16,.08);padding:12px;box-sizing:border-box;display:flex;align-items:flex-end;font-size:12px;color:#0E0E10" class="mono">300</div>
+        
+          <div style="flex:1 1 90px;height:96px;border-radius:16px;background:#D6FFF8;border:1px solid rgba(14,14,16,.08);padding:12px;box-sizing:border-box;display:flex;align-items:flex-end;font-size:12px;color:#0E0E10" class="mono">400</div>
+        
+      </div>
+    
+      <div style="display:flex;flex-wrap:wrap;gap:10px;align-items:stretch">
+        <div style="flex:0 0 120px;padding-top:8px"><div style="font-weight:600">Neutral</div><div class="mono" style="font-size:11px;color:#55555B;margin-top:4px">100 → 400</div></div>
+        
+          <div style="flex:1 1 90px;height:96px;border-radius:16px;background:#FFFFFF;border:1px solid rgba(14,14,16,.08);padding:12px;box-sizing:border-box;display:flex;align-items:flex-end;font-size:12px;color:#0E0E10" class="mono">100</div>
+        
+          <div style="flex:1 1 90px;height:96px;border-radius:16px;background:#C4C4C4;border:1px solid rgba(14,14,16,.08);padding:12px;box-sizing:border-box;display:flex;align-items:flex-end;font-size:12px;color:#0E0E10" class="mono">200</div>
+        
+          <div style="flex:1 1 90px;height:96px;border-radius:16px;background:#383838;border:1px solid rgba(14,14,16,.08);padding:12px;box-sizing:border-box;display:flex;align-items:flex-end;font-size:12px;color:#FFFFFF" class="mono">300</div>
+        
+          <div style="flex:1 1 90px;height:96px;border-radius:16px;background:#111111;border:1px solid rgba(14,14,16,.08);padding:12px;box-sizing:border-box;display:flex;align-items:flex-end;font-size:12px;color:#FFFFFF" class="mono">400</div>
+        
+      </div>
+    
+    <div style="margin-top:16px;background:#FFFFFF;border:1px solid #E4E3DE;border-radius:24px;padding:28px;display:flex;flex-wrap:wrap;gap:28px;align-items:flex-end;font-family:'Nunito',system-ui,sans-serif">
+      <div style="flex:1 1 200px"><div class="mono" style="font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#55555B">Typeface · Nunito</div><div style="font-size:96px;font-weight:700;line-height:1;margin-top:12px">Aa</div></div>
+      <div style="flex:2 1 320px;display:flex;flex-direction:column;gap:10px">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid #EFEEEA;padding-bottom:8px"><span style="font-size:24px;font-weight:700">Heading 1</span><span class="mono" style="font-size:12px;color:#55555B">24</span></div>
+        <div style="display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid #EFEEEA;padding-bottom:8px"><span style="font-size:22px;font-weight:700">Heading 2</span><span class="mono" style="font-size:12px;color:#55555B">22</span></div>
+        <div style="display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid #EFEEEA;padding-bottom:8px"><span style="font-size:14px">Body 1 — tracking your cycle, gently</span><span class="mono" style="font-size:12px;color:#55555B">14</span></div>
+        <div style="display:flex;justify-content:space-between;align-items:baseline"><span style="font-size:12px">Body 2 — labels and supporting text</span><span class="mono" style="font-size:12px;color:#55555B">12 · 10 · 8</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 08 OUTCOME ============ -->
+<section id="outcome" style="max-width:1320px;margin:0 auto;padding:clamp(80px,9vw,128px) clamp(20px,4vw,56px) 0;display:flex;flex-wrap:wrap;gap:24px 64px">
+  <div style="flex:1 1 220px;max-width:300px"><div class="mono" style="font-size:13px;color:#C2185B">08</div><h2 style="margin:8px 0 0;font-size:clamp(36px,3.6vw,52px);letter-spacing:-0.04em;line-height:1;font-weight:600">Outcome &amp; <span class="it">reflection</span></h2></div>
+  <div style="flex:999 1 640px;min-width:0">
+    <p style="margin:0;font-size:clamp(20px,1.9vw,26px);line-height:1.45;letter-spacing:-0.01em;color:#2A2A2F">In five weeks the team took Cici from interviews to a 50+ screen prototype covering tracking, Cici nest, insights, scheduling and virtual consults.</p>
+    <div style="display:flex;flex-wrap:wrap;gap:16px;margin-top:32px">
+      <div style="flex:1 1 260px;background:#FFFFFF;border:1px solid #E4E3DE;border-radius:20px;padding:24px"><div class="mono" style="font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#55555B">What testing showed</div><p style="margin:12px 0 0;font-size:16px;line-height:1.55">[Findings from the testing stage and what the team changed.]</p></div>
+      <div style="flex:1 1 260px;background:#FFFFFF;border:1px solid #E4E3DE;border-radius:20px;padding:24px"><div class="mono" style="font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#55555B">Leading the team</div><p style="margin:12px 0 0;font-size:16px;line-height:1.55">[What Victoria learned about running research and decisions across a five-person team.]</p></div>
+      <div style="flex:1 1 260px;background:#FFFFFF;border:1px solid #E4E3DE;border-radius:20px;padding:24px"><div class="mono" style="font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#55555B">Next</div><p style="margin:12px 0 0;font-size:16px;line-height:1.55">[What she would build or test next — e.g. the low-data mode with rural users.]</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ NEXT PROJECT ============ -->
+<section style="max-width:1320px;margin:0 auto;padding:clamp(96px,10vw,140px) clamp(20px,4vw,56px)">
+  <a href="quickpay.html" class="lift" style="display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between;text-decoration:none;background:#38074D;color:#FFFFFF;border-radius:clamp(24px,3vw,40px);padding:clamp(28px,4vw,56px);overflow:hidden">
+    <div style="flex:1 1 320px">
+      <div class="mono" style="font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#E3C8F2">Next case study — 02</div>
+      <div style="font-size:clamp(56px,8vw,120px);font-weight:800;letter-spacing:-0.06em;line-height:.9;margin-top:16px">QuickPay<span style="color:#D387F4">.</span></div>
+      <p style="margin:16px 0 0;font-size:18px;line-height:1.5;color:#E8DCEF;max-width:420px">Mobile payments, end-to-end — a wallet that makes moving money feel like one quick tap.</p>
+    </div>
+    <img src="assets/qp_hero.webp" alt="" style="flex:0 1 360px;width:360px;max-width:100%;display:block;border-radius:16px">
+  </a>
+  <div class="mono" style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;margin-top:40px;font-size:12px;color:#55555B">
+    <span>© 2026 Victoria — Designed with care</span>
+    <a href="index.html" class="lnk">← Back to all work</a>
+  </div>
+</section>
+
+</div>
+<script src="site.js" defer></script>
+</body>
+</html>

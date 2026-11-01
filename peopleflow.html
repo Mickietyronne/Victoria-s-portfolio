@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>PeopleFlow — Case study · Victoria</title>
+<meta name="description" content="PeopleFlow: an HR platform for hiring, onboarding, leave and records, with separate workspaces for HR and employees.">
+<meta property="og:title" content="PeopleFlow — Case study · Victoria">
+<meta property="og:description" content="PeopleFlow: an HR platform for hiring, onboarding, leave and records, with separate workspaces for HR and employees.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#FFFFFF">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap">
+<style>
+body{margin:0;background:#FFFFFF}
+a{color:inherit}a:hover{color:inherit}
+.it{font-family:inherit;font-style:normal}
+.rv{opacity:0;transform:translateY(28px);filter:blur(8px);transition:opacity .9s ease,transform 1s cubic-bezier(.22,1,.36,1),filter .9s ease}
+.rv.in{opacity:1;transform:none;filter:blur(0)}
+.mono{font-family:'JetBrains Mono',ui-monospace,Menlo,monospace}
+.lnk{text-decoration:none;transition:opacity .2s}.lnk:hover{opacity:.6}
+.lift{transition:transform .35s cubic-bezier(.2,.7,.2,1)}.lift:hover{transform:translateY(-4px)}
+.scrollx{overflow-x:auto;position:relative}
+.ftab{background:transparent;color:#3F3F45;transition:background-color .2s,color .2s}
+.ftab[aria-pressed="true"]{background:#0E0E10;color:#FFFFFF}
+.pfthumbs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:16px}
+@media (max-width:599px){.pfthumbs{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.pfthumb{all:unset;box-sizing:border-box;display:block;cursor:pointer;border-radius:10px}
+.pfthumb:focus-visible{outline:3px solid #2F45FF;outline-offset:3px}
+.pfthumb-img{display:block;aspect-ratio:1400/900;overflow:hidden;border-radius:8px;background:#FFFFFF;border:2px solid transparent;opacity:.62;transition:opacity .25s,border-color .25s,transform .25s}
+.pfthumb:hover .pfthumb-img{opacity:1;transform:translateY(-2px)}
+.pfthumb[aria-pressed="true"] .pfthumb-img{opacity:1;border-color:#0E0E10}
+.pfsw.dark .pfthumb[aria-pressed="true"] .pfthumb-img{border-color:#ADE163}
+.pfthumb-label{display:block;margin-top:8px;font-size:13px;font-weight:600;color:#3F3F45}
+.pfsw.dark .pfthumb-label{color:#C7CFC4}
+.pfthumb[aria-pressed="true"] .pfthumb-label{color:#0E0E10}
+.pfsw.dark .pfthumb[aria-pressed="true"] .pfthumb-label{color:#ADE163}
+.pfsw.dark .pftab{color:#C7CFC4}
+.pfsw.dark .pftab[aria-pressed="true"]{background:#ADE163;color:#17291D;border-color:#ADE163 !important}
+@media (prefers-reduced-motion:reduce){.pfsw-img{transition:none !important}}
+</style>
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<div style="font-family:'Inter Tight',system-ui,sans-serif;color:#0E0E10;background:#FFFFFF;overflow:hidden">
+
+<!-- ============ TOP BAR (shared case-study template) ============ -->
+<header style="max-width:1320px;margin:0 auto;padding:24px clamp(20px,4vw,56px);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px">
+  <a href="index.html" class="lnk" style="display:inline-flex;align-items:center;gap:10px;min-height:44px;padding:0 18px 0 12px;border-radius:999px;border:1px solid #D7D6D0;background:#FFFFFF;font-weight:500;font-size:14px">
+    <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M19 12H5M11 6l-6 6 6 6"></path></svg>
+    Back to all work
+  </a>
+  <a href="index.html" class="lnk" style="display:flex;align-items:center;gap:10px;font-weight:700;font-size:18px">
+    <span class="it" style="width:40px;height:40px;border-radius:50%;background:#0E0E10;color:#F6F6F3;display:flex;align-items:center;justify-content:center;font-size:20px">V</span>
+    <span>Victoria<span style="color:#5E8F1F">.</span></span>
+  </a>
+  <a href="cici.html" class="lnk" style="display:inline-flex;align-items:center;gap:10px;min-height:44px;padding:0 12px 0 18px;border-radius:999px;background:#0E0E10;color:#FFFFFF;font-weight:600;font-size:14px">
+    Next: Cici
+    <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+  </a>
+</header>
+
+<!-- ============ HERO ============ -->
+<section style="max-width:1320px;margin:0 auto;padding:clamp(32px,5vw,72px) clamp(20px,4vw,56px) 0">
+  <p class="mono" style="margin:0;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:#55555B">Case study 04 — HR &amp; people operations · Web app</p>
+  <div style="display:flex;flex-wrap:wrap;gap:24px 64px;align-items:flex-end;margin-top:24px">
+    <h1 style="margin:0;flex:1 1 560px;font-size:clamp(68px,11.5vw,180px);line-height:.84;letter-spacing:-0.06em;font-weight:800">PeopleFlow<span style="color:#ADE163;-webkit-text-stroke:2px #5E8F1F">.</span></h1>
+    <p style="margin:0;flex:1 1 360px;font-size:clamp(22px,2.4vw,32px);line-height:1.25;letter-spacing:-0.02em;font-weight:500">Everything a growing team needs — <span style="color:#8A8A90">from hire to handover, in one calm workspace for HR and every employee.</span></p>
+  </div>
+  <dl style="margin:56px 0 0;display:flex;flex-wrap:wrap;border-top:1px solid #0E0E10">
+    <div style="flex:1 1 180px;padding:20px 20px 20px 0"><dt class="mono" style="font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#55555B">Role</dt><dd style="margin:8px 0 0;font-size:17px;font-weight:600">UX Designer</dd></div>
+    <div style="flex:1 1 180px;padding:20px 20px 20px 0"><dt class="mono" style="font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#55555B">Timeline</dt><dd style="margin:8px 0 0;font-size:17px;font-weight:600">[Timeline]</dd></div>
+    <div style="flex:1 1 180px;padding:20px 20px 20px 0"><dt class="mono" style="font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#55555B">Platform</dt><dd style="margin:8px 0 0;font-size:17px;font-weight:600">Web app · desktop</dd></div>
+    <div style="flex:1 1 180px;padding:20px 20px 20px 0"><dt class="mono" style="font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#55555B">Users</dt><dd style="margin:8px 0 0;font-size:17px;font-weight:600">HR admins &amp; employees</dd></div>
+    <div style="flex:1 1 180px;padding:20px 0"><dt class="mono" style="font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#55555B">Scope</dt><dd style="margin:8px 0 0;font-size:17px;font-weight:600">31 screens · 2 workspaces</dd></div>
+  </dl>
+  <div style="margin-top:24px;border-radius:clamp(24px,3vw,40px);background:#17291D;overflow:hidden">
+    <img src="assets/pf_hero.webp" alt="The PeopleFlow HR dashboard for the organisation owner, overlapped by the employee dashboard" style="width:100%;display:block">
+  </div>
+</section>
+
+<!-- ============ AT A GLANCE ============ -->
+<section style="max-width:1320px;margin:0 auto;padding:56px clamp(20px,4vw,56px) 0">
+  <div style="display:flex;flex-wrap:wrap;gap:24px">
+    <div style="flex:1 1 220px;border-top:1px solid #0E0E10;padding-top:18px"><div style="font-size:clamp(44px,4.6vw,64px);font-weight:600;letter-spacing:-0.04em;line-height:1">31</div><p style="margin:10px 0 0;color:#55555B;font-size:15px">Screens designed, from sign-up to settings</p></div>
+    <div style="flex:1 1 220px;border-top:1px solid #0E0E10;padding-top:18px"><div style="font-size:clamp(44px,4.6vw,64px);font-weight:600;letter-spacing:-0.04em;line-height:1">2</div><p style="margin:10px 0 0;color:#55555B;font-size:15px">Role-based workspaces: HR and employee</p></div>
+    <div style="flex:1 1 220px;border-top:1px solid #0E0E10;padding-top:18px"><div style="font-size:clamp(44px,4.6vw,64px);font-weight:600;letter-spacing:-0.04em;line-height:1">6</div><p style="margin:10px 0 0;color:#55555B;font-size:15px">Stages in the hiring pipeline</p></div>
+    <div style="flex:1 1 220px;border-top:1px solid #0E0E10;padding-top:18px"><div style="font-size:clamp(44px,4.6vw,64px);font-weight:600;letter-spacing:-0.04em;line-height:1">9</div><p style="margin:10px 0 0;color:#55555B;font-size:15px">Admin modules in one sidebar</p></div>
+  </div>
+  <nav aria-label="Chapters" style="margin-top:56px;display:flex;flex-wrap:wrap;gap:8px">
+    <a href="#overview" class="lnk" style="padding:10px 16px;border-radius:999px;border:1px solid #D7D6D0;background:#FFFFFF;font-size:14px">01 Overview</a>
+    <a href="#workspaces" class="lnk" style="padding:10px 16px;border-radius:999px;border:1px solid #D7D6D0;background:#FFFFFF;font-size:14px">02 Two workspaces</a>
+    <a href="#lifecycle" class="lnk" style="padding:10px 16px;border-radius:999px;border:1px solid #D7D6D0;background:#FFFFFF;font-size:14px">03 Lifecycle</a>
+    <a href="#hiring" class="lnk" style="padding:10px 16px;border-radius:999px;border:1px solid #D7D6D0;background:#FFFFFF;font-size:14px">04 Hiring</a>
+    <a href="#people" class="lnk" style="padding:10px 16px;border-radius:999px;border:1px solid #D7D6D0;background:#FFFFFF;font-size:14px">05 People &amp; teams</a>
+    <a href="#onboarding" class="lnk" style="padding:10px 16px;border-radius:999px;border:1px solid #D7D6D0;background:#FFFFFF;font-size:14px">06 Onboarding</a>
+    <a href="#leave" class="lnk" style="padding:10px 16px;border-radius:999px;border:1px solid #D7D6D0;background:#FFFFFF;font-size:14px">07 Leave</a>
+    <a href="#control" class="lnk" style="padding:10px 16px;border-radius:999px;border:1px solid #D7D6D0;background:#FFFFFF;font-size:14px">08 Trust &amp; control</a>
+    <a href="#system" class="lnk" style="padding:10px 16px;border-radius:999px;border:1px solid #D7D6D0;background:#FFFFFF;font-size:14px">09 Design system</a>
+    <a href="#outcome" class="lnk" style="padding:10px 16px;border-radius:999px;border:1px solid #D7D6D0;background:#FFFFFF;font-size:14px">10 Outcome</a>
+  </nav>
+</section>
+<section id="overview" style="max-width:1320px;margin:0 auto;padding:clamp(80px,9vw,128px) clamp(20px,4vw,56px) 0;display:flex;flex-wrap:wrap;gap:24px 64px">
+  <div style="flex:1 1 220px;max-width:300px"><div class="mono" style="font-size:13px;color:#5E8F1F">01</div><h2 style="margin:8px 0 0;font-size:clamp(36px,3.6vw,52px);letter-spacing:-0.04em;line-height:1;font-weight:600">Overview</h2></div>
+  <div style="flex:999 1 640px;min-width:0">
+    <h3 style="margin:0;font-size:clamp(26px,2.6vw,38px);letter-spacing:-0.03em;line-height:1.12;font-weight:600">HR work lives in too many places. <span style="color:#8A8A90">PeopleFlow brings it into one.</span></h3>
+    <p style="margin:16px 0 0;font-size:18px;line-height:1.6;color:#3F3F45;max-width:720px">For a growing company, people operations is usually spread across spreadsheets, email threads and chat: who’s on leave, which documents are missing, where a candidate is in the process. PeopleFlow gives HR one place to hire, onboard and manage the team — and gives every employee a clear, personal space for their own leave, tasks and documents.</p>
+    <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:32px"><div class="lift" style="flex:1 1 220px;background:#FFFFFF;border:1px solid #E4E3DE;border-radius:20px;padding:22px"><div style="font-size:18px;font-weight:600;letter-spacing:-0.01em">Hiring</div><p style="margin:8px 0 0;font-size:15px;line-height:1.55;color:#3F3F45">Post vacancies, collect applications and move candidates through a visual pipeline.</p></div><div class="lift" style="flex:1 1 220px;background:#FFFFFF;border:1px solid #E4E3DE;border-radius:20px;padding:22px"><div style="font-size:18px;font-weight:600;letter-spacing:-0.01em">Onboarding</div><p style="margin:8px 0 0;font-size:15px;line-height:1.55;color:#3F3F45">Checklists HR sets up once and every new hire works through.</p></div><div class="lift" style="flex:1 1 220px;background:#FFFFFF;border:1px solid #E4E3DE;border-radius:20px;padding:22px"><div style="font-size:18px;font-weight:600;letter-spacing:-0.01em">People records</div><p style="margin:8px 0 0;font-size:15px;line-height:1.55;color:#3F3F45">Profiles, documents, departments and status in one directory.</p></div><div class="lift" style="flex:1 1 220px;background:#FFFFFF;border:1px solid #E4E3DE;border-radius:20px;padding:22px"><div style="font-size:18px;font-weight:600;letter-spacing:-0.01em">Leave</div><p style="margin:8px 0 0;font-size:15px;line-height:1.55;color:#3F3F45">Balances, requests and approvals, with the cost shown before anyone submits.</p></div><div class="lift" style="flex:1 1 220px;background:#FFFFFF;border:1px solid #E4E3DE;border-radius:20px;padding:22px"><div style="font-size:18px;font-weight:600;letter-spacing:-0.01em">Announcements</div><p style="margin:8px 0 0;font-size:15px;line-height:1.55;color:#3F3F45">Company news that lands in every employee’s workspace.</p></div><div class="lift" style="flex:1 1 220px;background:#FFFFFF;border:1px solid #E4E3DE;border-radius:20px;padding:22px"><div style="font-size:18px;font-weight:600;letter-spacing:-0.01em">Control</div><p style="margin:8px 0 0;font-size:15px;line-height:1.55;color:#3F3F45">An activity log of every action, plus roles, notifications and security.</p></div></div>
+
+  </div>
+</section>
+<section id="workspaces" style="max-width:1320px;margin:0 auto;padding:clamp(80px,9vw,128px) clamp(20px,4vw,56px) 0;display:flex;flex-wrap:wrap;gap:24px 64px">
+  <div style="flex:1 1 220px;max-width:300px"><div class="mono" style="font-size:13px;color:#5E8F1F">02</div><h2 style="margin:8px 0 0;font-size:clamp(36px,3.6vw,52px);letter-spacing:-0.04em;line-height:1;font-weight:600">Two <span class="it" style="color:#8A8A90">workspaces</span></h2><p style="margin:14px 0 0;font-size:15px;line-height:1.55;color:#55555B">One product, two very different people using it.</p></div>
+  <div style="flex:999 1 640px;min-width:0">
+    <h3 style="margin:0;font-size:clamp(26px,2.6vw,38px);letter-spacing:-0.03em;line-height:1.12;font-weight:600">Same product. <span style="color:#8A8A90">Two clear points of view.</span></h3>
+    <p style="margin:16px 0 0;font-size:18px;line-height:1.6;color:#3F3F45;max-width:720px">HR and employees need different things from the same data. So PeopleFlow has two workspaces built from one set of components — here they are side by side.</p>
+    <figure style="margin:36px 0 0;background:#F4F4F2;border-radius:clamp(20px,2.4vw,32px);padding:clamp(16px,2.4vw,32px)">
+      <div class="scrollx"><div style="min-width:640px">
+        <img src="assets/pf_roles_pair.webp" alt="The HR owner dashboard next to the employee dashboard" style="width:100%;display:block">
+        <figcaption style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:2.38%;margin-top:16px">
+          <div><div style="font-weight:600;font-size:15px">HR workspace · Grace</div><div style="margin-top:4px;font-size:14px;line-height:1.5;color:#55555B">Grace lands on what needs her attention: headcount, active staff, open vacancies, pending leave and who’s out today — with one-click actions to add an employee, post a job, review applications or send an announcement.</div></div>
+          <div><div style="font-weight:600;font-size:15px">Employee workspace · Daniel</div><div style="margin-top:4px;font-size:14px;line-height:1.5;color:#55555B">Daniel lands on his own world: leave left, pending requests, onboarding progress and documents due, plus the latest company announcements. Nothing about anyone else.</div></div>
+        </figcaption>
+      </div></div>
+    </figure>
+    <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:16px">
+      <div style="flex:1 1 240px;border-radius:20px;padding:22px;background:#17291D;color:#F2F5EE"><div class="mono" style="font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#ADE163">Colour as a cue</div><p style="margin:10px 0 0;font-size:15px;line-height:1.55">Admins work on a dark forest sidebar; employees on a light mint one. You always know which side of the product you’re on.</p></div>
+      <div style="flex:1 1 240px;border-radius:20px;padding:22px;background:#E9F0DE"><div class="mono" style="font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#3F6A12">One component set</div><p style="margin:10px 0 0;font-size:15px;line-height:1.55;color:#24331C">Both workspaces share the same cards, buttons, tables and status pills, so the system stays small and consistent.</p></div>
+      <div style="flex:1 1 240px;border-radius:20px;padding:22px;background:#FFFFFF;border:1px solid #E4E3DE"><div class="mono" style="font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#5E8F1F">Only what each role needs</div><p style="margin:10px 0 0;font-size:15px;line-height:1.55;color:#3F3F45">Employees never see billing, the audit log or anyone else’s records — their sidebar has six items, not ten.</p></div>
+    </div>
+
+  </div>
+</section>
+<section id="lifecycle" style="max-width:1320px;margin:0 auto;padding:clamp(80px,9vw,128px) clamp(20px,4vw,56px) 0;display:flex;flex-wrap:wrap;gap:24px 64px">
+  <div style="flex:1 1 220px;max-width:300px"><div class="mono" style="font-size:13px;color:#5E8F1F">03</div><h2 style="margin:8px 0 0;font-size:clamp(36px,3.6vw,52px);letter-spacing:-0.04em;line-height:1;font-weight:600">The <span class="it" style="color:#8A8A90">lifecycle</span></h2></div>
+  <div style="flex:999 1 640px;min-width:0">
+    <h3 style="margin:0;font-size:clamp(26px,2.6vw,38px);letter-spacing:-0.03em;line-height:1.12;font-weight:600">From hire to handover. <span style="color:#8A8A90">Five stages, one flow.</span></h3>
+    <p style="margin:16px 0 0;font-size:18px;line-height:1.6;color:#3F3F45;max-width:720px">The product follows a person through the company — and each stage hands off cleanly to the next.</p>
+    <ol style="margin:32px 0 0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:10px">
+      <li style="flex:1 1 140px;position:relative;background:#17291D;border-radius:20px;padding:22px;color:#F2F5EE">
+        <span class="mono" style="font-size:12px;color:#ADE163">01</span>
+        <div style="font-size:24px;font-weight:600;letter-spacing:-0.02em;margin-top:18px">Attract</div>
+        <div style="font-size:14px;font-weight:600;margin-top:6px;color:#ADE163">Jobs &amp; careers page</div>
+        <p style="margin:8px 0 0;font-size:14px;line-height:1.5;color:#C7CFC4">Vacancies drafted, published and closed in one list.</p>
+      </li>
+      <li style="flex:1 1 140px;position:relative;background:#E9F0DE;border-radius:20px;padding:22px;color:#17291D">
+        <span class="mono" style="font-size:12px;color:#3F6A12">02</span>
+        <div style="font-size:24px;font-weight:600;letter-spacing:-0.02em;margin-top:18px">Hire</div>
+        <div style="font-size:14px;font-weight:600;margin-top:6px;color:#3F6A12">Applications</div>
+        <p style="margin:8px 0 0;font-size:14px;line-height:1.5;color:#3E4A36">A six-stage pipeline with notes, answers and CVs.</p>
+      </li>
+      <li style="flex:1 1 140px;position:relative;background:#17291D;border-radius:20px;padding:22px;color:#F2F5EE">
+        <span class="mono" style="font-size:12px;color:#ADE163">03</span>
+        <div style="font-size:24px;font-weight:600;letter-spacing:-0.02em;margin-top:18px">Onboard</div>
+        <div style="font-size:14px;font-weight:600;margin-top:6px;color:#ADE163">Checklists</div>
+        <p style="margin:8px 0 0;font-size:14px;line-height:1.5;color:#C7CFC4">Tasks the new hire completes, tracked by HR.</p>
+      </li>
+      <li style="flex:1 1 140px;position:relative;background:#E9F0DE;border-radius:20px;padding:22px;color:#17291D">
+        <span class="mono" style="font-size:12px;color:#3F6A12">04</span>
+        <div style="font-size:24px;font-weight:600;letter-spacing:-0.02em;margin-top:18px">Manage</div>
+        <div style="font-size:14px;font-weight:600;margin-top:6px;color:#3F6A12">People, teams &amp; leave</div>
+        <p style="margin:8px 0 0;font-size:14px;line-height:1.5;color:#3E4A36">Records, departments, balances and approvals.</p>
+      </li>
+      <li style="flex:1 1 140px;position:relative;background:#17291D;border-radius:20px;padding:22px;color:#F2F5EE">
+        <span class="mono" style="font-size:12px;color:#ADE163">05</span>
+        <div style="font-size:24px;font-weight:600;letter-spacing:-0.02em;margin-top:18px">Protect</div>
+        <div style="font-size:14px;font-weight:600;margin-top:6px;color:#ADE163">Log, roles &amp; security</div>
+        <p style="margin:8px 0 0;font-size:14px;line-height:1.5;color:#C7CFC4">Every action recorded; access kept in check.</p>
+      </li>
+    </ol>
+
+  </div>
+</section>
+<section id="hiring" style="max-width:1320px;margin:0 auto;padding:clamp(80px,9vw,128px) clamp(20px,4vw,56px) 0;display:flex;flex-wrap:wrap;gap:24px 64px">
+  <div style="flex:1 1 220px;max-width:300px"><div class="mono" style="font-size:13px;color:#5E8F1F">04</div><h2 style="margin:8px 0 0;font-size:clamp(36px,3.6vw,52px);letter-spacing:-0.04em;line-height:1;font-weight:600">Hiring</h2></div>
+  <div style="flex:999 1 640px;min-width:0">
+    <h3 style="margin:0;font-size:clamp(26px,2.6vw,38px);letter-spacing:-0.03em;line-height:1.12;font-weight:600">From vacancy to hire, <span style="color:#8A8A90">without a spreadsheet.</span></h3>
+    <p style="margin:16px 0 0;font-size:18px;line-height:1.6;color:#3F3F45;max-width:720px">Hiring starts with a vacancy and ends with a new employee record — and every step between lives in PeopleFlow.</p>
+    <figure style="margin:36px 0 0;background:#F4F4F2;border-radius:clamp(20px,2.4vw,32px);padding:clamp(16px,2.4vw,32px)">
+      <div class="scrollx"><div style="min-width:640px">
+        <img src="assets/pf_jobs.webp" alt="Jobs list and create vacancy form" style="width:100%;display:block">
+        <figcaption style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:2.38%;margin-top:16px">
+          <div><div style="font-weight:600;font-size:15px">Jobs</div><div style="margin-top:4px;font-size:14px;line-height:1.5;color:#55555B">Every vacancy with status, location, deadline and applicant count.</div></div>
+          <div><div style="font-weight:600;font-size:15px">Create vacancy</div><div style="margin-top:4px;font-size:14px;line-height:1.5;color:#55555B">Basics, description and custom application questions — saved as a draft or published.</div></div>
+        </figcaption>
+      </div></div>
+    </figure>
+    <figure style="margin:36px 0 0;background:#F4F4F2;border-radius:clamp(20px,2.4vw,32px);padding:clamp(16px,2.4vw,32px)">
+      <div class="scrollx"><div style="min-width:640px">
+        <img src="assets/pf_apps_pair.webp" alt="Applications as a pipeline board and as a list" style="width:100%;display:block">
+        <figcaption style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:2.38%;margin-top:16px">
+          <div><div style="font-weight:600;font-size:15px">Pipeline board</div><div style="margin-top:4px;font-size:14px;line-height:1.5;color:#55555B">Candidates move across six columns — New, Screening, Interview, Assessment, Offer, Hired — so HR sees where every hire stands at a glance.</div></div>
+          <div><div style="font-weight:600;font-size:15px">List view</div><div style="margin-top:4px;font-size:14px;line-height:1.5;color:#55555B">The same candidates as a table, with vacancy, stage, applied date and a CV link — better for scanning and sorting large pipelines.</div></div>
+        </figcaption>
+      </div></div>
+    </figure>
+    <div style="margin-top:36px;display:flex;flex-wrap:wrap;gap:10px;align-items:center"><span style="display:inline-flex;align-items:center;gap:8px"><span style="display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border-radius:999px;background:#ADE163;color:#17291D;font-size:14px;font-weight:600"><span style="width:20px;height:20px;border-radius:50%;background:#17291D;color:#ADE163;display:inline-flex;align-items:center;justify-content:center;font-size:11px">✓</span>New</span><span aria-hidden="true" style="color:#B4B4BA">→</span></span><span style="display:inline-flex;align-items:center;gap:8px"><span style="display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border-radius:999px;background:#ADE163;color:#17291D;font-size:14px;font-weight:600"><span style="width:20px;height:20px;border-radius:50%;background:#17291D;color:#ADE163;display:inline-flex;align-items:center;justify-content:center;font-size:11px">✓</span>Screening</span><span aria-hidden="true" style="color:#B4B4BA">→</span></span><span style="display:inline-flex;align-items:center;gap:8px"><span style="display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border-radius:999px;background:#FFFFFF;color:#3F3F45;font-size:14px;font-weight:600"><span style="width:20px;height:20px;border-radius:50%;background:#E4E3DE;color:#3F3F45;display:inline-flex;align-items:center;justify-content:center;font-size:11px">3</span>Interview</span><span aria-hidden="true" style="color:#B4B4BA">→</span></span><span style="display:inline-flex;align-items:center;gap:8px"><span style="display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border-radius:999px;background:#FFFFFF;color:#3F3F45;font-size:14px;font-weight:600"><span style="width:20px;height:20px;border-radius:50%;background:#E4E3DE;color:#3F3F45;display:inline-flex;align-items:center;justify-content:center;font-size:11px">4</span>Assessment</span><span aria-hidden="true" style="color:#B4B4BA">→</span></span><span style="display:inline-flex;align-items:center;gap:8px"><span style="display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border-radius:999px;background:#FFFFFF;color:#3F3F45;font-size:14px;font-weight:600"><span style="width:20px;height:20px;border-radius:50%;background:#E4E3DE;color:#3F3F45;display:inline-flex;align-items:center;justify-content:center;font-size:11px">5</span>Offer</span><span aria-hidden="true" style="color:#B4B4BA">→</span></span><span style="display:inline-flex;align-items:center;gap:8px"><span style="display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border-radius:999px;background:#FFFFFF;color:#3F3F45;font-size:14px;font-weight:600"><span style="width:20px;height:20px;border-radius:50%;background:#E4E3DE;color:#3F3F45;display:inline-flex;align-items:center;justify-content:center;font-size:11px">6</span>Hired</span></span></div>
+    <div style="margin-top:20px;display:flex;flex-wrap:wrap;gap:24px;align-items:flex-start">
+      <figure style="flex:1.6 1 460px;min-width:0;margin:0;background:#F4F4F2;border-radius:clamp(20px,2.4vw,32px);padding:clamp(14px,2vw,26px)"><img src="assets/pf_applicant.webp" alt="Applicant detail for Blessing Ade, in the Screening stage, with application answers and internal notes" style="width:100%;display:block"></figure>
+      <ol style="flex:1 1 260px;margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:14px"><li style="display:flex;gap:14px"><span class="mono" style="flex:0 0 28px;height:28px;border-radius:50%;background:#17291D;color:#ADE163;display:flex;align-items:center;justify-content:center;font-size:12px">1</span><span><strong style="display:block;font-size:16px">Stage stepper</strong><span style="font-size:14px;line-height:1.5;color:#55555B">Where the candidate is, and how far they’ve come.</span></span></li><li style="display:flex;gap:14px"><span class="mono" style="flex:0 0 28px;height:28px;border-radius:50%;background:#17291D;color:#ADE163;display:flex;align-items:center;justify-content:center;font-size:12px">2</span><span><strong style="display:block;font-size:16px">Move stage</strong><span style="font-size:14px;line-height:1.5;color:#55555B">One control to push them forward — no drag required.</span></span></li><li style="display:flex;gap:14px"><span class="mono" style="flex:0 0 28px;height:28px;border-radius:50%;background:#17291D;color:#ADE163;display:flex;align-items:center;justify-content:center;font-size:12px">3</span><span><strong style="display:block;font-size:16px">Application answers</strong><span style="font-size:14px;line-height:1.5;color:#55555B">Custom questions from the vacancy, side by side with contact details.</span></span></li><li style="display:flex;gap:14px"><span class="mono" style="flex:0 0 28px;height:28px;border-radius:50%;background:#17291D;color:#ADE163;display:flex;align-items:center;justify-content:center;font-size:12px">4</span><span><strong style="display:block;font-size:16px">Internal notes</strong><span style="font-size:14px;line-height:1.5;color:#55555B">The team’s comments, timestamped, right next to the decision.</span></span></li><li style="display:flex;gap:14px"><span class="mono" style="flex:0 0 28px;height:28px;border-radius:50%;background:#17291D;color:#ADE163;display:flex;align-items:center;justify-content:center;font-size:12px">5</span><span><strong style="display:block;font-size:16px">Decide</strong><span style="font-size:14px;line-height:1.5;color:#55555B">Reject or mark as hired, with the CV a click away.</span></span></li></ol>
+    </div>
+
+  </div>
+</section>
+<section id="people" style="max-width:1320px;margin:0 auto;padding:clamp(80px,9vw,128px) clamp(20px,4vw,56px) 0;display:flex;flex-wrap:wrap;gap:24px 64px">
+  <div style="flex:1 1 220px;max-width:300px"><div class="mono" style="font-size:13px;color:#5E8F1F">05</div><h2 style="margin:8px 0 0;font-size:clamp(36px,3.6vw,52px);letter-spacing:-0.04em;line-height:1;font-weight:600">People <span class="it" style="color:#8A8A90">&amp; teams</span></h2></div>
+  <div style="flex:999 1 640px;min-width:0">
+    <h3 style="margin:0;font-size:clamp(26px,2.6vw,38px);letter-spacing:-0.03em;line-height:1.12;font-weight:600">One directory, <span style="color:#8A8A90">every record complete.</span></h3>
+    <p style="margin:16px 0 0;font-size:18px;line-height:1.6;color:#3F3F45;max-width:720px">Each employee is a single, complete record — and every team has a home.</p>
+    <figure style="margin:36px 0 0;background:#F4F4F2;border-radius:clamp(20px,2.4vw,32px);padding:clamp(16px,2.4vw,32px)">
+      <div class="scrollx"><div style="min-width:640px">
+        <img src="assets/pf_people.webp" alt="Employees directory and add employee form" style="width:100%;display:block">
+        <figcaption style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:2.38%;margin-top:16px">
+          <div><div style="font-weight:600;font-size:15px">Employees</div><div style="margin-top:4px;font-size:14px;line-height:1.5;color:#55555B">Search and filter by department, status and arrangement; status pills read at a glance.</div></div>
+          <div><div style="font-weight:600;font-size:15px">Add employee</div><div style="margin-top:4px;font-size:14px;line-height:1.5;color:#55555B">Personal details, role, placement and emergency contact — saved and invited in one step.</div></div>
+        </figcaption>
+      </div></div>
+    </figure>
+    <div class="pfsw" style="margin-top:36px;background:#F4F4F2;border-radius:clamp(20px,2.4vw,32px);padding:clamp(16px,2.4vw,32px)">
+      <div style="border-radius:12px;overflow:hidden;background:#FFFFFF;box-shadow:0 30px 60px -30px rgba(0,0,0,.45);border:1px solid rgba(0,0,0,.08)">
+        <div aria-hidden="true" style="height:30px;background:#F1F2F0;display:flex;align-items:center;gap:6px;padding:0 12px;border-bottom:1px solid #E1E2DE"><i style="width:9px;height:9px;border-radius:50%;background:#EC6A5E"></i><i style="width:9px;height:9px;border-radius:50%;background:#F4BE4F"></i><i style="width:9px;height:9px;border-radius:50%;background:#61C554"></i><span style="margin:0 auto;width:40%;height:14px;border-radius:7px;background:#FFFFFF"></span></div>
+        <div style="aspect-ratio:1400/900;overflow:hidden"><img class="pfsw-img" data-swg="profile" data-n="4" src="assets/pf_sp_profile.webp" alt="Employee profile tabs — Overview, Documents, Leave, Onboarding" style="width:100%;display:block;transition:transform .7s cubic-bezier(.22,1,.36,1);transform:translateY(0%)"></div>
+      </div>
+      <p style="margin:18px 0 0;font-size:15px;line-height:1.6;color:#3F3F45;max-width:760px;min-height:3.2em"><strong class="pfsw-capt" data-swg="profile" style="color:#0E0E10">Overview.</strong> <span class="pfsw-cap" data-swg="profile">Contact, employment, emergency contact and address — the record HR used to chase across emails.</span></p>
+      <div class="pfthumbs" role="group" aria-label="Employee profile tabs">
+        <button type="button" class="pfthumb" data-act="pfsw:profile-0" data-swg="profile" data-swk="0" data-cap="Contact, employment, emergency contact and address — the record HR used to chase across emails." data-capt="Overview" aria-pressed="true" aria-label="Show Overview">
+          <span class="pfthumb-img"><img src="assets/pf_sp_profile.webp" alt="" style="width:100%;display:block;transform:translateY(0%)"></span>
+          <span class="pfthumb-label">Overview</span>
+        </button><button type="button" class="pfthumb" data-act="pfsw:profile-1" data-swg="profile" data-swk="1" data-cap="Contracts, NDAs, ID and tax forms in one place, with drag-and-drop upload and a “Request document” action." data-capt="Documents" aria-pressed="false" aria-label="Show Documents">
+          <span class="pfthumb-img"><img src="assets/pf_sp_profile.webp" alt="" style="width:100%;display:block;transform:translateY(-25%)"></span>
+          <span class="pfthumb-label">Documents</span>
+        </button><button type="button" class="pfthumb" data-act="pfsw:profile-2" data-swg="profile" data-swk="2" data-cap="Used and remaining days for every leave type, plus the employee’s full request history." data-capt="Leave" aria-pressed="false" aria-label="Show Leave">
+          <span class="pfthumb-img"><img src="assets/pf_sp_profile.webp" alt="" style="width:100%;display:block;transform:translateY(-50%)"></span>
+          <span class="pfthumb-label">Leave</span>
+        </button><button type="button" class="pfthumb" data-act="pfsw:profile-3" data-swg="profile" data-swk="3" data-cap="The new hire’s checklist with overall progress, so HR can see exactly what’s left." data-capt="Onboarding" aria-pressed="false" aria-label="Show Onboarding">
+          <span class="pfthumb-img"><img src="assets/pf_sp_profile.webp" alt="" style="width:100%;display:block;transform:translateY(-75%)"></span>
+          <span class="pfthumb-label">Onboarding</span>
+        </button>
+      </div>
+    </div>
+    <figure style="margin:36px 0 0;background:#F4F4F2;border-radius:clamp(20px,2.4vw,32px);padding:clamp(16px,2.4vw,32px)">
+      <div class="scrollx"><div style="min-width:640px">
+        <img src="assets/pf_depts.webp" alt="Departments grid and Engineering department detail" style="width:100%;display:block">
+        <figcaption style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:2.38%;margin-top:16px">
+          <div><div style="font-weight:600;font-size:15px">Departments</div><div style="margin-top:4px;font-size:14px;line-height:1.5;color:#55555B">Each team’s manager, headcount and status.</div></div>
+          <div><div style="font-weight:600;font-size:15px">Department detail</div><div style="margin-top:4px;font-size:14px;line-height:1.5;color:#55555B">Team stats and members, with assign manager, edit and archive.</div></div>
+        </figcaption>
+      </div></div>
+    </figure>
+
+  </div>
+</section>
+<section id="onboarding" style="max-width:1320px;margin:0 auto;padding:clamp(80px,9vw,128px) clamp(20px,4vw,56px) 0;display:flex;flex-wrap:wrap;gap:24px 64px">
+  <div style="flex:1 1 220px;max-width:300px"><div class="mono" style="font-size:13px;color:#5E8F1F">06</div><h2 style="margin:8px 0 0;font-size:clamp(36px,3.6vw,52px);letter-spacing:-0.04em;line-height:1;font-weight:600">Onboarding</h2></div>
+  <div style="flex:999 1 640px;min-width:0">
+    <h3 style="margin:0;font-size:clamp(26px,2.6vw,38px);letter-spacing:-0.03em;line-height:1.12;font-weight:600">One checklist, <span style="color:#8A8A90">two points of view.</span></h3>
+    <p style="margin:16px 0 0;font-size:18px;line-height:1.6;color:#3F3F45;max-width:720px">HR sets up the tasks once; the new hire works through them. Both sides see the same progress, so nobody has to chase anybody.</p>
+    <figure style="margin:36px 0 0;background:#E9F0DE;border-radius:clamp(20px,2.4vw,32px);padding:clamp(16px,2.4vw,32px)">
+      <div class="scrollx"><div style="min-width:640px">
+        <img src="assets/pf_onboard.webp" alt="HR onboarding checklist and the employee onboarding page" style="width:100%;display:block">
+        <figcaption style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:2.38%;margin-top:16px">
+          <div><div style="font-weight:600;font-size:15px">HR view</div><div style="margin-top:4px;font-size:14px;line-height:1.5;color:#55555B">Progress across every task, with what’s done, due and overdue.</div></div>
+          <div><div style="font-weight:600;font-size:15px">Employee view</div><div style="margin-top:4px;font-size:14px;line-height:1.5;color:#55555B">The same tasks, ticked off — with uploads done right where they’re asked for.</div></div>
+        </figcaption>
+      </div></div>
+    </figure>
+    <figure style="margin:16px 0 0;background:#F4F4F2;border-radius:clamp(20px,2.4vw,32px);padding:clamp(16px,2.4vw,32px)">
+      <div class="scrollx"><div style="min-width:720px">
+        <img src="assets/pf_employee.webp" alt="Employee announcements, documents and profile pages" style="width:100%;display:block">
+        <figcaption style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));column-gap:1.72%;margin-top:16px">
+          <div><div style="font-weight:600;font-size:15px">Announcements</div><div style="margin-top:4px;font-size:14px;line-height:1.5;color:#55555B">Company news, tagged by audience.</div></div>
+          <div><div style="font-weight:600;font-size:15px">Documents</div><div style="margin-top:4px;font-size:14px;line-height:1.5;color:#55555B">What HR has requested, and what’s already uploaded.</div></div>
+          <div><div style="font-weight:600;font-size:15px">Profile</div><div style="margin-top:4px;font-size:14px;line-height:1.5;color:#55555B">Personal details they can edit; employment details HR manages.</div></div>
+        </figcaption>
+      </div></div>
+    </figure>
+
+  </div>
+</section>
+<section id="leave" style="max-width:1320px;margin:0 auto;padding:clamp(80px,9vw,128px) clamp(20px,4vw,56px) 0;display:flex;flex-wrap:wrap;gap:24px 64px">
+  <div style="flex:1 1 220px;max-width:300px"><div class="mono" style="font-size:13px;color:#5E8F1F">07</div><h2 style="margin:8px 0 0;font-size:clamp(36px,3.6vw,52px);letter-spacing:-0.04em;line-height:1;font-weight:600">Leave</h2></div>
+  <div style="flex:999 1 640px;min-width:0">
+    <h3 style="margin:0;font-size:clamp(26px,2.6vw,38px);letter-spacing:-0.03em;line-height:1.12;font-weight:600">Request in seconds. <span style="color:#8A8A90">Approve in one click.</span></h3>
+    <p style="margin:16px 0 0;font-size:18px;line-height:1.6;color:#3F3F45;max-width:720px">Leave is the feature people use most, so both sides of it had to be fast and clear.</p>
+    <figure style="margin:36px 0 0;background:#E9F0DE;border-radius:clamp(20px,2.4vw,32px);padding:clamp(16px,2.4vw,32px)">
+      <div class="scrollx"><div style="min-width:640px">
+        <img src="assets/pf_leave_emp.webp" alt="My leave balances and the request leave form" style="width:100%;display:block">
+        <figcaption style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:2.38%;margin-top:16px">
+          <div><div style="font-weight:600;font-size:15px">My leave</div><div style="margin-top:4px;font-size:14px;line-height:1.5;color:#55555B">Balances for every leave type, plus the status of every request.</div></div>
+          <div><div style="font-weight:600;font-size:15px">Request leave</div><div style="margin-top:4px;font-size:14px;line-height:1.5;color:#55555B">It shows the cost before you send: “This request will use 3 working days — you’ll have 9 of 20 annual days left.”</div></div>
+        </figcaption>
+      </div></div>
+    </figure>
+    <div aria-hidden="true" style="display:flex;align-items:center;gap:12px;margin:18px 0;padding-left:8px"><span style="width:2px;height:36px;background:#ADE163"></span><span class="mono" style="font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#5E8F1F">Manager is notified ↓</span></div>
+    <figure style="margin:0px 0 0;background:#F4F4F2;border-radius:clamp(20px,2.4vw,32px);padding:clamp(16px,2.4vw,32px)">
+      <div class="scrollx"><div style="min-width:640px">
+        <img src="assets/pf_leave_admin.webp" alt="Leave approvals table and the leave request detail panel" style="width:100%;display:block">
+        <figcaption style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:2.38%;margin-top:16px">
+          <div><div style="font-weight:600;font-size:15px">Leave approvals</div><div style="margin-top:4px;font-size:14px;line-height:1.5;color:#55555B">Pending, on leave today and approved this month at the top; approve or reject inline.</div></div>
+          <div><div style="font-weight:600;font-size:15px">Request detail</div><div style="margin-top:4px;font-size:14px;line-height:1.5;color:#55555B">Dates broken down by day, the employee’s reason and room for a manager comment.</div></div>
+        </figcaption>
+      </div></div>
+    </figure>
+
+  </div>
+</section>
+<section id="control" style="max-width:1320px;margin:0 auto;padding:clamp(80px,9vw,128px) clamp(20px,4vw,56px) 0;display:flex;flex-wrap:wrap;gap:24px 64px">
+  <div style="flex:1 1 220px;max-width:300px"><div class="mono" style="font-size:13px;color:#5E8F1F">08</div><h2 style="margin:8px 0 0;font-size:clamp(36px,3.6vw,52px);letter-spacing:-0.04em;line-height:1;font-weight:600">Trust <span class="it" style="color:#8A8A90">&amp; control</span></h2><p style="margin:14px 0 0;font-size:15px;line-height:1.55;color:#55555B">The quiet screens that make HR software trustworthy.</p></div>
+  <div style="flex:999 1 640px;min-width:0">
+    <h3 style="margin:0;font-size:clamp(26px,2.6vw,38px);letter-spacing:-0.03em;line-height:1.12;font-weight:600">Every action, on the record. <span style="color:#8A8A90">Every setting, in its place.</span></h3>
+    <p style="margin:16px 0 0;font-size:18px;line-height:1.6;color:#3F3F45;max-width:720px">HR handles sensitive data, so the product shows who did what — and gives owners real control over access and security.</p>
+    <figure style="margin:36px 0 0;background:#F4F4F2;border-radius:clamp(20px,2.4vw,32px);padding:clamp(16px,2.4vw,32px)">
+      <div class="scrollx"><div style="min-width:640px">
+        <img src="assets/pf_audit.webp" alt="Activity log and activity detail panel" style="width:100%;display:block">
+        <figcaption style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:2.38%;margin-top:16px">
+          <div><div style="font-weight:600;font-size:15px">Activity log</div><div style="margin-top:4px;font-size:14px;line-height:1.5;color:#55555B">Who did what, to which record, and when — filterable and exportable.</div></div>
+          <div><div style="font-weight:600;font-size:15px">Activity detail</div><div style="margin-top:4px;font-size:14px;line-height:1.5;color:#55555B">Actor, affected record, time, IP address and device for every event.</div></div>
+        </figcaption>
+      </div></div>
+    </figure>
+    <div class="pfsw dark" style="margin-top:36px;background:#17291D;border-radius:clamp(20px,2.4vw,32px);padding:clamp(16px,2.4vw,32px)">
+      <div style="border-radius:12px;overflow:hidden;background:#FFFFFF;box-shadow:0 30px 60px -30px rgba(0,0,0,.45);border:1px solid rgba(0,0,0,.08)">
+        <div aria-hidden="true" style="height:30px;background:#F1F2F0;display:flex;align-items:center;gap:6px;padding:0 12px;border-bottom:1px solid #E1E2DE"><i style="width:9px;height:9px;border-radius:50%;background:#EC6A5E"></i><i style="width:9px;height:9px;border-radius:50%;background:#F4BE4F"></i><i style="width:9px;height:9px;border-radius:50%;background:#61C554"></i><span style="margin:0 auto;width:40%;height:14px;border-radius:7px;background:#FFFFFF"></span></div>
+        <div style="aspect-ratio:1400/900;overflow:hidden"><img class="pfsw-img" data-swg="settings" data-n="4" src="assets/pf_sp_settings.webp" alt="Settings sections — Organisation, Team & roles, Notifications, Security" style="width:100%;display:block;transition:transform .7s cubic-bezier(.22,1,.36,1);transform:translateY(0%)"></div>
+      </div>
+      <p style="margin:18px 0 0;font-size:15px;line-height:1.6;color:#C7CFC4;max-width:760px;min-height:3.2em"><strong class="pfsw-capt" data-swg="settings" style="color:#FFFFFF">Organisation.</strong> <span class="pfsw-cap" data-swg="settings">Company profile, industry, size and location — with transfer ownership and delete organisation kept apart in a danger zone.</span></p>
+      <div class="pfthumbs" role="group" aria-label="Settings sections">
+        <button type="button" class="pfthumb" data-act="pfsw:settings-0" data-swg="settings" data-swk="0" data-cap="Company profile, industry, size and location — with transfer ownership and delete organisation kept apart in a danger zone." data-capt="Organisation" aria-pressed="true" aria-label="Show Organisation">
+          <span class="pfthumb-img"><img src="assets/pf_sp_settings.webp" alt="" style="width:100%;display:block;transform:translateY(0%)"></span>
+          <span class="pfthumb-label">Organisation</span>
+        </button><button type="button" class="pfthumb" data-act="pfsw:settings-1" data-swg="settings" data-swk="1" data-cap="Invite admins and give them a role — Owner, HR Administrator or Department Manager — with status at a glance." data-capt="Team & roles" aria-pressed="false" aria-label="Show Team & roles">
+          <span class="pfthumb-img"><img src="assets/pf_sp_settings.webp" alt="" style="width:100%;display:block;transform:translateY(-25%)"></span>
+          <span class="pfthumb-label">Team & roles</span>
+        </button><button type="button" class="pfthumb" data-act="pfsw:settings-2" data-swg="settings" data-swk="2" data-cap="Choose email and in-app alerts for each event: new applications, leave requests, payments, onboarding tasks and announcements." data-capt="Notifications" aria-pressed="false" aria-label="Show Notifications">
+          <span class="pfthumb-img"><img src="assets/pf_sp_settings.webp" alt="" style="width:100%;display:block;transform:translateY(-50%)"></span>
+          <span class="pfthumb-label">Notifications</span>
+        </button><button type="button" class="pfthumb" data-act="pfsw:settings-3" data-swg="settings" data-swk="3" data-cap="Password change, two-factor authentication, active sessions by device and location, and sign out of all devices." data-capt="Security" aria-pressed="false" aria-label="Show Security">
+          <span class="pfthumb-img"><img src="assets/pf_sp_settings.webp" alt="" style="width:100%;display:block;transform:translateY(-75%)"></span>
+          <span class="pfthumb-label">Security</span>
+        </button>
+      </div>
+    </div>
+    <figure style="margin:36px 0 0;background:#17291D;border-radius:clamp(20px,2.4vw,32px);padding:clamp(16px,2.4vw,32px)">
+      <div class="scrollx"><div style="min-width:640px">
+        <img src="assets/pf_auth.webp" alt="Sign in and create account screens" style="width:100%;display:block">
+        <figcaption style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:2.38%;margin-top:16px">
+          <div><div style="font-weight:600;font-size:15px">Sign in</div><div style="margin-top:4px;font-size:14px;line-height:1.5;color:#55555B">“Everything you need, in one place.” — written for employees.</div></div>
+          <div><div style="font-weight:600;font-size:15px">Create account</div><div style="margin-top:4px;font-size:14px;line-height:1.5;color:#55555B">“Everything your team needs, from hire to handover.” — written for the person setting it up.</div></div>
+        </figcaption>
+      </div></div>
+    </figure>
+
+  </div>
+</section>
+<section id="system" style="max-width:1320px;margin:0 auto;padding:clamp(80px,9vw,128px) clamp(20px,4vw,56px) 0;display:flex;flex-wrap:wrap;gap:24px 64px">
+  <div style="flex:1 1 220px;max-width:300px"><div class="mono" style="font-size:13px;color:#5E8F1F">09</div><h2 style="margin:8px 0 0;font-size:clamp(36px,3.6vw,52px);letter-spacing:-0.04em;line-height:1;font-weight:600">Design <span class="it" style="color:#8A8A90">system</span></h2><p style="margin:14px 0 0;font-size:15px;line-height:1.55;color:#55555B">Forest for structure, lime for action, and status colours that always mean the same thing.</p></div>
+  <div style="flex:999 1 640px;min-width:0">
+    <div style="display:flex;flex-wrap:wrap;gap:12px"><div class="lift" style="flex:1 1 130px;background:#FFFFFF;border:1px solid #E4E3DE;border-radius:18px;overflow:hidden"><div style="height:92px;background:#17291D"></div><div style="padding:12px 14px"><div style="font-weight:600;font-size:15px">Forest</div><div class="mono" style="font-size:12px;color:#55555B;margin-top:4px">#17291D</div></div></div><div class="lift" style="flex:1 1 130px;background:#FFFFFF;border:1px solid #E4E3DE;border-radius:18px;overflow:hidden"><div style="height:92px;background:#ADE163"></div><div style="padding:12px 14px"><div style="font-weight:600;font-size:15px">Lime</div><div class="mono" style="font-size:12px;color:#55555B;margin-top:4px">#ADE163</div></div></div><div class="lift" style="flex:1 1 130px;background:#FFFFFF;border:1px solid #E4E3DE;border-radius:18px;overflow:hidden"><div style="height:92px;background:#E9F0DE"></div><div style="padding:12px 14px"><div style="font-weight:600;font-size:15px">Mint</div><div class="mono" style="font-size:12px;color:#55555B;margin-top:4px">#E9F0DE</div></div></div><div class="lift" style="flex:1 1 130px;background:#FFFFFF;border:1px solid #E4E3DE;border-radius:18px;overflow:hidden"><div style="height:92px;background:#111111"></div><div style="padding:12px 14px"><div style="font-weight:600;font-size:15px">Ink</div><div class="mono" style="font-size:12px;color:#55555B;margin-top:4px">#111111</div></div></div><div class="lift" style="flex:1 1 130px;background:#FFFFFF;border:1px solid #E4E3DE;border-radius:18px;overflow:hidden"><div style="height:92px;background:#FFFFFF"></div><div style="padding:12px 14px"><div style="font-weight:600;font-size:15px">Surface</div><div class="mono" style="font-size:12px;color:#55555B;margin-top:4px">#FFFFFF</div></div></div><div class="lift" style="flex:1 1 130px;background:#FFFFFF;border:1px solid #E4E3DE;border-radius:18px;overflow:hidden"><div style="height:92px;background:#E7E8E4"></div><div style="padding:12px 14px"><div style="font-weight:600;font-size:15px">Line</div><div class="mono" style="font-size:12px;color:#55555B;margin-top:4px">#E7E8E4</div></div></div></div>
+    <div style="display:flex;flex-wrap:wrap;gap:16px;margin-top:16px">
+      <div style="flex:1 1 320px;background:#FFFFFF;border:1px solid #E4E3DE;border-radius:24px;padding:26px">
+        <div class="mono" style="font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#55555B">Status pills</div>
+        <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:16px"><span style="display:inline-flex;align-items:center;gap:6px;padding:5px 12px;border-radius:999px;background:#E6F6DF;color:#2C7A12;font-size:13px;font-weight:600"><i style="width:6px;height:6px;border-radius:50%;background:currentColor"></i>Active</span><span style="display:inline-flex;align-items:center;gap:6px;padding:5px 12px;border-radius:999px;background:#FDF1DC;color:#9A5B00;font-size:13px;font-weight:600"><i style="width:6px;height:6px;border-radius:50%;background:currentColor"></i>On leave</span><span style="display:inline-flex;align-items:center;gap:6px;padding:5px 12px;border-radius:999px;background:#E4EDFC;color:#2A56C6;font-size:13px;font-weight:600"><i style="width:6px;height:6px;border-radius:50%;background:currentColor"></i>Invited</span><span style="display:inline-flex;align-items:center;gap:6px;padding:5px 12px;border-radius:999px;background:#FCE4E4;color:#B42318;font-size:13px;font-weight:600"><i style="width:6px;height:6px;border-radius:50%;background:currentColor"></i>Suspended</span><span style="display:inline-flex;align-items:center;gap:6px;padding:5px 12px;border-radius:999px;background:#EEEEEC;color:#55555B;font-size:13px;font-weight:600"><i style="width:6px;height:6px;border-radius:50%;background:currentColor"></i>Exited</span><span style="display:inline-flex;align-items:center;gap:6px;padding:5px 12px;border-radius:999px;background:#FDF1DC;color:#9A5B00;font-size:13px;font-weight:600"><i style="width:6px;height:6px;border-radius:50%;background:currentColor"></i>Pending</span><span style="display:inline-flex;align-items:center;gap:6px;padding:5px 12px;border-radius:999px;background:#E6F6DF;color:#2C7A12;font-size:13px;font-weight:600"><i style="width:6px;height:6px;border-radius:50%;background:currentColor"></i>Approved</span><span style="display:inline-flex;align-items:center;gap:6px;padding:5px 12px;border-radius:999px;background:#FCE4E4;color:#B42318;font-size:13px;font-weight:600"><i style="width:6px;height:6px;border-radius:50%;background:currentColor"></i>Rejected</span></div>
+        <div class="mono" style="font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#55555B;margin-top:26px">Buttons</div>
+        <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:14px">
+          <span style="display:inline-flex;align-items:center;gap:6px;min-height:42px;padding:0 18px;border-radius:10px;background:#ADE163;color:#17291D;font-weight:700;font-size:14px">+ Add employee</span>
+          <span style="display:inline-flex;align-items:center;min-height:42px;padding:0 18px;border-radius:10px;border:1px solid #D7D6D0;font-weight:600;font-size:14px">Cancel</span>
+          <span style="display:inline-flex;align-items:center;min-height:42px;padding:0 18px;border-radius:10px;background:#D92D20;color:#FFFFFF;font-weight:600;font-size:14px">Delete organisation</span>
+        </div>
+      </div>
+      <div style="flex:1 1 320px;background:#17291D;color:#F2F5EE;border-radius:24px;padding:26px;display:flex;flex-direction:column;gap:14px">
+        <div class="mono" style="font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#C7CFC4">Stat card</div>
+        <div style="background:#FFFFFF;color:#111111;border-radius:16px;padding:18px;max-width:240px">
+          <span style="display:inline-flex;width:34px;height:34px;border-radius:10px;background:#E9F0DE;align-items:center;justify-content:center;color:#3F6A12;font-weight:700">⧗</span>
+          <div style="margin-top:14px;font-size:13px;color:#55555B">Pending leave</div>
+          <div style="font-size:30px;font-weight:700;letter-spacing:-0.02em">4</div>
+          <div style="font-size:12px;color:#9A5B00">— awaiting approval</div>
+        </div>
+        <div class="mono" style="font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#C7CFC4;margin-top:6px">Sidebar item</div>
+        <div style="display:flex;flex-direction:column;gap:6px;max-width:240px">
+          <span style="display:flex;justify-content:space-between;align-items:center;padding:10px 12px;border-radius:10px;background:#ADE163;color:#17291D;font-weight:600;font-size:14px">Applications <span style="font-size:11px;background:#17291D;color:#ADE163;border-radius:999px;padding:2px 8px">23</span></span>
+          <span style="display:flex;justify-content:space-between;align-items:center;padding:10px 12px;border-radius:10px;color:#C7CFC4;font-size:14px">Leave <span style="font-size:11px;background:#2E4A35;color:#E9F0DE;border-radius:999px;padding:2px 8px">4</span></span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<section id="outcome" style="max-width:1320px;margin:0 auto;padding:clamp(80px,9vw,128px) clamp(20px,4vw,56px) 0;display:flex;flex-wrap:wrap;gap:24px 64px">
+  <div style="flex:1 1 220px;max-width:300px"><div class="mono" style="font-size:13px;color:#5E8F1F">10</div><h2 style="margin:8px 0 0;font-size:clamp(36px,3.6vw,52px);letter-spacing:-0.04em;line-height:1;font-weight:600">Outcome <span class="it" style="color:#8A8A90">&amp; reflection</span></h2></div>
+  <div style="flex:999 1 640px;min-width:0">
+    <p style="margin:0;font-size:clamp(20px,1.9vw,26px);line-height:1.45;letter-spacing:-0.01em;color:#2A2A2F">31 screens across two role-based workspaces, a shared component set, and a complete hiring-to-handover flow — ready to hand to development.</p>
+    <div style="display:flex;flex-wrap:wrap;gap:16px;margin-top:32px">
+      <div style="flex:1 1 260px;background:#FFFFFF;border:1px solid #E4E3DE;border-radius:20px;padding:24px"><div class="mono" style="font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#55555B">Hardest problem</div><p style="margin:12px 0 0;font-size:16px;line-height:1.55">[The design decision Victoria found hardest on PeopleFlow, and how she solved it.]</p></div>
+      <div style="flex:1 1 260px;background:#FFFFFF;border:1px solid #E4E3DE;border-radius:20px;padding:24px"><div class="mono" style="font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#55555B">What she learned</div><p style="margin:12px 0 0;font-size:16px;line-height:1.55">[What designing for two roles taught her.]</p></div>
+      <div style="flex:1 1 260px;background:#FFFFFF;border:1px solid #E4E3DE;border-radius:20px;padding:24px"><div class="mono" style="font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#55555B">Next</div><p style="margin:12px 0 0;font-size:16px;line-height:1.55">[What she’d test or build next — e.g. payroll or performance reviews.]</p></div>
+    </div>
+
+  </div>
+</section>
+<!-- ============ NEXT PROJECT ============ -->
+<section style="max-width:1320px;margin:0 auto;padding:clamp(96px,10vw,140px) clamp(20px,4vw,56px)">
+  <a href="cici.html" class="lift" style="display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between;text-decoration:none;background:#FFD3DC;color:#0E0E10;border-radius:clamp(24px,3vw,40px);padding:clamp(28px,4vw,56px);overflow:hidden">
+    <div style="flex:1 1 320px">
+      <div class="mono" style="font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#7A1033">Next case study — 01</div>
+      <div style="font-size:clamp(56px,8vw,120px);font-weight:800;letter-spacing:-0.06em;line-height:.9;margin-top:16px">Cici<span style="color:#FF5470">.</span></div>
+      <p style="margin:16px 0 0;font-size:18px;line-height:1.5;color:#3F2A30;max-width:420px">A women’s wellness app for Nigerian women — from puberty to menopause, in one private place.</p>
+    </div>
+    <img src="assets/cici_hero.webp" alt="" style="flex:0 1 300px;width:300px;max-width:100%;display:block;border-radius:16px">
+  </a>
+  <div class="mono" style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;margin-top:40px;font-size:12px;color:#55555B">
+    <span>© 2026 Victoria — Designed with care</span>
+    <a href="index.html" class="lnk">← Back to all work</a>
+  </div>
+</section>
+
+</div>
+<script src="site.js" defer></script>
+</body>
+</html>
