@@ -1,7 +1,7 @@
 # Victoria — Portfolio
 
 Static site: HTML5, CSS3 and vanilla JavaScript (ES5+). No framework, no build step, no dependencies.
-Fonts: Inter Tight (headings and body) and JetBrains Mono (labels) via Google Fonts.
+Font: Inter Tight (headings, body and labels) via Google Fonts.
 
 ```
 index.html      Home (work, playground, process, about, testimonials, contact)

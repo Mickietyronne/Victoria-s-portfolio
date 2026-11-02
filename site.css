@@ -9,7 +9,7 @@ img{max-width:100%;height:auto}
 .card{will-change:transform}
 [data-cat].is-hidden{display:none !important}
 
-.view-cursor{position:fixed;left:0;top:0;width:104px;height:104px;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;pointer-events:none;z-index:50;opacity:0;transition:opacity .25s ease,background-color .25s ease;font:500 13px/1 'JetBrains Mono',ui-monospace,monospace;letter-spacing:.12em;text-transform:uppercase;box-shadow:0 12px 30px -10px rgba(14,14,16,.45)}
+.view-cursor{position:fixed;left:0;top:0;width:104px;height:104px;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;pointer-events:none;z-index:50;opacity:0;transition:opacity .25s ease,background-color .25s ease;font:600 13px/1 'Inter Tight',system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;box-shadow:0 12px 30px -10px rgba(14,14,16,.45)}
 .view-cursor.on{opacity:1}
 .stack{transition:filter .2s linear}
 @media (prefers-reduced-motion:reduce){.view-cursor{display:none}}
