@@ -437,6 +437,53 @@
     window.addEventListener('resize', function () { if (window.innerWidth > 599 && menu.classList.contains('open')) shut(false); });
   })();
 
+
+  /* ---------- Endless carousels (photos + testimonials), driven by script so they loop forever on every device ---------- */
+  (function () {
+    var tracks = [].slice.call(document.querySelectorAll('.life-track, .quotes-track')); if (!tracks.length) return;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;   // CSS shows a still, hand-scrollable strip instead
+    var items = tracks.map(function (t) {
+      t.style.animation = 'none';
+      return { el: t, set: t.querySelector('.life-set, .quotes-set'), quotes: t.classList.contains('quotes-track'), x: 0, w: 0 };
+    });
+    function measure() { items.forEach(function (it) { it.w = it.set ? it.set.getBoundingClientRect().width : 0; }); }
+    measure(); window.addEventListener('resize', measure);
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(measure);
+    window.addEventListener('load', measure);
+    var last = performance.now();
+    function tick(now) {
+      var dt = Math.min(0.05, (now - last) / 1000); last = now;
+      items.forEach(function (it) {
+        if (!it.w) { it.w = it.set ? it.set.getBoundingClientRect().width : 0; if (!it.w) return; }
+        if (!it.el.offsetParent) return;                       // hidden view: skip work
+        // pace in px/second: gentle on desktop, much slower on phones so the quotes can be read as they pass
+        var phone = window.innerWidth < 600;
+        var pace = it.quotes ? (phone ? 15 : 22) : (phone ? 20 : 26);
+        it.x -= pace * dt;
+        if (it.x <= -it.w) it.x += it.w;                       // wrap seamlessly: the second copy takes over
+        it.el.style.transform = 'translate3d(' + it.x.toFixed(2) + 'px,0,0)';
+      });
+      requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  })();
+
+  /* ---------- Big hero name: scale it to fill the width exactly, centred ---------- */
+  (function () {
+    var el = document.querySelector('.ld-name'); if (!el) return;
+    function fit() {
+      if (!el.offsetParent) return;
+      el.style.fontSize = '100px';
+      var avail = el.clientWidth, text = 0;
+      [].forEach.call(el.childNodes, function () {});
+      var r = document.createRange(); r.selectNodeContents(el); text = r.getBoundingClientRect().width;
+      if (!text || !avail) return;
+      el.style.fontSize = Math.min(240, Math.max(28, 100 * avail / text * 0.985)).toFixed(2) + 'px';
+    }
+    fit(); window.addEventListener('resize', fit); window.addEventListener('viewchange', fit);
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(fit);
+  })();
+
   /* ---------- One click handler for everything ---------- */
   document.addEventListener('click', function (e) {
     var el = e.target.closest('[data-act]'); if (!el) return;

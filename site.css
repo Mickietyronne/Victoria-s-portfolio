@@ -46,7 +46,6 @@ html.intro-lock,html.intro-lock body{overflow:hidden}
   nav[aria-label="Main"]{order:3;width:100%;justify-content:space-between;flex-wrap:nowrap !important;gap:2px !important;box-sizing:border-box}
   nav[aria-label="Main"] a{padding:12px 8px !important;font-size:13px !important}
   /* name under the ID card fits on one line */
-  .ld-name{font-size:8.6vw !important}
   /* comfortable tap targets for footer links */
   nav[aria-label="Social"] a,.mono > a.lnk{display:inline-flex;align-items:center;min-height:44px}
   a.lnk[href^="mailto:"]{display:inline-block;padding:10px 0}
