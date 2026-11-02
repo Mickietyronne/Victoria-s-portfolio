@@ -78,3 +78,6 @@ html.menu-lock,html.menu-lock body{overflow:hidden}
 /* Spotify player slot (filled when someone presses play) */
 .sp-embed{display:none;border-radius:12px;overflow:hidden}
 .sp-embed.on{display:block;min-height:80px}
+
+/* keep the scrollbar's space reserved, so locking scroll (intro, menu, lightbox) never shifts the page */
+html{scrollbar-gutter:stable}

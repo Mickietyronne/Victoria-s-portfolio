@@ -29,5 +29,5 @@ Or from the terminal: `npm i -g vercel` then `vercel` inside this folder.
 ## Before going live
 - Search for `[` — every bracketed placeholder (surname, metrics, roles, quotes, song, links) needs real content.
 - Her email (adenekanayo2002@gmail.com) is set in `index.html` and at the top of `site.js`.
-- `resume.pdf` is her CV; replace the file to update it. Replace `#linkedin` with her real LinkedIn URL.
+- `resume.pdf` is her CV; replace the file to update it.
 - Swap the images in `assets/` for full-resolution exports (keep the same file names).
